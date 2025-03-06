@@ -86,7 +86,7 @@
       {"name":"% Nuls/inscrits","type":"string"},
       {"name":"% Nuls/votants","type":"string"},
       {"name":"Numéro de panneau 1","type":"string"},
-      {"name":"Nuance candidat 1","type":"string"},
+      {"name":"Nuance candidat 1","type":"string","meaning":"Text"},
       {"name":"Nom candidat 1","type":"string"},
       {"name":"Prénom candidat 1","type":"string"},
       {"name":"Sexe candidat 1","type":"string"},
