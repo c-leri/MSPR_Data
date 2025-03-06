@@ -66,8 +66,9 @@
   },
   "schema": {
     "columns": [
-      {"name":"Commune de plus de 5000 hab.","type":"string"},
-      {"name":"Nombre de demandeurs d\u0027emploi","type":"string"}
+      {"name":"Communes","type":"string"},
+      {"name":"Code postaux1","type":"string"},
+      {"name":"Sans emplois","type":"string"}
     ],
     "userModified": true
   },
