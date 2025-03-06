@@ -27,10 +27,143 @@
     },
     "autoRefreshSample": false
   },
-  "explorationFilters": [],
+  "explorationFilters": [
+    {
+      "validityFilter": {
+        "column": "Commune de plus de 5000 hab._0",
+        "type": "validity",
+        "params": {
+          "nok": true,
+          "type": "Text",
+          "ok": true,
+          "empty": true
+        }
+      },
+      "column": "Commune de plus de 5000 hab._0",
+      "active": true,
+      "alphanumFilter": {
+        "selectedValues": [],
+        "column": "Commune de plus de 5000 hab._0",
+        "type": "alphanum",
+        "params": {
+          "mode": "full_string",
+          "normalization": "exact"
+        }
+      },
+      "type": "columnFilter",
+      "$$hashKey": "object:32492",
+      "facet": {
+        "columnType": "ALPHANUM",
+        "selectedValues": {},
+        "column": "Commune de plus de 5000 hab._0",
+        "sort": "count",
+        "type": "facet",
+        "currentMode": "ALPHANUM"
+      },
+      "currentMode": "FACET"
+    },
+    {
+      "validityFilter": {
+        "column": "Commune de plus de 5000 hab.",
+        "type": "validity",
+        "params": {
+          "nok": true,
+          "type": "Text",
+          "ok": true,
+          "empty": true
+        }
+      },
+      "column": "Commune de plus de 5000 hab.",
+      "active": true,
+      "alphanumFilter": {
+        "selectedValues": [],
+        "column": "Commune de plus de 5000 hab.",
+        "type": "alphanum",
+        "params": {
+          "mode": "full_string",
+          "normalization": "exact"
+        }
+      },
+      "type": "columnFilter",
+      "$$hashKey": "object:32847",
+      "facet": {
+        "columnType": "ALPHANUM",
+        "selectedValues": {},
+        "column": "Commune de plus de 5000 hab.",
+        "sort": "count",
+        "type": "facet",
+        "currentMode": "ALPHANUM"
+      },
+      "currentMode": "FACET"
+    }
+  ],
   "columnUseScientificNotationByName": {},
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "RegexpExtractor",
+      "params": {
+        "found_col": false,
+        "extractAllOccurrences": false,
+        "prefix": "Code postaux",
+        "column": "Commune de plus de 5000 hab.",
+        "pattern": "([-+]?(?:[0-9]+(?:,[0-9]+)?))"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "mapping": [
+          {
+            "from": "\\h\\d{5}$",
+            "to": ""
+          },
+          {
+            "from": "",
+            "to": ""
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "Commune de plus de 5000 hab."
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "stopAfterFirstMatch": false,
+        "matching": "PATTERN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnRenamer",
+      "params": {
+        "renamings": [
+          {
+            "from": "Commune de plus de 5000 hab.",
+            "to": "Communes"
+          },
+          {
+            "from": "Nombre de demandeurs d\u0027emploi",
+            "to": "Sans emplois"
+          }
+        ]
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -57,7 +190,71 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "Commune de plus de 5000 hab._11": 248,
+    "Commune de plus de 5000 hab._10": 248,
+    "Commune de plus de 5000 hab._13": 248,
+    "Commune de plus de 5000 hab._12": 248,
+    "departement_menages": 158,
+    "Nombre de demandeurs d\u0027emploi": 233,
+    "Code postaux1": 113,
+    "departement_ets_comm": 165,
+    "departement_ets_comm_plus_services": 270,
+    "Commune de plus de 5000 hab._19": 248,
+    "Code postal1": 105,
+    "Commune de plus de 5000 hab._18": 248,
+    "departement_residencessec": 203,
+    "departement_emploi": 150,
+    "Commune de plus de 5000 hab._15": 248,
+    "departement_ets_service": 188,
+    "Commune de plus de 5000 hab._14": 248,
+    "Commune de plus de 5000 hab._17": 248,
+    "Commune de plus de 5000 hab._16": 248,
+    "departement_ets_admin": 173,
+    "departement_ets_agri": 165,
+    "departement_ets_10plus": 180,
+    "Sans emplois": 134,
+    "departement_ffiscaux": 165,
+    "departement_naissances": 180,
+    "Commune de plus de 5000 hab._0": 240,
+    "Commune de plus de 5000 hab._4": 240,
+    "Commune de plus de 5000 hab._3": 240,
+    "Commune de plus de 5000 hab._2": 240,
+    "Commune de plus de 5000 hab.": 232,
+    "Commune de plus de 5000 hab._1": 240,
+    "Commune de plus de 5000 hab._8": 240,
+    "Commune de plus de 5000 hab._7": 240,
+    "Commune de plus de 5000 hab._6": 240,
+    "Commune de plus de 5000 hab._5": 240,
+    "departement_logvacants": 180,
+    "departement_residencesprincipales": 263,
+    "Commune de plus de 5000 hab._9": 240,
+    "departement_ets": 128,
+    "departement_revenufiscalmedianmoyen": 278,
+    "Communes": 211,
+    "departement_residencesprincipales_proprietaire": 300,
+    "Commune de plus de 5000 hab._extracted_1": 300,
+    "departement_population": 180,
+    "departement_logements": 173,
+    "Commune de plus de 5000 hab._22": 248,
+    "Commune de plus de 5000 hab._21": 248,
+    "departement_chomage_1564": 195,
+    "Commune de plus de 5000 hab._24": 248,
+    "departement_population_1564": 218,
+    "Commune de plus de 5000 hab._23": 248,
+    "Commune de plus de 5000 hab._20": 248,
+    "departement_deces": 143,
+    "departement_ets_construc": 195,
+    "departement_ratio_imposable": 218,
+    "departement_ffiscaux_imposables": 248,
+    "departement_ets_indus": 173,
+    "departement_actifs_1564": 188,
+    "Commune de plus de 5000 hab._26": 248,
+    "Commune de plus de 5000 hab._25": 248,
+    "Commune de plus de 5000 hab._28": 248,
+    "Commune de plus de 5000 hab._27": 248,
+    "departement_ets_1_9": 158
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
