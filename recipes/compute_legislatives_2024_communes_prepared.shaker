@@ -7467,7 +7467,7 @@
       "disabled": false,
       "type": "MultiColumnByPrefixFold",
       "params": {
-        "columnNamePattern": "Elu (\\d)",
+        "columnNamePattern": "Elu (\\d+)",
         "columnNameColumn": "Candidat elu",
         "foldRemoveFoldedColumns": true,
         "columnContentColumn": "Elu"
