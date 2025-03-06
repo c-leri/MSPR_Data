@@ -1,0 +1,13 @@
+.journal
+.mainlock
+.wlock
+.ts
+git-info.json
+.git
+merge-requests.json
+version-tags.json
+*.pyc
+.coverage
+.htmlcov
+.DS_Store
+.idea
