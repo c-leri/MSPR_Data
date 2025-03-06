@@ -95,7 +95,7 @@
       {"name":"% Voix/exprimés 1","type":"string"},
       {"name":"Elu 1","type":"string"},
       {"name":"Numéro de panneau 2","type":"string"},
-      {"name":"Nuance candidat 2","type":"string"},
+      {"name":"Nuance candidat 2","type":"string","meaning":"Text"},
       {"name":"Nom candidat 2","type":"string"},
       {"name":"Prénom candidat 2","type":"string"},
       {"name":"Sexe candidat 2","type":"string"},
