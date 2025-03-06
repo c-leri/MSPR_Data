@@ -180,6 +180,14 @@
       },
       {
         "d": true,
+        "name": "Candidat elu"
+      },
+      {
+        "d": true,
+        "name": "Elu"
+      },
+      {
+        "d": true,
         "name": "Elu 3"
       },
       {
@@ -7459,10 +7467,10 @@
       "disabled": false,
       "type": "MultiColumnByPrefixFold",
       "params": {
-        "columnNamePattern": "Élu (\\d)",
-        "columnNameColumn": "Candidat élu",
+        "columnNamePattern": "Elu (\\d)",
+        "columnNameColumn": "Candidat elu",
         "foldRemoveFoldedColumns": true,
-        "columnContentColumn": "Élu"
+        "columnContentColumn": "Elu"
       },
       "alwaysShowComment": false
     }
@@ -7509,6 +7517,7 @@
     "Elu 92": 100,
     "Elu 91": 100,
     "Voix 204": 100,
+    "Élu": 100,
     "Voix 203": 100,
     "Voix 202": 100,
     "Elu 98": 100,
@@ -7592,6 +7601,7 @@
     "Elu 50": 100,
     "Elu 52": 100,
     "Elu 51": 100,
+    "Elu": 100,
     "Elu 58": 100,
     "Numéro de panneau 172": 173,
     "Elu 57": 100,
@@ -8409,6 +8419,7 @@
     "Numéro de panneau 153": 173,
     "Numéro de panneau 156": 173,
     "Numéro de panneau 155": 173,
+    "Candidat elu": 105,
     "Numéro de panneau 139": 173,
     "% Voix/exprimés 173": 158,
     "% Voix/exprimés 174": 158,
