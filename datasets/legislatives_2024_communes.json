@@ -69,7 +69,7 @@
     "columns": [
       {"name":"Code département","type":"string","meaning":"Text"},
       {"name":"Libellé département","type":"string"},
-      {"name":"Code commune","type":"string"},
+      {"name":"Code commune","type":"string","meaning":"Text"},
       {"name":"Libellé commune","type":"string"},
       {"name":"Inscrits","type":"string"},
       {"name":"Votants","type":"string"},
