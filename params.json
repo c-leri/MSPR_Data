@@ -9,28 +9,9 @@
   "projectType": "REGULAR",
   "projectAppType": "REGULAR",
   "hasSetupSection": false,
-  "owner": "celestin.bouchet@gmail.com",
+  "owner": "dominique@gagnie.re",
   "permissionsVersion": "V2",
-  "permissions": [
-    {
-      "group": "space_administrators",
-      "admin": true,
-      "editPermissions": false,
-      "readProjectContent": false,
-      "writeProjectContent": false,
-      "exportDatasetsData": false,
-      "readDashboards": false,
-      "writeDashboards": false,
-      "moderateDashboards": false,
-      "publishToDataCollections": false,
-      "shareToWorkspaces": false,
-      "runScenarios": false,
-      "manageDashboardAuthorizations": false,
-      "manageExposedElements": false,
-      "manageAdditionalDashboardUsers": false,
-      "executeApp": false
-    }
-  ],
+  "permissions": [],
   "additionalDashboardUsers": {
     "users": []
   },
@@ -161,7 +142,6 @@
     "dkuProperties": []
   },
   "name": "MSPR_Data",
-  "projectStatus": "Sandbox",
   "metrics": {
     "probes": [],
     "engineConfig": {
