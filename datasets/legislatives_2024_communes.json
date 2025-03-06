@@ -67,7 +67,7 @@
   },
   "schema": {
     "columns": [
-      {"name":"Code département","type":"string"},
+      {"name":"Code département","type":"string","meaning":"Text"},
       {"name":"Libellé département","type":"string"},
       {"name":"Code commune","type":"string"},
       {"name":"Libellé commune","type":"string"},
