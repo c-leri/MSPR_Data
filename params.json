@@ -161,6 +161,7 @@
     "dkuProperties": []
   },
   "name": "MSPR_Data",
+  "imgPattern": 2,
   "metrics": {
     "probes": [],
     "engineConfig": {
@@ -224,7 +225,9 @@
     "lastModifiedOn": 1741264492429
   },
   "shortDesc": "The project *MSPR_Data* was created by celestin.bouchet on Mar 06th 2025",
-  "tags": [],
+  "tags": [
+    "mspr"
+  ],
   "customFields": {},
   "checklists": {
     "checklists": [
