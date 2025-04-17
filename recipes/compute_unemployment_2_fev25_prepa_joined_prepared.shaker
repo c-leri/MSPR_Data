@@ -8,10 +8,6 @@
       },
       {
         "d": true,
-        "name": "pop_2024"
-      },
-      {
-        "d": true,
         "name": "unemployed_percent"
       }
     ]
@@ -57,7 +53,6 @@
       "params": {
         "columns": [
           "commune",
-          "pop_2024",
           "unemployed_percent"
         ],
         "keep": true,
