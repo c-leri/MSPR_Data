@@ -70,7 +70,7 @@
       {"name":"City","type":"string"},
       {"name":"Postcode","type":"string"},
       {"name":"Unemployeds","type":"double"},
-      {"name":"reg","type":"bigint"},
+      {"name":"reg","type":"string"},
       {"name":"dep","type":"string"},
       {"name":"commune","type":"string"},
       {"name":"pop_2024","type":"bigint"},
