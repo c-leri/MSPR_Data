@@ -3,8 +3,19 @@
     "steps": [],
     "maxProcessedMemTableBytes": -1,
     "columnsSelection": {
-      "mode": "ALL"
+      "mode": "ALL",
+      "list": [
+        {
+          "name": "Commune de plus de 5000 hab.",
+          "d": true
+        },
+        {
+          "name": "Nombre de demandeurs d\u0027emploi",
+          "d": true
+        }
+      ]
     },
+    "columnOrder": [],
     "columnWidthsByName": {
       "Commune de plus de 5000 hab.": 232,
       "Nombre de demandeurs d\u0027emploi": 233
@@ -41,7 +52,7 @@
         "maxReadUncompressedBytes": -1
       },
       "autoRefreshSample": false,
-      "_refreshTrigger": 1741274272872
+      "_refreshTrigger": 1744888627587
     },
     "vizSampling": {
       "selection": {
@@ -87,7 +98,10 @@
         "alphanumFilter": {
           "type": "alphanum",
           "column": "Commune de plus de 5000 hab.",
-          "selectedValues": [],
+          "selectedValues": [
+            "grenoble",
+            ""
+          ],
           "params": {
             "mode": "full_string",
             "normalization": "exact"
