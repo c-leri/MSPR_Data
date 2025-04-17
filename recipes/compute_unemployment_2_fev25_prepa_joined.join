@@ -124,7 +124,7 @@
     {
       "mode": "GREL",
       "name": "unemployed_percent",
-      "expr": "Unemployeds / pop_2024",
+      "expr": "Unemployeds / pop_2024 * 100",
       "type": "double"
     }
   ],
