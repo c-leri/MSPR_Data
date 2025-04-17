@@ -765,6 +765,17 @@
         "columnContentColumn": "Elu"
       },
       "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FilterOnCustomFormula",
+      "params": {
+        "expression": "val(\"nuance candidat\") \u003d\u003d val(\"Candidat elu\")",
+        "action": "KEEP_ROW"
+      },
+      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,
