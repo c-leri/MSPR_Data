@@ -162,6 +162,42 @@
     },
     {
       "preview": false,
+      "designTimeReport": {
+        "report": {
+          "producedColumns": [
+            "Nombre de demandeurs d\u0027emploi_0"
+          ]
+        }
+      },
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ExtractNumbers",
+      "params": {
+        "output": "",
+        "multipleValues": true,
+        "input": "Nombre de demandeurs d\u0027emploi",
+        "replaceMultipliers": false,
+        "delimiter": "BEST_GUESS",
+        "extractToJson": false
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "Nombre de demandeurs d\u0027emploi"
+        ],
+        "keep": false,
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "ColumnRenamer",
@@ -172,7 +208,7 @@
             "to": "City"
           },
           {
-            "from": "Nombre de demandeurs d\u0027emploi",
+            "from": "Nombre de demandeurs d\u0027emploi_0",
             "to": "Unemployeds"
           },
           {
@@ -232,6 +268,7 @@
     "Commune de plus de 5000 hab._17": 248,
     "Commune de plus de 5000 hab._16": 248,
     "departement_ets_admin": 173,
+    "Nombre de demandeurs d\u0027emploi_0": 248,
     "departement_ets_agri": 165,
     "departement_ets_10plus": 180,
     "City": 211,
@@ -256,6 +293,7 @@
     "Commune de plus de 5000 hab._9": 240,
     "departement_ets": 128,
     "departement_revenufiscalmedianmoyen": 278,
+    "Unemployeds0": 134,
     "Communes": 211,
     "departement_residencesprincipales_proprietaire": 300,
     "Commune de plus de 5000 hab._extracted_1": 300,
@@ -274,6 +312,7 @@
     "departement_ratio_imposable": 218,
     "departement_ffiscaux_imposables": 248,
     "departement_ets_indus": 173,
+    "Unemployeds_0": 134,
     "departement_actifs_1564": 188,
     "Unemployeds": 134,
     "Commune de plus de 5000 hab._26": 248,
