@@ -1,0 +1,499 @@
+{
+  "joins": [
+    {
+      "table2": 1,
+      "table1": 0,
+      "conditionsMode": "AND",
+      "type": "LEFT",
+      "outerJoinOnTheLeft": true,
+      "on": []
+    }
+  ],
+  "selectedColumns": [
+    {
+      "name": "reg",
+      "table": 0
+    },
+    {
+      "name": "dep",
+      "table": 0
+    },
+    {
+      "name": "commune",
+      "table": 0
+    },
+    {
+      "name": "pop_2024",
+      "table": 0
+    },
+    {
+      "name": "Mois",
+      "table": 1
+    },
+    {
+      "name": "Juillet 2016",
+      "table": 1
+    },
+    {
+      "name": "Août 2016",
+      "table": 1
+    },
+    {
+      "name": "Septembre 2016",
+      "table": 1
+    },
+    {
+      "name": "Octobre 2016",
+      "table": 1
+    },
+    {
+      "name": "Novembre 2016",
+      "table": 1
+    },
+    {
+      "name": "Décembre 2016",
+      "table": 1
+    },
+    {
+      "name": "Janvier 2017",
+      "table": 1
+    },
+    {
+      "name": "Février 2017",
+      "table": 1
+    },
+    {
+      "name": "Mars 2017",
+      "table": 1
+    },
+    {
+      "name": "Avril 2017",
+      "table": 1
+    },
+    {
+      "name": "Mai 2017",
+      "table": 1
+    },
+    {
+      "name": "Juin 2017",
+      "table": 1
+    },
+    {
+      "name": "Juillet 2017",
+      "table": 1
+    },
+    {
+      "name": "Août 2017",
+      "table": 1
+    },
+    {
+      "name": "Septembre 2017",
+      "table": 1
+    },
+    {
+      "name": "Octobre 2017",
+      "table": 1
+    },
+    {
+      "name": "Novembre 2017",
+      "table": 1
+    },
+    {
+      "name": "Décembre 2017",
+      "table": 1
+    },
+    {
+      "name": "Janvier 2018",
+      "table": 1
+    },
+    {
+      "name": "Février 2018",
+      "table": 1
+    },
+    {
+      "name": "Mars 2018",
+      "table": 1
+    },
+    {
+      "name": "Avril 2018",
+      "table": 1
+    },
+    {
+      "name": "Mai 2018",
+      "table": 1
+    },
+    {
+      "name": "Juin 2018",
+      "table": 1
+    },
+    {
+      "name": "Juillet 2018",
+      "table": 1
+    },
+    {
+      "name": "Août 2018",
+      "table": 1
+    },
+    {
+      "name": "Septembre 2018",
+      "table": 1
+    },
+    {
+      "name": "Octobre 2018",
+      "table": 1
+    },
+    {
+      "name": "Novembre 2018",
+      "table": 1
+    },
+    {
+      "name": "Décembre 2018",
+      "table": 1
+    },
+    {
+      "name": "Janvier 2019",
+      "table": 1
+    },
+    {
+      "name": "Février 2019",
+      "table": 1
+    },
+    {
+      "name": "Mars 2019",
+      "table": 1
+    },
+    {
+      "name": "Avril 2019",
+      "table": 1
+    },
+    {
+      "name": "Mai 2019",
+      "table": 1
+    },
+    {
+      "name": "Juin 2019",
+      "table": 1
+    },
+    {
+      "name": "Juillet 2019",
+      "table": 1
+    },
+    {
+      "name": "Août 2019",
+      "table": 1
+    },
+    {
+      "name": "Septembre 2019",
+      "table": 1
+    },
+    {
+      "name": "Octobre 2019",
+      "table": 1
+    },
+    {
+      "name": "Novembre 2019",
+      "table": 1
+    },
+    {
+      "name": "Décembre 2019",
+      "table": 1
+    },
+    {
+      "name": "Janvier 2020",
+      "table": 1
+    },
+    {
+      "name": "Février 2020",
+      "table": 1
+    },
+    {
+      "name": "Mars 2020",
+      "table": 1
+    },
+    {
+      "name": "Avril 2020",
+      "table": 1
+    },
+    {
+      "name": "Mai 2020",
+      "table": 1
+    },
+    {
+      "name": "Juin 2020",
+      "table": 1
+    },
+    {
+      "name": "Juillet 2020",
+      "table": 1
+    },
+    {
+      "name": "Août 2020",
+      "table": 1
+    },
+    {
+      "name": "Septembre 2020",
+      "table": 1
+    },
+    {
+      "name": "Octobre 2020",
+      "table": 1
+    },
+    {
+      "name": "Novembre 2020",
+      "table": 1
+    },
+    {
+      "name": "Décembre 2020",
+      "table": 1
+    },
+    {
+      "name": "Janvier 2021",
+      "table": 1
+    },
+    {
+      "name": "Février 2021",
+      "table": 1
+    },
+    {
+      "name": "Mars 2021",
+      "table": 1
+    },
+    {
+      "name": "Avril 2021",
+      "table": 1
+    },
+    {
+      "name": "Mai 2021",
+      "table": 1
+    },
+    {
+      "name": "Juin 2021",
+      "table": 1
+    },
+    {
+      "name": "Juillet 2021",
+      "table": 1
+    },
+    {
+      "name": "Août 2021",
+      "table": 1
+    },
+    {
+      "name": "Septembre 2021",
+      "table": 1
+    },
+    {
+      "name": "Octobre 2021",
+      "table": 1
+    },
+    {
+      "name": "Novembre 2021",
+      "table": 1
+    },
+    {
+      "name": "Décembre 2021",
+      "table": 1
+    },
+    {
+      "name": "Janvier 2022",
+      "table": 1
+    },
+    {
+      "name": "Février 2022",
+      "table": 1
+    },
+    {
+      "name": "Mars 2022",
+      "table": 1
+    },
+    {
+      "name": "Avril 2022",
+      "table": 1
+    },
+    {
+      "name": "Mai 2022",
+      "table": 1
+    },
+    {
+      "name": "Juin 2022",
+      "table": 1
+    },
+    {
+      "name": "Juillet 2022",
+      "table": 1
+    },
+    {
+      "name": "Août 2022",
+      "table": 1
+    },
+    {
+      "name": "Septembre 2022",
+      "table": 1
+    },
+    {
+      "name": "Octobre 2022",
+      "table": 1
+    },
+    {
+      "name": "Novembre 2022",
+      "table": 1
+    },
+    {
+      "name": "Décembre 2022",
+      "table": 1
+    },
+    {
+      "name": "Janvier 2023",
+      "table": 1
+    },
+    {
+      "name": "Février 2023",
+      "table": 1
+    },
+    {
+      "name": "Mars 2023",
+      "table": 1
+    },
+    {
+      "name": "Avril 2023",
+      "table": 1
+    },
+    {
+      "name": "Mai 2023",
+      "table": 1
+    },
+    {
+      "name": "Juin 2023",
+      "table": 1
+    },
+    {
+      "name": "Juillet 2023",
+      "table": 1
+    },
+    {
+      "name": "Août 2023",
+      "table": 1
+    },
+    {
+      "name": "Septembre 2023",
+      "table": 1
+    },
+    {
+      "name": "Octobre 2023",
+      "table": 1
+    },
+    {
+      "name": "Novembre 2023",
+      "table": 1
+    },
+    {
+      "name": "Décembre 2023",
+      "table": 1
+    },
+    {
+      "name": "Janvier 2024",
+      "table": 1
+    },
+    {
+      "name": "Février 2024",
+      "table": 1
+    },
+    {
+      "name": "Mars 2024",
+      "table": 1
+    },
+    {
+      "name": "Avril 2024",
+      "table": 1
+    },
+    {
+      "name": "Mai 2024",
+      "table": 1
+    },
+    {
+      "name": "Juin 2024",
+      "table": 1
+    },
+    {
+      "name": "Juillet 2024",
+      "table": 1
+    },
+    {
+      "name": "Août 2024",
+      "table": 1
+    },
+    {
+      "name": "Septembre 2024",
+      "table": 1
+    },
+    {
+      "name": "Octobre 2024",
+      "table": 1
+    },
+    {
+      "name": "Novembre 2024",
+      "table": 1
+    }
+  ],
+  "resolvedSelectedColumns": [],
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "inheritConf": "default",
+      "addDkuUdf": false,
+      "executionEngine": "HIVESERVER2"
+    },
+    "sqlPipelineParams": {
+      "pipelineAllowMerge": true,
+      "pipelineAllowStart": true
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "containerSelection": {
+      "containerMode": "INHERIT"
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "skipPrerunValidate": false,
+      "pipelineAllowMerge": true,
+      "useGlobalMetastore": false,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "mode": "AUTO",
+        "autoModeRepartitionInto": 10,
+        "map": {}
+      },
+      "overwriteOutputSchema": false,
+      "executionEngine": "SPARK_SUBMIT",
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      }
+    }
+  },
+  "virtualInputs": [
+    {
+      "outputColumnsSelectionMode": "AUTO_NON_CONFLICTING",
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "originLabel": "pop_commune_2024_prepared",
+      "index": 0,
+      "computedColumns": []
+    },
+    {
+      "outputColumnsSelectionMode": "AUTO_NON_CONFLICTING",
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "originLabel": "unemployement_3_2_juil_2016_jan_2025_prepa",
+      "index": 1,
+      "computedColumns": []
+    }
+  ],
+  "enableAutoCastInJoinConditions": false
+}

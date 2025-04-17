@@ -1,0 +1,49 @@
+{
+  "type": "join",
+  "neverRecomputeExistingPartitions": false,
+  "customMeta": {
+    "kv": {}
+  },
+  "redispatchPartitioning": false,
+  "maxRunningActivities": 0,
+  "hashPropagationBehavior": "INHERIT",
+  "variables": {},
+  "dkuProperties": [],
+  "inputs": {
+    "main": {
+      "items": [
+        {
+          "ref": "pop_commune_2024_prepared",
+          "deps": []
+        },
+        {
+          "ref": "unemployement_3_2_juil_2016_jan_2025_prepa",
+          "deps": []
+        }
+      ]
+    }
+  },
+  "outputs": {
+    "main": {
+      "items": [
+        {
+          "ref": "pop_commune_2024_prepared_joined",
+          "appendMode": false
+        }
+      ]
+    }
+  },
+  "labels": [],
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "celestin.bouchet@gmail.com"
+    },
+    "lastModifiedOn": 1744897015550
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
