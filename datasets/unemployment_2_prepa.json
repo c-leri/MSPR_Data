@@ -29,7 +29,8 @@
     "representsNullFields": false,
     "parquetCompressionMethod": "SNAPPY",
     "parquetFlavor": "HIVE",
-    "parquetBlockSizeMB": 128
+    "parquetBlockSizeMB": 128,
+    "readTemporalMode": "AS_TEMPORAL"
   },
   "partitioning": {
     "ignoreNonMatchingFile": false,
@@ -66,12 +67,13 @@
   },
   "schema": {
     "columns": [
-      {"name":"Communes","type":"string"},
-      {"name":"Code postaux1","type":"string"},
-      {"name":"Sans emplois","type":"string"}
+      {"name":"City","type":"string"},
+      {"name":"Postcode","type":"string"},
+      {"name":"Unemployeds","type":"string"}
     ],
     "userModified": true
   },
+  "typeSystemVersion": "V2",
   "dkuProperties": [],
   "metrics": {
     "probes": [
