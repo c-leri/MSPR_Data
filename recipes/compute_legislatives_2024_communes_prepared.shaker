@@ -773,7 +773,7 @@
       "params": {
         "columnNamePattern": "Elu (\\d+)",
         "columnNameColumn": "Candidat elu",
-        "foldRemoveFoldedColumns": true,
+        "foldRemoveFoldedColumns": false,
         "columnContentColumn": "Elu"
       },
       "alwaysShowComment": false
