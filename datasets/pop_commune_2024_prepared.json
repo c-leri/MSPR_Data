@@ -67,8 +67,8 @@
   },
   "schema": {
     "columns": [
-      {"name":"reg","type":"bigint"},
-      {"name":"dep","type":"string"},
+      {"name":"reg","type":"string"},
+      {"name":"dep","type":"string","meaning":"Text"},
       {"name":"commune","type":"string"},
       {"name":"pop_2024","type":"bigint"}
     ],
