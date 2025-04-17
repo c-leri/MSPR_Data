@@ -125,7 +125,7 @@
       "mode": "GREL",
       "name": "unemployed_percent",
       "expr": "Unemployeds / pop_2024",
-      "type": "double"
+      "type": "bigint"
     }
   ],
   "postFilter": {
@@ -162,7 +162,7 @@
           },
           {
             "name": "unemployed_percent",
-            "type": "double"
+            "type": "bigint"
           }
         ],
         "userModified": false
