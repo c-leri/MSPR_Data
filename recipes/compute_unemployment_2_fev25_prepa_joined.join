@@ -6,36 +6,57 @@
       "conditionsMode": "AND",
       "type": "LEFT",
       "outerJoinOnTheLeft": true,
-      "on": []
+      "on": [
+        {
+          "column1": {
+            "name": "City",
+            "table": 0
+          },
+          "dateDiffUnit": "SECOND",
+          "column2": {
+            "name": "commune",
+            "table": 1
+          },
+          "normalizeText": true,
+          "type": "EQ"
+        }
+      ]
     }
   ],
   "selectedColumns": [
     {
       "name": "City",
+      "type": "string",
       "table": 0
     },
     {
       "name": "Postcode",
+      "type": "string",
       "table": 0
     },
     {
       "name": "Unemployeds",
+      "type": "string",
       "table": 0
     },
     {
       "name": "reg",
+      "type": "bigint",
       "table": 1
     },
     {
       "name": "dep",
+      "type": "string",
       "table": 1
     },
     {
       "name": "commune",
+      "type": "string",
       "table": 1
     },
     {
       "name": "pop_2024",
+      "type": "bigint",
       "table": 1
     }
   ],
@@ -99,5 +120,54 @@
       "computedColumns": []
     }
   ],
+  "computedColumns": [
+    {
+      "mode": "GREL",
+      "name": "unemployed_percent",
+      "expr": "Unemployeds / pop_2024",
+      "type": "double"
+    }
+  ],
+  "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "City",
+            "type": "string"
+          },
+          {
+            "name": "Postcode",
+            "type": "string"
+          },
+          {
+            "name": "Unemployeds",
+            "type": "string"
+          },
+          {
+            "name": "reg",
+            "type": "bigint"
+          },
+          {
+            "name": "dep",
+            "type": "string"
+          },
+          {
+            "name": "commune",
+            "type": "string"
+          },
+          {
+            "name": "pop_2024",
+            "type": "bigint"
+          },
+          {
+            "name": "unemployed_percent",
+            "type": "double"
+          }
+        ],
+        "userModified": false
+      }
+    }
+  },
   "enableAutoCastInJoinConditions": false
 }
