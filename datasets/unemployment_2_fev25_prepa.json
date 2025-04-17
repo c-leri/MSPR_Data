@@ -69,7 +69,7 @@
     "columns": [
       {"name":"City","type":"string"},
       {"name":"Postcode","type":"string"},
-      {"name":"Unemployeds","type":"int"}
+      {"name":"Unemployeds","type":"double"}
     ],
     "userModified": true
   },
