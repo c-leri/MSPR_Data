@@ -1,8 +1,8 @@
 {
-  "type": "HTTP",
-  "managed": false,
+  "type": "S3",
+  "managed": true,
   "featureGroup": false,
-  "formatType": "csv",
+  "formatType": "parquet",
   "checklists": {
     "checklists": []
   },
@@ -11,7 +11,7 @@
     "kv": {}
   },
   "flowOptions": {
-    "virtualizable": false,
+    "virtualizable": true,
     "rebuildBehavior": "NORMAL",
     "crossProjectBuildBehavior": "DEFAULT"
   },
@@ -25,35 +25,12 @@
     }
   },
   "formatParams": {
-    "style": "excel",
-    "charset": "utf-8",
-    "separator": ";",
-    "quoteChar": "\"",
-    "escapeChar": "\\",
-    "maxRowChars": 100000000,
-    "dateSerializationFormat": "ISO",
-    "arrayMapFormat": "json",
-    "hiveSeparators": [
-      "\u0002",
-      "\u0003",
-      "\u0004",
-      "\u0005",
-      "\u0006",
-      "\u0007",
-      "\b"
-    ],
-    "skipRowsBeforeHeader": 3,
-    "parseHeaderRow": true,
-    "skipRowsAfterHeader": 0,
-    "probableNumberOfRecords": 2,
-    "normalizeBooleans": false,
-    "normalizeDoubles": true,
-    "readAdditionalColumnsBehavior": "INSERT_IN_DATA_WARNING",
-    "readMissingColumnsBehavior": "DISCARD_SILENT",
-    "readDataTypeMismatchBehavior": "DISCARD_WARNING",
-    "writeDataTypeMismatchBehavior": "DISCARD_WARNING",
-    "fileReadFailureBehavior": "FAIL",
-    "compress": ""
+    "parquetLowerCaseIdentifiers": false,
+    "representsNullFields": false,
+    "parquetCompressionMethod": "SNAPPY",
+    "parquetFlavor": "HIVE",
+    "parquetBlockSizeMB": 128,
+    "readTemporalMode": "AS_TEMPORAL"
   },
   "partitioning": {
     "ignoreNonMatchingFile": false,
@@ -65,30 +42,38 @@
     "lastModifiedBy": {
       "login": "dominique@gagnie.re"
     },
-    "lastModifiedOn": 1741274071158
+    "lastModifiedOn": 1741274353984
   },
   "tags": [],
   "params": {
-    "sources": [
-      {
-        "url": "https://raw.githubusercontent.com/c-leri/MSPR_Data/refs/heads/master/datasets/unemployement_2.csv"
-      }
-    ],
-    "consider404AsEmpty": true,
-    "fallbackHeadToGet": true,
+    "bucket": "gis-data-eu-west-3",
+    "metastoreSynchronizationEnabled": true,
+    "metastoreDatabaseName": "default",
+    "metastoreTableName": "${projectKey}_unemployment_2_prepa",
+    "connection": "dataiku-managed-storage",
+    "path": "/managed-dss-data/${projectKey}/unemployment_2_prepa",
     "notReadyIfEmpty": false,
-    "useGlobalProxy": true,
-    "trustAnySSLCertificate": false,
-    "previewPartition": "",
-    "partitions": []
+    "filesSelectionRules": {
+      "mode": "ALL",
+      "excludeRules": [],
+      "includeRules": [],
+      "explicitFiles": []
+    },
+    "variablesExpansionLoopConfig": {
+      "enabled": false,
+      "mode": "CREATE_VARIABLE_FOR_EACH_COLUMN",
+      "replacements": []
+    }
   },
   "schema": {
     "columns": [
-      {"name":"Commune de plus de 5000 hab.","type":"string"},
-      {"name":"Nombre de demandeurs d\u0027emploi","type":"string"}
+      {"name":"City","type":"string"},
+      {"name":"Postcode","type":"string"},
+      {"name":"Unemployeds","type":"string"}
     ],
     "userModified": true
   },
+  "typeSystemVersion": "V2",
   "dkuProperties": [],
   "metrics": {
     "probes": [
