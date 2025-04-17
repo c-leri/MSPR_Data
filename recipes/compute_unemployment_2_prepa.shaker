@@ -1,6 +1,20 @@
 {
   "columnsSelection": {
-    "mode": "ALL"
+    "mode": "ALL",
+    "list": [
+      {
+        "d": true,
+        "name": "City"
+      },
+      {
+        "d": true,
+        "name": "Postcode"
+      },
+      {
+        "d": true,
+        "name": "Unemployeds"
+      }
+    ]
   },
   "explorationSampling": {
     "_refreshTrigger": 1741274272872,
@@ -97,6 +111,7 @@
       "currentMode": "FACET"
     }
   ],
+  "columnOrder": [],
   "columnUseScientificNotationByName": {},
   "origin": "PREPARE_RECIPE",
   "exploreUIParams": {
@@ -124,6 +139,7 @@
       "type": "FindReplace",
       "params": {
         "output": "",
+        "useDatasetForMapping": false,
         "mapping": [
           {
             "from": "\\h\\d{5}$",
@@ -153,11 +169,15 @@
         "renamings": [
           {
             "from": "Commune de plus de 5000 hab.",
-            "to": "Communes"
+            "to": "City"
           },
           {
             "from": "Nombre de demandeurs d\u0027emploi",
-            "to": "Sans emplois"
+            "to": "Unemployeds"
+          },
+          {
+            "from": "Code postaux1",
+            "to": "Postcode"
           }
         ]
       },
@@ -196,6 +216,7 @@
     "Commune de plus de 5000 hab._13": 248,
     "Commune de plus de 5000 hab._12": 248,
     "departement_menages": 158,
+    "Unemployed": 134,
     "Nombre de demandeurs d\u0027emploi": 233,
     "Code postaux1": 113,
     "departement_ets_comm": 165,
@@ -213,9 +234,12 @@
     "departement_ets_admin": 173,
     "departement_ets_agri": 165,
     "departement_ets_10plus": 180,
+    "City": 211,
     "Sans emplois": 134,
     "departement_ffiscaux": 165,
+    "Postcode": 100,
     "departement_naissances": 180,
+    "Cit": 211,
     "Commune de plus de 5000 hab._0": 240,
     "Commune de plus de 5000 hab._4": 240,
     "Commune de plus de 5000 hab._3": 240,
@@ -225,6 +249,7 @@
     "Commune de plus de 5000 hab._8": 240,
     "Commune de plus de 5000 hab._7": 240,
     "Commune de plus de 5000 hab._6": 240,
+    "Code postaux": 105,
     "Commune de plus de 5000 hab._5": 240,
     "departement_logvacants": 180,
     "departement_residencesprincipales": 263,
@@ -235,6 +260,7 @@
     "departement_residencesprincipales_proprietaire": 300,
     "Commune de plus de 5000 hab._extracted_1": 300,
     "departement_population": 180,
+    "Code ": 100,
     "departement_logements": 173,
     "Commune de plus de 5000 hab._22": 248,
     "Commune de plus de 5000 hab._21": 248,
@@ -249,6 +275,7 @@
     "departement_ffiscaux_imposables": 248,
     "departement_ets_indus": 173,
     "departement_actifs_1564": 188,
+    "Unemployeds": 134,
     "Commune de plus de 5000 hab._26": 248,
     "Commune de plus de 5000 hab._25": 248,
     "Commune de plus de 5000 hab._28": 248,
