@@ -9,7 +9,7 @@
   "projectType": "REGULAR",
   "projectAppType": "REGULAR",
   "hasSetupSection": false,
-  "owner": "dominique@gagnie.re",
+  "owner": "celestin.bouchet@gmail.com",
   "permissionsVersion": "V2",
   "permissions": [
     {
@@ -160,7 +160,8 @@
     },
     "dkuProperties": []
   },
-  "name": "MSPR_Data",
+  "name": "test",
+  "projectStatus": "Sandbox",
   "imgPattern": 2,
   "metrics": {
     "probes": [],
@@ -224,7 +225,7 @@
     },
     "lastModifiedOn": 1741264492429
   },
-  "shortDesc": "The project *MSPR_Data* was created by celestin.bouchet on Mar 06th 2025",
+  "shortDesc": "The project *test* was created by Pradityo Adi Wicaksono on Mar 06th 2025",
   "tags": [
     "mspr"
   ],
