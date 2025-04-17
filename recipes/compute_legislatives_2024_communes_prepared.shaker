@@ -80,6 +80,14 @@
       },
       {
         "d": true,
+        "name": "nuance candidat"
+      },
+      {
+        "d": true,
+        "name": "nuance"
+      },
+      {
+        "d": true,
         "name": "Nuance candidat 1"
       },
       {
@@ -105,10 +113,6 @@
       {
         "d": true,
         "name": "% Voix/exprimés 1"
-      },
-      {
-        "d": true,
-        "name": "Elu 1"
       },
       {
         "d": true,
@@ -152,10 +156,6 @@
       },
       {
         "d": true,
-        "name": "Elu 2"
-      },
-      {
-        "d": true,
         "name": "Numéro de panneau 3"
       },
       {
@@ -185,10 +185,6 @@
       {
         "d": true,
         "name": "% Voix/exprimés 3"
-      },
-      {
-        "d": true,
-        "name": "Elu 3"
       },
       {
         "d": true,
@@ -224,10 +220,6 @@
       },
       {
         "d": true,
-        "name": "Elu 4"
-      },
-      {
-        "d": true,
         "name": "Numéro de panneau 5"
       },
       {
@@ -260,10 +252,6 @@
       },
       {
         "d": true,
-        "name": "Elu 5"
-      },
-      {
-        "d": true,
         "name": "Numéro de panneau 6"
       },
       {
@@ -293,10 +281,6 @@
       {
         "d": true,
         "name": "% Voix/exprimés 6"
-      },
-      {
-        "d": true,
-        "name": "Elu 6"
       },
       {
         "d": true,
@@ -368,10 +352,6 @@
       },
       {
         "d": true,
-        "name": "Elu 8"
-      },
-      {
-        "d": true,
         "name": "Numéro de panneau 9"
       },
       {
@@ -401,10 +381,6 @@
       {
         "d": true,
         "name": "% Voix/exprimés 9"
-      },
-      {
-        "d": true,
-        "name": "Elu 9"
       },
       {
         "d": true,
@@ -766,14 +742,26 @@
   },
   "steps": [
     {
-      "preview": true,
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "MultiColumnByPrefixFold",
+      "params": {
+        "columnNamePattern": "Nuance candidat (\\d+)",
+        "columnNameColumn": "nuance candidat",
+        "columnContentColumn": "nuance"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "MultiColumnByPrefixFold",
       "params": {
         "columnNamePattern": "Elu (\\d+)",
         "columnNameColumn": "Candidat elu",
-        "foldRemoveFoldedColumns": false,
+        "foldRemoveFoldedColumns": true,
         "columnContentColumn": "Elu"
       },
       "alwaysShowComment": false
@@ -1113,6 +1101,7 @@
     "Nuance candidat 204": 158,
     "Nuance candidat 203": 158,
     "Nuance candidat 202": 158,
+    "nuance": 100,
     "Nuance candidat 19": 150,
     "Nuance candidat 17": 150,
     "Nuance candidat 18": 150,
@@ -2499,6 +2488,7 @@
     "% Voix/exprimés 13": 150,
     "% Voix/exprimés 12": 150,
     "% Voix/exprimés 15": 150,
+    "nuance candidat": 128,
     "% Voix/exprimés 14": 150,
     "% Voix/exprimés 17": 150,
     "% Voix/exprimés 16": 150,
