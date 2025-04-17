@@ -67,20 +67,9 @@
   },
   "schema": {
     "columns": [
-      {"name":"objectid","type":"bigint"},
       {"name":"reg","type":"bigint"},
       {"name":"dep","type":"string"},
-      {"name":"cv","type":"string"},
-      {"name":"codgeo","type":"string"},
       {"name":"commune","type":"string"},
-      {"name":"p13_pop","type":"bigint"},
-      {"name":"p14_pop","type":"bigint"},
-      {"name":"p15_pop","type":"bigint"},
-      {"name":"p16_pop","type":"bigint"},
-      {"name":"p17_pop","type":"bigint"},
-      {"name":"p18_pop","type":"bigint"},
-      {"name":"p19_pop","type":"bigint"},
-      {"name":"p20_pop","type":"bigint"},
       {"name":"pop_2024","type":"bigint"}
     ],
     "userModified": true
