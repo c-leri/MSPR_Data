@@ -74,7 +74,7 @@
       {"name":"dep","type":"string"},
       {"name":"commune","type":"string"},
       {"name":"pop_2024","type":"bigint"},
-      {"name":"unemployed_percent","type":"bigint"}
+      {"name":"unemployed_percent","type":"double"}
     ],
     "userModified": true
   },
