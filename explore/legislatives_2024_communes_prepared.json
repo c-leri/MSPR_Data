@@ -7,15 +7,15 @@
       "list": [
         {
           "name": "Code département",
-          "d": false
+          "d": true
         },
         {
           "name": "Libellé département",
-          "d": false
+          "d": true
         },
         {
           "name": "Code commune",
-          "d": false
+          "d": true
         },
         {
           "name": "Libellé commune",
@@ -23,67 +23,67 @@
         },
         {
           "name": "Inscrits",
-          "d": false
+          "d": true
         },
         {
           "name": "Votants",
-          "d": false
+          "d": true
         },
         {
           "name": "% Votants",
-          "d": false
+          "d": true
         },
         {
           "name": "Abstentions",
-          "d": false
+          "d": true
         },
         {
           "name": "% Abstentions",
-          "d": false
+          "d": true
         },
         {
           "name": "Exprimés",
-          "d": false
+          "d": true
         },
         {
           "name": "% Exprimés/inscrits",
-          "d": false
+          "d": true
         },
         {
           "name": "% Exprimés/votants",
-          "d": false
+          "d": true
         },
         {
           "name": "Blancs",
-          "d": false
+          "d": true
         },
         {
           "name": "% Blancs/inscrits",
-          "d": false
+          "d": true
         },
         {
           "name": "% Blancs/votants",
-          "d": false
+          "d": true
         },
         {
           "name": "Nuls",
-          "d": false
+          "d": true
         },
         {
           "name": "% Nuls/inscrits",
-          "d": false
+          "d": true
         },
         {
           "name": "% Nuls/votants",
-          "d": false
+          "d": true
         },
         {
           "name": "Numéro de panneau 1",
-          "d": false
+          "d": true
         },
         {
           "name": "nuance candidat",
-          "d": false
+          "d": true
         },
         {
           "name": "nuance",
@@ -91,623 +91,623 @@
         },
         {
           "name": "Nuance candidat 1",
-          "d": false
+          "d": true
         },
         {
           "name": "Nom candidat 1",
-          "d": false
+          "d": true
         },
         {
           "name": "Prénom candidat 1",
-          "d": false
+          "d": true
         },
         {
           "name": "Sexe candidat 1",
-          "d": false
+          "d": true
         },
         {
           "name": "Voix 1",
-          "d": false
+          "d": true
         },
         {
           "name": "% Voix/inscrits 1",
-          "d": false
+          "d": true
         },
         {
           "name": "% Voix/exprimés 1",
-          "d": false
+          "d": true
         },
         {
           "name": "Numéro de panneau 2",
-          "d": false
+          "d": true
         },
         {
           "name": "Nuance candidat 2",
-          "d": false
+          "d": true
         },
         {
           "name": "Nom candidat 2",
-          "d": false
+          "d": true
         },
         {
           "name": "Prénom candidat 2",
-          "d": false
+          "d": true
         },
         {
           "name": "Sexe candidat 2",
-          "d": false
+          "d": true
         },
         {
           "name": "Voix 2",
-          "d": false
+          "d": true
         },
         {
           "name": "% Voix/inscrits 2",
-          "d": false
+          "d": true
         },
         {
           "name": "% Voix/exprimés 2",
-          "d": false
+          "d": true
         },
         {
           "name": "Candidat elu",
-          "d": false
+          "d": true
         },
         {
           "name": "Elu",
-          "d": false
+          "d": true
         },
         {
           "name": "Numéro de panneau 3",
-          "d": false
+          "d": true
         },
         {
           "name": "Nuance candidat 3",
-          "d": false
+          "d": true
         },
         {
           "name": "Nom candidat 3",
-          "d": false
+          "d": true
         },
         {
           "name": "Prénom candidat 3",
-          "d": false
+          "d": true
         },
         {
           "name": "Sexe candidat 3",
-          "d": false
+          "d": true
         },
         {
           "name": "Voix 3",
-          "d": false
+          "d": true
         },
         {
           "name": "% Voix/inscrits 3",
-          "d": false
+          "d": true
         },
         {
           "name": "% Voix/exprimés 3",
-          "d": false
+          "d": true
         },
         {
           "name": "Numéro de panneau 4",
-          "d": false
+          "d": true
         },
         {
           "name": "Nuance candidat 4",
-          "d": false
+          "d": true
         },
         {
           "name": "Nom candidat 4",
-          "d": false
+          "d": true
         },
         {
           "name": "Prénom candidat 4",
-          "d": false
+          "d": true
         },
         {
           "name": "Sexe candidat 4",
-          "d": false
+          "d": true
         },
         {
           "name": "Voix 4",
-          "d": false
+          "d": true
         },
         {
           "name": "% Voix/inscrits 4",
-          "d": false
+          "d": true
         },
         {
           "name": "% Voix/exprimés 4",
-          "d": false
+          "d": true
         },
         {
           "name": "Numéro de panneau 5",
-          "d": false
+          "d": true
         },
         {
           "name": "Nuance candidat 5",
-          "d": false
+          "d": true
         },
         {
           "name": "Nom candidat 5",
-          "d": false
+          "d": true
         },
         {
           "name": "Prénom candidat 5",
-          "d": false
+          "d": true
         },
         {
           "name": "Sexe candidat 5",
-          "d": false
+          "d": true
         },
         {
           "name": "Voix 5",
-          "d": false
+          "d": true
         },
         {
           "name": "% Voix/inscrits 5",
-          "d": false
+          "d": true
         },
         {
           "name": "% Voix/exprimés 5",
-          "d": false
+          "d": true
         },
         {
           "name": "Numéro de panneau 6",
-          "d": false
+          "d": true
         },
         {
           "name": "Nuance candidat 6",
-          "d": false
+          "d": true
         },
         {
           "name": "Nom candidat 6",
-          "d": false
+          "d": true
         },
         {
           "name": "Prénom candidat 6",
-          "d": false
+          "d": true
         },
         {
           "name": "Sexe candidat 6",
-          "d": false
+          "d": true
         },
         {
           "name": "Voix 6",
-          "d": false
+          "d": true
         },
         {
           "name": "% Voix/inscrits 6",
-          "d": false
+          "d": true
         },
         {
           "name": "% Voix/exprimés 6",
-          "d": false
+          "d": true
         },
         {
           "name": "Numéro de panneau 7",
-          "d": false
+          "d": true
         },
         {
           "name": "Nuance candidat 7",
-          "d": false
+          "d": true
         },
         {
           "name": "Nom candidat 7",
-          "d": false
+          "d": true
         },
         {
           "name": "Prénom candidat 7",
-          "d": false
+          "d": true
         },
         {
           "name": "Sexe candidat 7",
-          "d": false
+          "d": true
         },
         {
           "name": "Voix 7",
-          "d": false
+          "d": true
         },
         {
           "name": "% Voix/inscrits 7",
-          "d": false
+          "d": true
         },
         {
           "name": "% Voix/exprimés 7",
-          "d": false
+          "d": true
         },
         {
           "name": "Elu 7",
-          "d": false
+          "d": true
         },
         {
           "name": "Numéro de panneau 8",
-          "d": false
+          "d": true
         },
         {
           "name": "Nuance candidat 8",
-          "d": false
+          "d": true
         },
         {
           "name": "Nom candidat 8",
-          "d": false
+          "d": true
         },
         {
           "name": "Prénom candidat 8",
-          "d": false
+          "d": true
         },
         {
           "name": "Sexe candidat 8",
-          "d": false
+          "d": true
         },
         {
           "name": "Voix 8",
-          "d": false
+          "d": true
         },
         {
           "name": "% Voix/inscrits 8",
-          "d": false
+          "d": true
         },
         {
           "name": "% Voix/exprimés 8",
-          "d": false
+          "d": true
         },
         {
           "name": "Numéro de panneau 9",
-          "d": false
+          "d": true
         },
         {
           "name": "Nuance candidat 9",
-          "d": false
+          "d": true
         },
         {
           "name": "Nom candidat 9",
-          "d": false
+          "d": true
         },
         {
           "name": "Prénom candidat 9",
-          "d": false
+          "d": true
         },
         {
           "name": "Sexe candidat 9",
-          "d": false
+          "d": true
         },
         {
           "name": "Voix 9",
-          "d": false
+          "d": true
         },
         {
           "name": "% Voix/inscrits 9",
-          "d": false
+          "d": true
         },
         {
           "name": "% Voix/exprimés 9",
-          "d": false
+          "d": true
         },
         {
           "name": "Numéro de panneau 10",
-          "d": false
+          "d": true
         },
         {
           "name": "Nuance candidat 10",
-          "d": false
+          "d": true
         },
         {
           "name": "Nom candidat 10",
-          "d": false
+          "d": true
         },
         {
           "name": "Prénom candidat 10",
-          "d": false
+          "d": true
         },
         {
           "name": "Sexe candidat 10",
-          "d": false
+          "d": true
         },
         {
           "name": "Voix 10",
-          "d": false
+          "d": true
         },
         {
           "name": "% Voix/inscrits 10",
-          "d": false
+          "d": true
         },
         {
           "name": "% Voix/exprimés 10",
-          "d": false
+          "d": true
         },
         {
           "name": "Elu 10",
-          "d": false
+          "d": true
         },
         {
           "name": "Numéro de panneau 11",
-          "d": false
+          "d": true
         },
         {
           "name": "Nuance candidat 11",
-          "d": false
+          "d": true
         },
         {
           "name": "Nom candidat 11",
-          "d": false
+          "d": true
         },
         {
           "name": "Prénom candidat 11",
-          "d": false
+          "d": true
         },
         {
           "name": "Sexe candidat 11",
-          "d": false
+          "d": true
         },
         {
           "name": "Voix 11",
-          "d": false
+          "d": true
         },
         {
           "name": "% Voix/inscrits 11",
-          "d": false
+          "d": true
         },
         {
           "name": "% Voix/exprimés 11",
-          "d": false
+          "d": true
         },
         {
           "name": "Elu 11",
-          "d": false
+          "d": true
         },
         {
           "name": "Numéro de panneau 12",
-          "d": false
+          "d": true
         },
         {
           "name": "Nuance candidat 12",
-          "d": false
+          "d": true
         },
         {
           "name": "Nom candidat 12",
-          "d": false
+          "d": true
         },
         {
           "name": "Prénom candidat 12",
-          "d": false
+          "d": true
         },
         {
           "name": "Sexe candidat 12",
-          "d": false
+          "d": true
         },
         {
           "name": "Voix 12",
-          "d": false
+          "d": true
         },
         {
           "name": "% Voix/inscrits 12",
-          "d": false
+          "d": true
         },
         {
           "name": "% Voix/exprimés 12",
-          "d": false
+          "d": true
         },
         {
           "name": "Elu 12",
-          "d": false
+          "d": true
         },
         {
           "name": "Numéro de panneau 13",
-          "d": false
+          "d": true
         },
         {
           "name": "Nuance candidat 13",
-          "d": false
+          "d": true
         },
         {
           "name": "Nom candidat 13",
-          "d": false
+          "d": true
         },
         {
           "name": "Prénom candidat 13",
-          "d": false
+          "d": true
         },
         {
           "name": "Sexe candidat 13",
-          "d": false
+          "d": true
         },
         {
           "name": "Voix 13",
-          "d": false
+          "d": true
         },
         {
           "name": "% Voix/inscrits 13",
-          "d": false
+          "d": true
         },
         {
           "name": "% Voix/exprimés 13",
-          "d": false
+          "d": true
         },
         {
           "name": "Elu 13",
-          "d": false
+          "d": true
         },
         {
           "name": "Numéro de panneau 14",
-          "d": false
+          "d": true
         },
         {
           "name": "Nuance candidat 14",
-          "d": false
+          "d": true
         },
         {
           "name": "Nom candidat 14",
-          "d": false
+          "d": true
         },
         {
           "name": "Prénom candidat 14",
-          "d": false
+          "d": true
         },
         {
           "name": "Sexe candidat 14",
-          "d": false
+          "d": true
         },
         {
           "name": "Voix 14",
-          "d": false
+          "d": true
         },
         {
           "name": "% Voix/inscrits 14",
-          "d": false
+          "d": true
         },
         {
           "name": "% Voix/exprimés 14",
-          "d": false
+          "d": true
         },
         {
           "name": "Elu 14",
-          "d": false
+          "d": true
         },
         {
           "name": "Numéro de panneau 15",
-          "d": false
+          "d": true
         },
         {
           "name": "Nuance candidat 15",
-          "d": false
+          "d": true
         },
         {
           "name": "Nom candidat 15",
-          "d": false
+          "d": true
         },
         {
           "name": "Prénom candidat 15",
-          "d": false
+          "d": true
         },
         {
           "name": "Sexe candidat 15",
-          "d": false
+          "d": true
         },
         {
           "name": "Voix 15",
-          "d": false
+          "d": true
         },
         {
           "name": "% Voix/inscrits 15",
-          "d": false
+          "d": true
         },
         {
           "name": "% Voix/exprimés 15",
-          "d": false
+          "d": true
         },
         {
           "name": "Elu 15",
-          "d": false
+          "d": true
         },
         {
           "name": "Numéro de panneau 16",
-          "d": false
+          "d": true
         },
         {
           "name": "Nuance candidat 16",
-          "d": false
+          "d": true
         },
         {
           "name": "Nom candidat 16",
-          "d": false
+          "d": true
         },
         {
           "name": "Prénom candidat 16",
-          "d": false
+          "d": true
         },
         {
           "name": "Sexe candidat 16",
-          "d": false
+          "d": true
         },
         {
           "name": "Voix 16",
-          "d": false
+          "d": true
         },
         {
           "name": "% Voix/inscrits 16",
-          "d": false
+          "d": true
         },
         {
           "name": "% Voix/exprimés 16",
-          "d": false
+          "d": true
         },
         {
           "name": "Elu 16",
-          "d": false
+          "d": true
         },
         {
           "name": "Numéro de panneau 17",
-          "d": false
+          "d": true
         },
         {
           "name": "Nuance candidat 17",
-          "d": false
+          "d": true
         },
         {
           "name": "Nom candidat 17",
-          "d": false
+          "d": true
         },
         {
           "name": "Prénom candidat 17",
-          "d": false
+          "d": true
         },
         {
           "name": "Sexe candidat 17",
-          "d": false
+          "d": true
         },
         {
           "name": "Voix 17",
-          "d": false
+          "d": true
         },
         {
           "name": "% Voix/inscrits 17",
-          "d": false
+          "d": true
         },
         {
           "name": "% Voix/exprimés 17",
-          "d": false
+          "d": true
         },
         {
           "name": "Elu 17",
-          "d": false
+          "d": true
         },
         {
           "name": "Numéro de panneau 18",
-          "d": false
+          "d": true
         },
         {
           "name": "Nuance candidat 18",
-          "d": false
+          "d": true
         },
         {
           "name": "Nom candidat 18",
-          "d": false
+          "d": true
         },
         {
           "name": "Prénom candidat 18",
-          "d": false
+          "d": true
         },
         {
           "name": "Sexe candidat 18",
-          "d": false
+          "d": true
         },
         {
           "name": "Voix 18",
-          "d": false
+          "d": true
         },
         {
           "name": "% Voix/inscrits 18",
-          "d": false
+          "d": true
         },
         {
           "name": "% Voix/exprimés 18",
-          "d": false
+          "d": true
         },
         {
           "name": "Elu 18",
-          "d": false
+          "d": true
         }
       ]
     },
