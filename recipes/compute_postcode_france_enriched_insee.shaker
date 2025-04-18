@@ -4,6 +4,10 @@
     "list": [
       {
         "d": true,
+        "name": "Code_commune_INSEE"
+      },
+      {
+        "d": true,
         "name": "Nom_de_la_commune"
       },
       {
@@ -101,7 +105,8 @@
       "params": {
         "columns": [
           "Nom_de_la_commune",
-          "Code_postal"
+          "Code_postal",
+          "Code_commune_INSEE"
         ],
         "keep": true,
         "appliesTo": "COLUMNS"
