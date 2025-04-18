@@ -4,74 +4,108 @@
       "table2": 1,
       "table1": 0,
       "conditionsMode": "AND",
-      "type": "LEFT",
+      "type": "INNER",
       "outerJoinOnTheLeft": true,
-      "on": []
+      "on": [
+        {
+          "column1": {
+            "name": "Code commune",
+            "table": 0
+          },
+          "dateDiffUnit": "SECOND",
+          "column2": {
+            "name": "Code_commune_INSEE",
+            "table": 1
+          },
+          "type": "EQ"
+        }
+      ]
     }
   ],
   "selectedColumns": [
     {
       "name": "Code commune",
+      "type": "string",
       "table": 0
     },
     {
       "name": "nuance",
+      "type": "string",
       "table": 0
     },
     {
+      "name": "Code_commune_INSEE",
+      "type": "string",
+      "table": 1
+    },
+    {
       "name": "Nom_de_la_commune",
+      "type": "string",
       "table": 1
     },
     {
       "name": "Code_postal",
+      "type": "string",
       "table": 1
     },
     {
       "name": "insee_departement",
+      "type": "string",
       "table": 1
     },
     {
       "name": "insee_population",
+      "type": "bigint",
       "table": 1
     },
     {
       "name": "insee_menages",
+      "type": "bigint",
       "table": 1
     },
     {
       "name": "insee_naissances",
+      "type": "bigint",
       "table": 1
     },
     {
       "name": "insee_deces",
+      "type": "bigint",
       "table": 1
     },
     {
       "name": "insee_ffiscaux",
+      "type": "bigint",
       "table": 1
     },
     {
       "name": "insee_ffiscaux_imposables",
+      "type": "bigint",
       "table": 1
     },
     {
       "name": "insee_revenufiscalmedianmoyen",
+      "type": "double",
       "table": 1
     },
     {
       "name": "insee_emploi",
+      "type": "bigint",
       "table": 1
     },
     {
       "name": "insee_population_1564",
+      "type": "bigint",
       "table": 1
     },
     {
       "name": "insee_chomage_1564",
+      "type": "bigint",
       "table": 1
     },
     {
       "name": "insee_actifs_1564",
+      "type": "bigint",
       "table": 1
     }
   ],
@@ -135,5 +169,85 @@
       "computedColumns": []
     }
   ],
+  "computedColumns": [],
+  "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "meaning": "Text",
+            "name": "Code commune",
+            "type": "string"
+          },
+          {
+            "meaning": "Text",
+            "name": "nuance",
+            "type": "string"
+          },
+          {
+            "name": "Code_commune_INSEE",
+            "type": "string"
+          },
+          {
+            "name": "Nom_de_la_commune",
+            "type": "string"
+          },
+          {
+            "name": "Code_postal",
+            "type": "string"
+          },
+          {
+            "name": "insee_departement",
+            "type": "string"
+          },
+          {
+            "name": "insee_population",
+            "type": "bigint"
+          },
+          {
+            "name": "insee_menages",
+            "type": "bigint"
+          },
+          {
+            "name": "insee_naissances",
+            "type": "bigint"
+          },
+          {
+            "name": "insee_deces",
+            "type": "bigint"
+          },
+          {
+            "name": "insee_ffiscaux",
+            "type": "bigint"
+          },
+          {
+            "name": "insee_ffiscaux_imposables",
+            "type": "bigint"
+          },
+          {
+            "name": "insee_revenufiscalmedianmoyen",
+            "type": "double"
+          },
+          {
+            "name": "insee_emploi",
+            "type": "bigint"
+          },
+          {
+            "name": "insee_population_1564",
+            "type": "bigint"
+          },
+          {
+            "name": "insee_chomage_1564",
+            "type": "bigint"
+          },
+          {
+            "name": "insee_actifs_1564",
+            "type": "bigint"
+          }
+        ],
+        "userModified": false
+      }
+    }
+  },
   "enableAutoCastInJoinConditions": false
 }
