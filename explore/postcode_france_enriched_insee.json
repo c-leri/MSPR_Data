@@ -89,7 +89,7 @@
     },
     "sorting": [
       {
-        "column": "insee_departement",
+        "column": "Code_postal",
         "ascending": true
       }
     ],
@@ -110,14 +110,14 @@
           "rules": []
         },
         "samplingMethod": "HEAD_SEQUENTIAL",
-        "maxRecords": 10000,
+        "maxRecords": 40000,
         "targetRatio": 0.02,
         "ascending": true,
         "withinFirstN": -1,
         "maxReadUncompressedBytes": -1
       },
       "autoRefreshSample": false,
-      "_refreshTrigger": 0
+      "_refreshTrigger": 1744958359716
     },
     "vizSampling": {
       "selection": {
