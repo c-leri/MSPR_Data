@@ -134,10 +134,12 @@
               }
             ],
             "sort": {
-              "type": "NATURAL",
-              "label": "Natural ordering",
-              "sortAscending": true
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Count distinct of Code_postal, descending"
             },
+            "prefix": "",
+            "suffix": "",
             "multiplier": "Auto",
             "hideTrailingZeros": true,
             "digitGrouping": "DEFAULT",
@@ -181,6 +183,8 @@
               "measureIdx": 0,
               "label": "Count distinct of Code_postal, descending"
             },
+            "prefix": "",
+            "suffix": "",
             "multiplier": "Auto",
             "hideTrailingZeros": true,
             "digitGrouping": "DEFAULT",
@@ -206,6 +210,8 @@
             "useParenthesesForNegativeValues": false,
             "shouldFormatInPercentage": false,
             "hideTrailingZeros": true,
+            "prefix": "",
+            "suffix": "",
             "showValue": true,
             "showDisplayLabel": true,
             "labelPosition": "BOTTOM",
@@ -240,6 +246,538 @@
             "colorRules": []
           }
         ],
+        "xDimension": [],
+        "yDimension": [],
+        "uaXDimension": [],
+        "uaYDimension": [],
+        "uaDimensionPair": [],
+        "uaSize": [],
+        "uaColor": [],
+        "uaShape": [],
+        "uaTooltip": [],
+        "groupDimension": [],
+        "xMeasure": [],
+        "yMeasure": [],
+        "colorMeasure": [],
+        "sizeMeasure": [],
+        "geometry": [],
+        "geoLayers": [
+          {
+            "geometry": [],
+            "colorOptions": {
+              "ccScaleMode": "NORMAL",
+              "paletteType": "CONTINUOUS",
+              "quantizationMode": "NONE",
+              "numQuantizeSteps": 5,
+              "paletteMiddleValue": 0.0,
+              "heatDensityMapIntensity": 0.5,
+              "heatDensityMapRadius": 0.5,
+              "singleColor": "#2678B1",
+              "transparency": 0.75,
+              "colorPalette": "default",
+              "customPalette": {
+                "id": "__dku_custom__",
+                "name": "Custom Palette",
+                "colors": [],
+                "values": [],
+                "fixedValues": false
+              },
+              "customColors": {}
+            },
+            "uaColor": []
+          }
+        ],
+        "tooltipMeasures": [],
+        "boxplotBreakdownDim": [],
+        "boxplotValue": [],
+        "filters": [],
+        "xAxisFormatting": {
+          "displayAxis": true,
+          "showAxisTitle": true,
+          "axisTitleFormatting": {
+            "fontSize": 15,
+            "fontColor": "#333",
+            "hasBackground": false
+          },
+          "axisValuesFormatting": {
+            "numberFormatting": {
+              "multiplier": "Auto",
+              "hideTrailingZeros": true,
+              "digitGrouping": "DEFAULT",
+              "useParenthesesForNegativeValues": false,
+              "shouldFormatInPercentage": false,
+              "prefix": "",
+              "suffix": ""
+            },
+            "axisTicksFormatting": {
+              "fontSize": 12,
+              "fontColor": "#333",
+              "hasBackground": false
+            }
+          },
+          "ticksConfig": {
+            "mode": "INTERVAL"
+          },
+          "customExtent": {
+            "editMode": "AUTO",
+            "manualExtent": [
+              null,
+              null
+            ]
+          },
+          "isLogScale": false,
+          "includeZero": true
+        },
+        "yAxesFormatting": [
+          {
+            "id": "y_left_0",
+            "displayAxis": true,
+            "showAxisTitle": true,
+            "axisTitle": "nombre de communes",
+            "axisTitleFormatting": {
+              "fontSize": 15,
+              "fontColor": "#333",
+              "hasBackground": false
+            },
+            "axisValuesFormatting": {
+              "numberFormatting": {
+                "multiplier": "Auto",
+                "hideTrailingZeros": true,
+                "digitGrouping": "DEFAULT",
+                "useParenthesesForNegativeValues": false,
+                "shouldFormatInPercentage": false,
+                "prefix": "",
+                "suffix": ""
+              },
+              "axisTicksFormatting": {
+                "fontSize": 17,
+                "fontColor": "#000000",
+                "hasBackground": false
+              }
+            },
+            "ticksConfig": {
+              "mode": "INTERVAL"
+            },
+            "customExtent": {
+              "editMode": "AUTO",
+              "manualExtent": [
+                null,
+                null
+              ]
+            },
+            "isLogScale": false,
+            "includeZero": true
+          },
+          {
+            "id": "y_right_0",
+            "displayAxis": true,
+            "showAxisTitle": true,
+            "axisTitleFormatting": {
+              "fontSize": 15,
+              "fontColor": "#333",
+              "hasBackground": false
+            },
+            "axisValuesFormatting": {
+              "numberFormatting": {
+                "multiplier": "Auto",
+                "hideTrailingZeros": true,
+                "digitGrouping": "DEFAULT",
+                "useParenthesesForNegativeValues": false,
+                "shouldFormatInPercentage": false,
+                "prefix": "",
+                "suffix": ""
+              },
+              "axisTicksFormatting": {
+                "fontSize": 12,
+                "fontColor": "#333",
+                "hasBackground": false
+              }
+            },
+            "ticksConfig": {
+              "mode": "INTERVAL"
+            },
+            "customExtent": {
+              "editMode": "AUTO",
+              "manualExtent": [
+                null,
+                null
+              ]
+            },
+            "isLogScale": false,
+            "includeZero": true
+          }
+        ],
+        "radialAxisFormatting": {
+          "showAxisTitle": false,
+          "axisTitleFormatting": {
+            "fontSize": 15,
+            "fontColor": "#333",
+            "hasBackground": false
+          },
+          "ticksConfig": {
+            "mode": "INTERVAL"
+          },
+          "customExtent": {},
+          "isLogScale": false,
+          "includeZero": true
+        },
+        "smoothing": true,
+        "showLegend": true,
+        "strokeWidth": 2,
+        "fillOpacity": 0.6,
+        "tooltipOptions": {
+          "display": true
+        },
+        "hexbinRadius": 20,
+        "hexbinNumber": 20,
+        "hexbinRadiusMode": "NUM_HEXAGONS",
+        "valuesInChartDisplayOptions": {
+          "displayValues": true,
+          "displayPieLabelsOrValues": true,
+          "displayMode": "LABELS",
+          "overlappingStrategy": "AUTO",
+          "textFormatting": {
+            "fontSize": 11,
+            "fontColor": "AUTO",
+            "hasBackground": false,
+            "backgroundColor": "#D9D9D9BF"
+          }
+        },
+        "stackedColumnsOptions": {
+          "totalsInChartDisplayOptions": {
+            "textFormatting": {
+              "fontSize": 11,
+              "fontColor": "#333",
+              "hasBackground": false
+            },
+            "addDetails": false,
+            "additionalMeasures": []
+          }
+        },
+        "chartHeight": 200,
+        "singleXAxis": true,
+        "multiTooltips": false,
+        "animationFrameDuration": 3000,
+        "animationRepeat": true,
+        "colorMode": "UNIQUE_SCALE",
+        "colorOptions": {
+          "ccScaleMode": "NORMAL",
+          "paletteType": "CONTINUOUS",
+          "quantizationMode": "NONE",
+          "numQuantizeSteps": 5,
+          "paletteMiddleValue": 0.0,
+          "heatDensityMapIntensity": 0.5,
+          "heatDensityMapRadius": 0.5,
+          "singleColor": "#2678B1",
+          "transparency": 1.0,
+          "colorPalette": "default",
+          "customPalette": {
+            "id": "__dku_custom__",
+            "name": "Custom Palette",
+            "colors": [],
+            "values": [],
+            "fixedValues": false
+          },
+          "customColors": {
+            "v_ENS": "#1f77b4",
+            "v_UG": "#aec7e8",
+            "v_RN": "#ff7f0e",
+            "v_LR": "#ffbb78",
+            "v_DVD": "#2ca02c",
+            "v_UXD": "#98df8a",
+            "v_REG": "#d62728",
+            "v_DVG": "#e7cb94",
+            "v_HOR": "#9467bd",
+            "v_DVC": "#c5b0d5",
+            "v_UDI": "#8c564b",
+            "v_ECO": "#c49c94",
+            "v_SOC": "#e377c2",
+            "v_DIV": "#f7b6d2"
+          }
+        },
+        "bubblesOptions": {
+          "defaultRadius": 5.0,
+          "singleShape": "FILLED_CIRCLE"
+        },
+        "computeMode": "NORMAL",
+        "xAxisMode": "NORMAL",
+        "yAxisMode": "NORMAL",
+        "pieOptions": {
+          "donutHoleSize": 54.0
+        },
+        "scatterZoomOptions": {
+          "scale": [
+            1.0,
+            1.0
+          ],
+          "translate": [
+            0.0,
+            0.0
+          ],
+          "chartWidth": 0.0,
+          "enabled": true,
+          "persisted": true
+        },
+        "linesZoomOptions": {
+          "displayBrush": true,
+          "enabled": true,
+          "persisted": true
+        },
+        "scatterOptions": {
+          "equalScales": false,
+          "identityLine": false,
+          "connectPoints": {
+            "enabled": false,
+            "splitBy": "COLOR",
+            "lineFormatting": {
+              "color": "#000",
+              "size": 1
+            }
+          },
+          "optimizeRendering": true,
+          "regression": {
+            "show": false,
+            "displayFormula": false,
+            "type": "LINEAR",
+            "labelPosition": "INSIDE_END",
+            "lineFormatting": {
+              "color": "#000",
+              "size": 1
+            },
+            "textFormatting": {
+              "fontSize": 11,
+              "fontColor": "#333",
+              "hasBackground": false,
+              "backgroundColor": "#D9D9D9BF"
+            }
+          },
+          "numberOfRecords": 1000000.0
+        },
+        "scatterMPOptions": {
+          "connectPoints": {
+            "enabled": false,
+            "splitBy": "COLOR",
+            "lineFormatting": {
+              "color": "#000",
+              "size": 1
+            }
+          },
+          "optimizeRendering": false,
+          "pairColorOptions": {
+            "singleColor": "#659a88",
+            "transparency": 0.75,
+            "colorPalette": "default",
+            "customPalette": {
+              "id": "__dku_custom__",
+              "name": "Custom Palette",
+              "colors": [],
+              "values": [],
+              "fixedValues": false
+            },
+            "customColors": {}
+          },
+          "numberOfRecords": 1000000.0
+        },
+        "mapOptions": {
+          "tilesLayer": "cartodb-positron",
+          "lockSquareGrid": false
+        },
+        "mapGridOptions": {
+          "gridLonDeg": 0.5,
+          "gridLatDeg": 0.5
+        },
+        "radarOptions": {
+          "filled": false,
+          "polygonsSource": "MEASURES",
+          "lineStyle": {
+            "width": 2.0,
+            "type": "SOLID"
+          }
+        },
+        "sankeyOptions": {
+          "curveness": 0.5,
+          "linkColorVariant": "GRADIENT",
+          "nodeLabelFormatting": {
+            "fontSize": 11,
+            "fontColor": "AUTO",
+            "hasBackground": false,
+            "backgroundColor": "#D9D9D9BF"
+          }
+        },
+        "gaugeOptions": {
+          "min": {
+            "sourceType": "Constant",
+            "percentile": 0.0,
+            "isCustomPercentile": false,
+            "constantValue": 0.0,
+            "constantDateValue": 0.0,
+            "defaultConstantValue": 0.0,
+            "ignoreExistingFilters": false
+          },
+          "max": {
+            "sourceType": "Constant",
+            "percentile": 0.0,
+            "isCustomPercentile": false,
+            "constantValue": 0.0,
+            "constantDateValue": 0.0,
+            "defaultConstantValue": 0.0,
+            "ignoreExistingFilters": false
+          },
+          "axis": {
+            "ticksConfig": {
+              "mode": "INTERVAL"
+            },
+            "axisValuesFormatting": {
+              "numberFormatting": {
+                "multiplier": "Auto",
+                "hideTrailingZeros": true,
+                "digitGrouping": "DEFAULT",
+                "useParenthesesForNegativeValues": false,
+                "shouldFormatInPercentage": false,
+                "prefix": "",
+                "suffix": ""
+              },
+              "axisTicksFormatting": {
+                "fontSize": 12,
+                "fontColor": "#333",
+                "hasBackground": false
+              }
+            },
+            "thickness": 30,
+            "customRanges": false
+          },
+          "displayPointer": false
+        },
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABQCAYAAADSm7GJAAAAAXNSR0IArs4c6QAAA49JREFUeF7t3E1IVFEUB/B700kJizbiBygYPEV7ixZjLYrCzCHKFi5yWUSoZGmzCHXRYqCNIwUlSjgUfWxahLnIIlIrQsnERYthxGZQyMWEFlH2neONoBbJvOYMDDbn+Hf7DvPO+f/uYUZmeFrhT3QCWvR0GE4BWPghADCAhScgfDxsMICFJyB8PGwwgIUnIHw8bDCAhScgfDzSBhe1D56Y89deFp6FyPFIwMVtg95XXbUXRSYgfCgAA1gpbDDfU4AN5mtH6hzApJj4FqUE+M6z1w3Frrzrbrf+wTcKmZ2nBLh/PNocy8m/Um/r7zJj4jsVgPnakTpfFWDjy7GVMpna9+kFqSsUpSyBVQLetF3FjEufWxxLWed4IVICACbFxLcIwHztSJ0DmBQT3yIA87UjdQ5gUkx8iwDM147UOYBJMfEtAjBfO1LnACbFxLcIwHztSJ0DmBQT3yIA87UjdQ5gUkx8iwDM147UOYBJMfEtAjBfO1LnACbFxLcIwHztSJ0DmBQT3yIA87UjdQ5gUkx8i9IC2Bil1XDHHl3T+YRvlOnZeZoA+9apoS8t2uO/lJ4x8e0KwHztSJ0DmBQT3yIA87UjdQ5gUkx8i9gAl90sK5k+Mj3LN+r/0zkbYPuGfTp4NIhP2UmeEwAnGRi3cgBzE0uyXzHAVxf8G4/nti8mOb/4cjHAfbN+b1NJO57Gt+LIAlj4Dq8Z4JeWVW6Fw2Gt1JJw07/GWzPAU6WlDbF3mbfshdBHAK9IINGzKhM9J8v4/v0QFmMSf5uU6P/gRO/BiYBNuDsr+j4ro9Dd9FnSAcAG/9acn+jdFtPLmwsqWxy/k+5ufHSwNbD3ntMBmJycdLnd7rR62h+AkwDuaRzxngpUO35SHx0IeXfVVaTVJ3kScFHHXc9c56GHTie3fzxaFduR/7Re61i8GnM2u0Rlrs/Qvg+RuNd//aJjpKNa7+scdrqHfc2uCR4LDjld75vp8jRtaXPsMWRZu13GPLcikW/xXuPtRG/RstYbciubp53u0ds44jkZqHa8x9jAlGdnXbnj9fOHD9ScuX3fcYbRQM/WvK/LEau1NW6P877HOUuLKrvwQtUbpx7Ng1CB3l8R/XOdBCzpPWmtzQJg4eIABrDwBISPhw0GsPAEhI+HDQaw8ASEj4cNBrDwBISPhw0GsPAEhI+HDQaw8ASEj4cNBrDwBISPhw0GsPAEhI/3E3+aBo11L5eQAAAAAElFTkSuQmCC",
+        "useLiveProcessingIfAvailable": true,
+        "legendPlacement": "OUTER_RIGHT",
+        "legendFormatting": {
+          "fontSize": 11,
+          "fontColor": "#333",
+          "hasBackground": false
+        },
+        "pivotTableOptions": {
+          "displayEmptyValues": false,
+          "showSidebar": true,
+          "measureDisplayMode": "ROWS",
+          "displayTotals": {
+            "subTotals": {
+              "rows": true,
+              "columns": true
+            },
+            "grandTotal": {
+              "row": true,
+              "column": true
+            }
+          },
+          "tableFormatting": {
+            "showRowHeaders": true,
+            "showRowMainHeaders": true,
+            "rowMainHeaders": {
+              "fontSize": 12,
+              "fontColor": "#333",
+              "hasBackground": false
+            },
+            "rowSubheaders": {
+              "fontSize": 12,
+              "fontColor": "#333",
+              "hasBackground": false
+            },
+            "freezeRowHeaders": true,
+            "showColumnHeaders": true,
+            "showColumnMainHeaders": true,
+            "columnMainHeaders": {
+              "fontSize": 12,
+              "fontColor": "#333",
+              "hasBackground": false
+            },
+            "columnSubheaders": {
+              "fontSize": 12,
+              "fontColor": "#333",
+              "hasBackground": false
+            },
+            "values": {
+              "fontSize": 12,
+              "fontColor": "#333",
+              "hasBackground": false
+            },
+            "rowHeaders": {
+              "fontSize": 12,
+              "fontColor": "#333",
+              "hasBackground": false
+            },
+            "columnHeaders": {
+              "fontSize": 12,
+              "fontColor": "#333",
+              "hasBackground": false
+            }
+          },
+          "areRowsExpandedByDefault": true,
+          "areColumnExpandedByDefault": true,
+          "rowIdByCustomExpandedStatus": {},
+          "columnIdByCustomExpandedStatus": {},
+          "columnIdByCustomWidth": {}
+        },
+        "gridlinesOptions": {
+          "vertical": {
+            "show": true,
+            "lineFormatting": {
+              "type": "FILLED",
+              "color": "#d9d9d9",
+              "size": 1
+            }
+          },
+          "horizontal": {
+            "show": true,
+            "displayAxis": {
+              "type": "LEFT_Y_AXIS"
+            },
+            "lineFormatting": {
+              "type": "FILLED",
+              "color": "#d9d9d9",
+              "size": 1
+            }
+          }
+        }
+      }
+    },
+    {
+      "copySelectionFromScript": false,
+      "engineType": "LINO",
+      "refreshableSelection": {
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": 10,
+          "targetRatio": 0.02,
+          "ascending": true,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        },
+        "autoRefreshSample": false,
+        "_refreshTrigger": 1744977728541
+      },
+      "def": {
+        "type": "grouped_columns",
+        "variant": "normal",
+        "name": "New chart",
+        "userEditedName": false,
+        "displayWithEChartsByDefault": true,
+        "genericDimension0": [],
+        "genericDimension1": [],
+        "facetDimension": [],
+        "animationDimension": [],
+        "genericMeasures": [],
         "xDimension": [],
         "yDimension": [],
         "uaXDimension": [],
@@ -462,7 +1000,7 @@
           "heatDensityMapIntensity": 0.5,
           "heatDensityMapRadius": 0.5,
           "singleColor": "#2678B1",
-          "transparency": 1.0,
+          "transparency": 0.75,
           "colorPalette": "default",
           "customPalette": {
             "id": "__dku_custom__",
@@ -477,7 +1015,6 @@
           "defaultRadius": 5.0,
           "singleShape": "FILLED_CIRCLE"
         },
-        "computeMode": "NORMAL",
         "xAxisMode": "NORMAL",
         "yAxisMode": "NORMAL",
         "pieOptions": {
@@ -512,7 +1049,7 @@
               "size": 1
             }
           },
-          "optimizeRendering": true,
+          "optimizeRendering": false,
           "regression": {
             "show": false,
             "displayFormula": false,
@@ -626,7 +1163,6 @@
           },
           "displayPointer": false
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABQCAYAAADSm7GJAAAAAXNSR0IArs4c6QAABDBJREFUeF7tnV1IU2EYx9/XaWmmoLDKUFcwUWzQRQSVFqyEoBDF3UUEQRepfeAS7YNwN0aaeSEto4IQootAIayujEGidWEXha00QUNMU6jwgwVTTxgZLqbPO98zd97135Vwnufdc36/8z875/jFGV5RTYBH9d5h5xgER/lBAMEQHOUEonz3kGAIjnICUb57SDAEG5dARtWTrcP1RV+MO2HkJ1M6wRnV7c7husLGyGM07gQQbFw3ukwGwbpgNO4iEGxcN7pMBsG6YDTuIhBsXDe6TAbBumAMzyKt3WPHHPu2PJJZHYJl6IW5t+3VV2fJ3s1St4EQHGZJMstDcIQfdGiu5FTm9yfwWt+IjMjleiE40oKvJu5kJmbmrpkOCA4DgUg/qtQgOAxWlywJwTRfXGTRjJatQIIl4Im0IsE0JSSYZoQESzCSakWCaXxIMM0ICZZgJNWKBNP4kGCaERIswUiqFQmm8SHBNCMkWIKRVCsSTONDgmlGSLAEI6lWJJjGhwTTjJBgCUZSrUgwjQ8JphkhwRKMpFqRYBofEkwzQoIlGEm1IsE0PiSYZoQESzCSakWCaXxIMM0ICZZgJNWqR4I1z0Urt18fWM0g+KG71VALoUcXwR3VTl5Qt6rf/4HgEGStphSCaWr//WewhgTTR0mkKpBgmjwSjATTR0mkKpBgmvyaJDi3JTffO+jtZi42T48kXgHBNKs1EWxrsZ3vzex1MzubpUcSr4BgmhUE4zOYPkqoCiSYIhR8uzJ/wgGCwyfYpblialiNxjnXgr0LTtGKn6Kbh+odTJt7U7r90hAEByGg+pMsCCbOjiKCP1mt660DA/OcMf/S5YzwzQYI1kGwNyurwMT5RHZ//1sIDgJU9YssCCZSIiJYc7utjLE4Xl7+QfSaM5QHHS6XJ9Y8zuLLb9unA1IocJEFwX+IeTyD8bHTM9n7C20BpzIhwXfdu9ksj+dlZZ3hENx82rNtdk7bdfbewVYIFiX8T13n03cpMbOm4rziHQ+WbtJT8OuHTcl7jp+bXFg/lASrILjBUZhT2dr+cZGdyIOOsFxkaY971zEzW8fttoDTXU9PT9zPkY3m/KKcgH91k9uSm+k94R1mnAW9GV/YIa2pKZklzcXwkxU/Vjq+uu7fsuSdOvN5oSbtwjPL6M2jv7+mXo0V3QkJvqmk0juHxwMS/OKKhR+qXXGN9+npqabERH9OX99UQG8VS2IbkuO4a/Ib9f6L2ycuv0wzXzswGqy+oeSIpbLt+d9ZWru+Wxx5KSvO1jx2Y5PPb5pyZjh9EbsPFt151OlPYE2eZOk/NlYUJQDBoqQUrYNgRcWJjg3BoqQUrYNgRcWJjg3BoqQUrYNgRcWJjg3BoqQUrYNgRcWJjg3BoqQUrYNgRcWJjg3BoqQUrYNgRcWJjg3BoqQUrYNgRcWJjv0L5Oq1fsP1+3sAAAAASUVORK5CYII\u003d",
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT",
         "legendFormatting": {
