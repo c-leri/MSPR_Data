@@ -1,14 +1,42 @@
 {
-  "name": null,
+  "name": "hugoapi",
   "error": null,
-  "endpoints": [],
+  "endpoints": [
+    {
+      "modelRef": "cdF4hJeD",
+      "useJava": true,
+      "computePropensity": true,
+      "outputExplanations": false,
+      "individualExplanationParams": {
+        "method": "ICE",
+        "nbExplanations": 3,
+        "drawInScoredSet": false,
+        "subChunkSize": 5000,
+        "shapleyBackgroundSize": 100
+      },
+      "mlFlowOutputStyle": "PARSED",
+      "testQueries": [],
+      "enrichMapping": [],
+      "healthCheckQueries": [],
+      "returnPostEnrichData": false,
+      "auditPostEnrichData": false,
+      "id": "hugoep",
+      "type": "STD_PREDICTION",
+      "openAPI": {
+        "title": "hugoep",
+        "content": "{\n  \"paths\" : {\n    \"/hugoep/predict\" : {\n      \"post\" : {\n        \"summary\" : \"hugoep endpoint\",\n        \"description\" : \"Prediction type: STD_PREDICTION\",\n        \"parameters\" : [ {\n          \"in\" : \"body\",\n          \"name\" : \"serviceInputPayload\",\n          \"description\" : \"The input payload for executing the real-time machine learning service.\",\n          \"required\" : true,\n          \"schema\" : {\n            \"$ref\" : \"#/definitions/hugoep_EndpointInput\"\n          }\n        } ],\n        \"responses\" : {\n          \"200\" : {\n            \"description\" : \"The service processed the input correctly and provided a result prediction, if applicable.\",\n            \"schema\" : {\n              \"$ref\" : \"#/definitions/hugoep_EndpointOutput\"\n            }\n          },\n          \"default\" : {\n            \"description\" : \"The service failed to execute due to an error.\",\n            \"schema\" : {\n              \"$ref\" : \"#/definitions/hugoep_ErrorResponse\"\n            }\n          }\n        }\n      }\n    }\n  },\n  \"definitions\" : {\n    \"hugoep_EndpointInput\" : {\n      \"type\" : \"object\",\n      \"properties\" : {\n        \"features\" : {\n          \"type\" : \"object\",\n          \"properties\" : {\n            \"insee_revenufiscalmedianmoyen\" : {\n              \"type\" : \"number\",\n              \"format\" : \"double\"\n            },\n            \"insee_chomage_1564\" : {\n              \"type\" : \"integer\",\n              \"format\" : \"int32\"\n            },\n            \"insee_population\" : {\n              \"type\" : \"integer\",\n              \"format\" : \"int32\"\n            },\n            \"insee_population_1564\" : {\n              \"type\" : \"integer\",\n              \"format\" : \"int32\"\n            }\n          }\n        }\n      }\n    },\n    \"hugoep_EndpointOutput\" : {\n      \"type\" : \"object\",\n      \"properties\" : {\n        \"result\" : {\n          \"type\" : \"object\",\n          \"properties\" : {\n            \"prediction\" : {\n              \"type\" : \"string\"\n            }\n          }\n        }\n      }\n    },\n    \"hugoep_ErrorResponse\" : {\n      \"type\" : \"object\",\n      \"properties\" : {\n        \"status_code\" : {\n          \"type\" : \"integer\",\n          \"format\" : \"int32\"\n        },\n        \"message\" : {\n          \"type\" : \"string\"\n        }\n      }\n    }\n  }\n}",
+        "enabled": false,
+        "isManual": false
+      }
+    }
+  ],
   "authMethod": "API_KEYS",
   "authRealm": {
     "id": null,
     "queryKeys": [
       {
         "id": "DEFAULT_KEY",
-        "key": "e:AES:X2:ZbReLK15cTK0rhD7F8oc/iQlx7yY3KCguI+HJkMKiAnszgGhw3FIG6qLGn4PIBumGTjg7iyjHE+WBYYPg8eTS7lyqgE3JHzFPPG5lr+UFyI\u003d",
+        "key": "e:AES:X2:rrmgJW2HQ+n2pbu9Q9FcpE2DeJR1bIJiJ9gHEtEBWMIo1WXaawKNqfxSbKfxJLPM+zdYn/uoxgG6hLaMvq8i7HLBznk70fvb1YA65iEWqqI\u003d",
         "label": "Default API key",
         "description": null,
         "createdOn": 1744979150302,
