@@ -87,6 +87,69 @@
   },
   "outputColumnNameOverrides": {},
   "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "Nom_de_la_commune",
+            "type": "string"
+          },
+          {
+            "name": "Code_postal",
+            "type": "string"
+          },
+          {
+            "name": "insee_departement",
+            "type": "string"
+          },
+          {
+            "name": "insee_population",
+            "type": "bigint"
+          },
+          {
+            "name": "insee_menages",
+            "type": "bigint"
+          },
+          {
+            "name": "insee_naissances",
+            "type": "bigint"
+          },
+          {
+            "name": "insee_deces",
+            "type": "bigint"
+          },
+          {
+            "name": "insee_ffiscaux",
+            "type": "bigint"
+          },
+          {
+            "name": "insee_ffiscaux_imposables",
+            "type": "bigint"
+          },
+          {
+            "name": "insee_revenufiscalmedianmoyen",
+            "type": "double"
+          },
+          {
+            "name": "insee_emploi",
+            "type": "bigint"
+          },
+          {
+            "name": "insee_population_1564",
+            "type": "bigint"
+          },
+          {
+            "name": "insee_chomage_1564",
+            "type": "bigint"
+          },
+          {
+            "name": "insee_actifs_1564",
+            "type": "bigint"
+          }
+        ],
+        "userModified": false
+      }
+    },
     "distinct": false,
     "enabled": false
   }
