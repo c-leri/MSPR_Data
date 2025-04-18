@@ -3,7 +3,52 @@
     {
       "id": "zidRTgd",
       "grid": {
-        "tiles": []
+        "tiles": [
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": 0,
+              "left": 0,
+              "width": 30,
+              "height": 21
+            },
+            "clickAction": "OPEN_OTHER_INSIGHT",
+            "tileParams": {
+              "displayMode": "interactive_scoring",
+              "advancedOptions": {
+                "featureImportance": {
+                  "importanceDisplayMode": "globalExplanations",
+                  "graphType": "absoluteFeatureImportance"
+                },
+                "interactiveScoring": {
+                  "featuresOrder": [
+                    "insee_chomage_1564",
+                    "insee_population",
+                    "insee_revenufiscalmedianmoyen",
+                    "insee_population_1564"
+                  ]
+                }
+              }
+            },
+            "backgroundOpacity": 1.0,
+            "autoLoad": true,
+            "locked": false,
+            "borderOptions": {
+              "color": "#D9D9D9",
+              "radius": 20,
+              "size": 1
+            },
+            "titleOptions": {
+              "showTitle": "NO",
+              "fontColor": "#000",
+              "fontSize": 13
+            },
+            "insightId": "LGLWFJd",
+            "insightType": "saved-model_report",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
+          }
+        ]
       },
       "show": true,
       "showTitle": false,
