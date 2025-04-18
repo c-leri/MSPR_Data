@@ -1,0 +1,167 @@
+{
+  "script": {
+    "steps": [],
+    "maxProcessedMemTableBytes": -1,
+    "columnsSelection": {
+      "mode": "ALL",
+      "list": [
+        {
+          "name": "Code commune",
+          "d": true
+        },
+        {
+          "name": "nuance",
+          "d": true
+        },
+        {
+          "name": "Code_commune_INSEE",
+          "d": true
+        },
+        {
+          "name": "Nom_de_la_commune",
+          "d": true
+        },
+        {
+          "name": "Code_postal",
+          "d": true
+        },
+        {
+          "name": "insee_departement",
+          "d": true
+        },
+        {
+          "name": "insee_population",
+          "d": true
+        },
+        {
+          "name": "insee_menages",
+          "d": true
+        },
+        {
+          "name": "insee_naissances",
+          "d": true
+        },
+        {
+          "name": "insee_deces",
+          "d": true
+        },
+        {
+          "name": "insee_ffiscaux",
+          "d": true
+        },
+        {
+          "name": "insee_ffiscaux_imposables",
+          "d": true
+        },
+        {
+          "name": "insee_revenufiscalmedianmoyen",
+          "d": true
+        },
+        {
+          "name": "insee_emploi",
+          "d": true
+        },
+        {
+          "name": "insee_population_1564",
+          "d": true
+        },
+        {
+          "name": "insee_chomage_1564",
+          "d": true
+        },
+        {
+          "name": "insee_actifs_1564",
+          "d": true
+        }
+      ]
+    },
+    "columnOrder": [],
+    "columnWidthsByName": {
+      "Code commune": 105,
+      "nuance": 100,
+      "Code_commune_INSEE": 150,
+      "Nom_de_la_commune": 190,
+      "Code_postal": 100,
+      "insee_departement": 143,
+      "insee_population": 135,
+      "insee_menages": 113,
+      "insee_naissances": 135,
+      "insee_deces": 100,
+      "insee_ffiscaux": 120,
+      "insee_ffiscaux_imposables": 203,
+      "insee_revenufiscalmedianmoyen": 233,
+      "insee_emploi": 105,
+      "insee_population_1564": 173,
+      "insee_chomage_1564": 150,
+      "insee_actifs_1564": 143
+    },
+    "columnUseScientificNotationByName": {},
+    "coloring": {
+      "scheme": "MEANING_AND_STATUS",
+      "individualColumns": [],
+      "individualColumnsRules": [],
+      "valueColoringMode": "HASH"
+    },
+    "sorting": [],
+    "analysisColumnData": {},
+    "explorationSampling": {
+      "selection": {
+        "maxRecordsForDisplay": -1,
+        "maxStoredBytes": 104857600,
+        "timeout": -1,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "maxRecords": 40000,
+        "targetRatio": 0.02,
+        "ascending": true,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 1744959766595
+    },
+    "vizSampling": {
+      "selection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "FULL",
+        "maxRecords": -1,
+        "targetRatio": 0.02,
+        "ascending": true,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "exploreUIParams": {
+      "autoRefresh": true
+    },
+    "globalSearchQuery": "",
+    "explorationFilters": [],
+    "previewMode": "ALL_ROWS"
+  },
+  "charts": [],
+  "interactiveSearch": {
+    "savedQueries": []
+  },
+  "customMeasures": []
+}
