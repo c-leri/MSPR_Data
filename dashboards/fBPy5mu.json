@@ -50,8 +50,9 @@
           }
         ]
       },
+      "title": "Tableau de bord - Prédiction des résultats (Législative 2024)",
       "show": true,
-      "showTitle": false,
+      "showTitle": true,
       "titleAlign": "CENTER",
       "titleFontColor": "#444444",
       "titleFontSize": 28,
