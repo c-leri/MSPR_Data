@@ -99,7 +99,7 @@
       "def": {
         "type": "grouped_columns",
         "variant": "normal",
-        "name": "",
+        "name": "Nombre de candidats élus dans chaque commune, en fonction de leur nuance",
         "userEditedName": true,
         "displayWithEChartsByDefault": true,
         "genericDimension0": [
@@ -145,7 +145,49 @@
             "shouldFormatInPercentage": false
           }
         ],
-        "genericDimension1": [],
+        "genericDimension1": [
+          {
+            "column": "nuance",
+            "type": "ALPHANUM",
+            "numParams": {
+              "emptyBinsMode": "ZEROS"
+            },
+            "maxValues": 20,
+            "generateOthersCategory": true,
+            "forceLastPositionOthers": false,
+            "oneTickPerBin": "AUTO",
+            "filters": [],
+            "isA": "dimension",
+            "possibleSorts": [
+              {
+                "type": "NATURAL",
+                "label": "Natural ordering",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Count distinct of Code_postal, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Count distinct of Code_postal, ascending",
+                "sortAscending": true
+              }
+            ],
+            "sort": {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Count distinct of Code_postal, descending"
+            },
+            "multiplier": "Auto",
+            "hideTrailingZeros": true,
+            "digitGrouping": "DEFAULT",
+            "useParenthesesForNegativeValues": false,
+            "shouldFormatInPercentage": false
+          }
+        ],
         "facetDimension": [],
         "animationDimension": [],
         "genericMeasures": [
@@ -420,7 +462,7 @@
           "heatDensityMapIntensity": 0.5,
           "heatDensityMapRadius": 0.5,
           "singleColor": "#2678B1",
-          "transparency": 0.75,
+          "transparency": 1.0,
           "colorPalette": "default",
           "customPalette": {
             "id": "__dku_custom__",
@@ -584,7 +626,7 @@
           },
           "displayPointer": false
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABQCAYAAADSm7GJAAAAAXNSR0IArs4c6QAABOdJREFUeF7tnU9sFFUcx39vprsbqClFWFqZ3a6agHogJF692EQPsFNX0ujNi5xMTGxrd9GTJCKhuxgxMfHPkcRANGhkZ0mMJt5MjBcOinoA9w9QKUIbSqBsZ/eRHgw6s/B72bd/Zuq3x877TX/7+bzve7Ozzawg/KxrAmJdvzq8OILgdT4JIBiCA0zg4A8DqaXr8VYdVo5Nzge48561FuoEb5/5NhmJrB5vKXjOHu8ZxQD/IQgOsJxOtAbBnaAY4HNAcIDldKI1CO4ExQCfA4IDLKcTrUFwJygG+BwQHFA5Y7nS80S039ueIPlrJW+/q9o2BKuS6vG45OzpjGEaU94/KyWdrebtadV2IFiVVI/HQTAR9ftO1sjs8cGGscnwuv/7zzu36MuXGzpzAoIDIDiVc06QoFGvyEZDvHXxaPonCNYhAMFK9LAHK2FqPQgJ1oCnUtrvPRiCVSxpjIFgHh6WaJ7RfUcgwRrwVEqRYJ4SEswzQoI1GGmVIsE8PiSYZ4QEazDSKkWCeXxIMM8ICdZgpFWKBPP4kGCeERKswUirFAnm8SHBPCMkWIORVikSzONDgnlGSLAGI61SJJjHhwTzjJBgDUZapUgwjw8J5hkhwRqMtEqRYB4fEswzQoI1GGmVIsE8PiSYZ4QEazDSKkWCeXxIMM8ICdZgpFWqm+BUtjQpDfmitwlJ9GNtzv6Yaw7/NssR0jyuKziZdV41DHrF20ZT0ve1vP0e1x4Ec4Q0j0MwD/B/vQcjwfwE6esIJJjHjwRjD+ZnSb9GIME8+a4nODFdtIQpNntbuRNtXF04nLnCt3j/ERDM0+u64FSulCUh9/rfa4qT1bn0p3yLEPxvAoF7jBIEtzeFQ/OUHQiG4PYIdOApO3gf3Db6e4VIcHsQuSV67DVns7vBfch79ltNubx0bN/SP7/HRVZI3wcns6Vpw5Av+KaPlKcq+YmPIJiIwrxEQ7DCt65AcHvbx3+qwrwHJw8UZ4QUT/uXQXGyWkg7/fy4EAnuQIKTOeeQIegZ3+fFTfFZrZA+AcFExCV4+5vFrZFGPeKFKIYfXiwfHF950CLS7VuVEKywhHOCx7LOJ8KgJ3y3MqU4XM2nv9MRPDblPE4Res43eUhcqxTSp7g9GIKJyMo54wOCXmpxuX5u7XK9n4ITs8VnTVO841tiiS7U5uz9EKyS0Gxpkgz5uj+B8udqfiKnK9g6UNwtV5u+p6pHh4Z+q9+oxx/03YVBFrztjW9GojHT9nIzSa5U8hOfczc6OnaRlZj+YgPFYpa3EZei7l9H9pRH3z4TN13pO25QfblW2Hd+bZ8UprvFW28Id6GWz1y2Zr7aSWZso++FmrJSPWIvWjPF3WQavhsykcGNv5fLZbLi255sNQ8vFdJnh6e+Hh6MRB/1TT7h3r6cz/wRz5ZGo+R/YnuzSYvz76crqdnTj7nC3OStX6278wsfZq6kcs5TrhQx7/HbK+LC9S17blo3nF0te7v5yLmRoWvRAeHu8HGR0q0dtX9ZuzYRhpHwHSexXCvsPW/lziRIyq2+7cdtXr34wcSlnt3oUFgEMKSLBLp+q7KLvePUCgQgWAFSmIdAcJjtKfQOwQqQwjwEgsNsT6F3CFaAFOYhEBxmewq9Q7ACpDAPgeAw21PoHYIVIIV5CASH2Z5C7xCsACnMQ+4CZrg9q4Ji53IAAAAASUVORK5CYII\u003d",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABQCAYAAADSm7GJAAAAAXNSR0IArs4c6QAABDBJREFUeF7tnV1IU2EYx9/XaWmmoLDKUFcwUWzQRQSVFqyEoBDF3UUEQRepfeAS7YNwN0aaeSEto4IQootAIayujEGidWEXha00QUNMU6jwgwVTTxgZLqbPO98zd97135Vwnufdc36/8z875/jFGV5RTYBH9d5h5xgER/lBAMEQHOUEonz3kGAIjnICUb57SDAEG5dARtWTrcP1RV+MO2HkJ1M6wRnV7c7husLGyGM07gQQbFw3ukwGwbpgNO4iEGxcN7pMBsG6YDTuIhBsXDe6TAbBumAMzyKt3WPHHPu2PJJZHYJl6IW5t+3VV2fJ3s1St4EQHGZJMstDcIQfdGiu5FTm9yfwWt+IjMjleiE40oKvJu5kJmbmrpkOCA4DgUg/qtQgOAxWlywJwTRfXGTRjJatQIIl4Im0IsE0JSSYZoQESzCSakWCaXxIMM0ICZZgJNWKBNP4kGCaERIswUiqFQmm8SHBNCMkWIKRVCsSTONDgmlGSLAEI6lWJJjGhwTTjJBgCUZSrUgwjQ8JphkhwRKMpFqRYBofEkwzQoIlGEm1IsE0PiSYZoQESzCSakWCaXxIMM0ICZZgJNWqR4I1z0Urt18fWM0g+KG71VALoUcXwR3VTl5Qt6rf/4HgEGStphSCaWr//WewhgTTR0mkKpBgmjwSjATTR0mkKpBgmvyaJDi3JTffO+jtZi42T48kXgHBNKs1EWxrsZ3vzex1MzubpUcSr4BgmhUE4zOYPkqoCiSYIhR8uzJ/wgGCwyfYpblialiNxjnXgr0LTtGKn6Kbh+odTJt7U7r90hAEByGg+pMsCCbOjiKCP1mt660DA/OcMf/S5YzwzQYI1kGwNyurwMT5RHZ//1sIDgJU9YssCCZSIiJYc7utjLE4Xl7+QfSaM5QHHS6XJ9Y8zuLLb9unA1IocJEFwX+IeTyD8bHTM9n7C20BpzIhwXfdu9ksj+dlZZ3hENx82rNtdk7bdfbewVYIFiX8T13n03cpMbOm4rziHQ+WbtJT8OuHTcl7jp+bXFg/lASrILjBUZhT2dr+cZGdyIOOsFxkaY971zEzW8fttoDTXU9PT9zPkY3m/KKcgH91k9uSm+k94R1mnAW9GV/YIa2pKZklzcXwkxU/Vjq+uu7fsuSdOvN5oSbtwjPL6M2jv7+mXo0V3QkJvqmk0juHxwMS/OKKhR+qXXGN9+npqabERH9OX99UQG8VS2IbkuO4a/Ib9f6L2ycuv0wzXzswGqy+oeSIpbLt+d9ZWru+Wxx5KSvO1jx2Y5PPb5pyZjh9EbsPFt151OlPYE2eZOk/NlYUJQDBoqQUrYNgRcWJjg3BoqQUrYNgRcWJjg3BoqQUrYNgRcWJjg3BoqQUrYNgRcWJjg3BoqQUrYNgRcWJjg3BoqQUrYNgRcWJjg3BoqQUrYNgRcWJjv0L5Oq1fsP1+3sAAAAASUVORK5CYII\u003d",
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT",
         "legendFormatting": {
