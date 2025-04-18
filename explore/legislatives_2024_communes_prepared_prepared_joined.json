@@ -77,14 +77,14 @@
     },
     "columnOrder": [],
     "columnWidthsByName": {
-      "Code commune": 105,
+      "Code commune": 143,
       "nuance": 100,
-      "Code_commune_INSEE": 150,
+      "Code_commune_INSEE": 213,
       "Nom_de_la_commune": 190,
       "Code_postal": 100,
       "insee_departement": 143,
       "insee_population": 135,
-      "insee_menages": 196,
+      "insee_menages": 133,
       "insee_naissances": 135,
       "insee_deces": 100,
       "insee_ffiscaux": 120,
@@ -107,7 +107,7 @@
     "explorationSampling": {
       "selection": {
         "maxRecordsForDisplay": -1,
-        "maxStoredBytes": 104857600,
+        "maxStoredBytes": -1,
         "timeout": -1,
         "filter": {
           "distinct": false,
@@ -116,7 +116,7 @@
         "partitionSelectionMethod": "ALL",
         "latestPartitionsN": 1,
         "ordering": {
-          "enabled": false,
+          "enabled": true,
           "rules": []
         },
         "samplingMethod": "HEAD_SEQUENTIAL",
@@ -126,8 +126,8 @@
         "withinFirstN": -1,
         "maxReadUncompressedBytes": -1
       },
-      "autoRefreshSample": false,
-      "_refreshTrigger": 1744959766595
+      "autoRefreshSample": true,
+      "_refreshTrigger": 1744960326636
     },
     "vizSampling": {
       "selection": {
@@ -156,7 +156,43 @@
       "autoRefresh": true
     },
     "globalSearchQuery": "",
-    "explorationFilters": [],
+    "explorationFilters": [
+      {
+        "column": "Nom_de_la_commune",
+        "type": "columnFilter",
+        "currentMode": "FACET",
+        "active": true,
+        "facet": {
+          "type": "facet",
+          "column": "Nom_de_la_commune",
+          "columnType": "ALPHANUM",
+          "currentMode": "ALPHANUM",
+          "sort": "count",
+          "selectedValues": {
+            "GRENOBLE": true
+          }
+        },
+        "alphanumFilter": {
+          "type": "alphanum",
+          "column": "Nom_de_la_commune",
+          "selectedValues": [],
+          "params": {
+            "mode": "full_string",
+            "normalization": "exact"
+          }
+        },
+        "validityFilter": {
+          "type": "validity",
+          "column": "Nom_de_la_commune",
+          "params": {
+            "type": "Text",
+            "ok": true,
+            "nok": true,
+            "empty": true
+          }
+        }
+      }
+    ],
     "previewMode": "ALL_ROWS"
   },
   "charts": [],
