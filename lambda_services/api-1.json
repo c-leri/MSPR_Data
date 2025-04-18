@@ -1,0 +1,38 @@
+{
+  "name": null,
+  "error": null,
+  "endpoints": [],
+  "authMethod": "API_KEYS",
+  "authRealm": {
+    "id": null,
+    "queryKeys": [
+      {
+        "id": "DEFAULT_KEY",
+        "key": "e:AES:X2:DimXZCjz7psMc1QvRJ2TldXjlF41gnDCS0e/QupPuDY9EliSA0P0WzrpZDGa80osAL/lbxsUffvhO2KWN1PuH8rDYwxIsCiVmiuOO3RtFUc\u003d",
+        "label": "Default API key",
+        "description": null,
+        "createdOn": 1744968863790,
+        "createdBy": "dominique@gagnie.re"
+      }
+    ]
+  },
+  "oauth2Config": null,
+  "deploymentMonitoring": [],
+  "releaseNotes": null,
+  "versionTag": null,
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "dominique@gagnie.re"
+    },
+    "lastModifiedOn": 1744968863791,
+    "extendedProperties": null
+  },
+  "description": null,
+  "shortDesc": null,
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
