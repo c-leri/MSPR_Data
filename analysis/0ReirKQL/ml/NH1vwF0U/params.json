@@ -3,9 +3,9 @@
   "guessPolicy": "KMEANS",
   "preprocessing": {
     "reduce": {
-      "enable": false,
+      "enable": true,
       "disable": true,
-      "kept_variance": 0.0
+      "kept_variance": 0.95
     },
     "outliers": {
       "method": "CLUSTER",
