@@ -3851,18 +3851,18 @@
         "enabled": false,
         "rules": []
       },
-      "samplingMethod": "HEAD_SEQUENTIAL",
+      "samplingMethod": "RANDOM_FIXED_RATIO",
       "maxRecords": 100000,
-      "targetRatio": 0.02,
+      "targetRatio": 0.15,
       "ascending": true,
       "withinFirstN": -1,
       "maxReadUncompressedBytes": -1,
-      "seed": 1337
+      "seed": 667
     },
     "ssdTrainingRatio": 0.8,
     "ssdStratified": false,
     "ssdGrouped": false,
-    "ssdSeed": 1337,
+    "ssdSeed": 667,
     "testOnLargerValues": true,
     "streamAll": false,
     "kfold": false,
