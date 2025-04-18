@@ -1,6 +1,64 @@
 {
   "columnsSelection": {
-    "mode": "ALL"
+    "mode": "ALL",
+    "list": [
+      {
+        "d": true,
+        "name": "Nom_de_la_commune"
+      },
+      {
+        "d": true,
+        "name": "Code_postal"
+      },
+      {
+        "d": true,
+        "name": "insee_departement"
+      },
+      {
+        "d": true,
+        "name": "insee_population"
+      },
+      {
+        "d": true,
+        "name": "insee_menages"
+      },
+      {
+        "d": true,
+        "name": "insee_naissances"
+      },
+      {
+        "d": true,
+        "name": "insee_deces"
+      },
+      {
+        "d": true,
+        "name": "insee_ffiscaux"
+      },
+      {
+        "d": true,
+        "name": "insee_ffiscaux_imposables"
+      },
+      {
+        "d": true,
+        "name": "insee_revenufiscalmedianmoyen"
+      },
+      {
+        "d": true,
+        "name": "insee_emploi"
+      },
+      {
+        "d": true,
+        "name": "insee_population_1564"
+      },
+      {
+        "d": true,
+        "name": "insee_chomage_1564"
+      },
+      {
+        "d": true,
+        "name": "insee_actifs_1564"
+      }
+    ]
   },
   "explorationSampling": {
     "_refreshTrigger": 0,
@@ -30,8 +88,45 @@
   "explorationFilters": [],
   "columnOrder": [],
   "columnUseScientificNotationByName": {},
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "Nom_de_la_commune",
+          "Code_postal"
+        ],
+        "keep": true,
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "EnrichFrenchPostcode",
+      "params": {
+        "basicDemography": true,
+        "companies": false,
+        "departement": true,
+        "housing": false,
+        "fiscal": true,
+        "prefix": "insee",
+        "column": "Code_postal",
+        "employment": true,
+        "sourceDatasetVersion": "INSEE_JAN_2024"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -58,7 +153,42 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "postcode_population": 158,
+    "insee_revenufiscalmedianmoyen": 233,
+    "insee_departement": 143,
+    "insee_menages": 113,
+    "postcode_deces": 120,
+    "postcode_logvacants": 158,
+    "postcode_ffiscaux_imposables": 225,
+    "postcode_revenufiscalmedianmoyen": 255,
+    "insee_actifs_1564": 143,
+    "postcode_departement": 165,
+    "postcode_menages": 135,
+    "Code_postal": 100,
+    "insee_population": 135,
+    "postcode_actifs_1564": 165,
+    "postcode_residencesprincipales": 240,
+    "insee_population_1564": 173,
+    "Libellé_d_acheminement": 180,
+    "postcode_chomage_1564": 173,
+    "insee_ffiscaux_imposables": 203,
+    "postcode_naissances": 158,
+    "postcode_logements": 150,
+    "postcode_emploi": 128,
+    "insee_deces": 100,
+    "postcode_residencesprincipales_proprietaire": 300,
+    "insee_naissances": 135,
+    "Ligne_5": 134,
+    "insee_ffiscaux": 120,
+    "Code_commune_INSEE": 150,
+    "postcode_residencessec": 180,
+    "insee_chomage_1564": 150,
+    "postcode_ffiscaux": 143,
+    "Nom_de_la_commune": 190,
+    "postcode_population_1564": 195,
+    "insee_emploi": 105
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
