@@ -1414,7 +1414,7 @@
     },
     "knn": {
       "k": {
-        "gridMode": "EXPLICIT",
+        "gridMode": "RANGE",
         "randomMode": "RANGE",
         "limit": {
           "min": 1
@@ -1424,8 +1424,8 @@
         ],
         "range": {
           "min": 3,
-          "max": 7,
-          "nbValues": 3,
+          "max": 30,
+          "nbValues": 10,
           "scaling": "LINEAR"
         }
       },
