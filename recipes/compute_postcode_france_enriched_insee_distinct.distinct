@@ -5,6 +5,9 @@
   },
   "keys": [
     {
+      "column": "Code_commune_INSEE"
+    },
+    {
       "column": "Nom_de_la_commune"
     },
     {
@@ -90,6 +93,10 @@
     "$status": {
       "schema": {
         "columns": [
+          {
+            "name": "Code_commune_INSEE",
+            "type": "string"
+          },
           {
             "name": "Nom_de_la_commune",
             "type": "string"
