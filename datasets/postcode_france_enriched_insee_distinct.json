@@ -67,6 +67,7 @@
   },
   "schema": {
     "columns": [
+      {"name":"Code_commune_INSEE","type":"string"},
       {"name":"Nom_de_la_commune","type":"string"},
       {"name":"Code_postal","type":"string"},
       {"name":"insee_departement","type":"string"},
