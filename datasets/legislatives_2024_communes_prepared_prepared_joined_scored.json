@@ -68,7 +68,7 @@
   "schema": {
     "columns": [
       {"name":"Code commune","type":"string"},
-      {"name":"nuance","type":"string"},
+      {"name":"nuance","type":"string","meaning":"Text"},
       {"name":"Code_commune_INSEE","type":"string"},
       {"name":"Nom_de_la_commune","type":"string"},
       {"name":"Code_postal","type":"string"},
