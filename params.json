@@ -19,7 +19,7 @@
   "projectType": "REGULAR",
   "projectAppType": "REGULAR",
   "hasSetupSection": false,
-  "owner": "hcwhatever@gmail.com",
+  "owner": "pradityo.wicaksono@yahoo.com",
   "permissionsVersion": "V2",
   "permissions": [
     {
@@ -171,6 +171,7 @@
     "dkuProperties": []
   },
   "name": "test",
+  "projectStatus": "Sandbox",
   "imgPattern": 2,
   "metrics": {
     "probes": [],
