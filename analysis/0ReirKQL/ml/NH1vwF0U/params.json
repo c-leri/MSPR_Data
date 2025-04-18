@@ -906,7 +906,7 @@
       "def": {
         "type": "scatter",
         "variant": "normal",
-        "name": "New chart",
+        "name": "insee_ffiscaux vs insee_emploi",
         "userEditedName": false,
         "displayWithEChartsByDefault": true,
         "genericDimension0": [],
@@ -916,8 +916,36 @@
         "genericMeasures": [],
         "xDimension": [],
         "yDimension": [],
-        "uaXDimension": [],
-        "uaYDimension": [],
+        "uaXDimension": [
+          {
+            "column": "insee_ffiscaux",
+            "type": "NUMERICAL",
+            "treatAsAlphanum": false,
+            "sortBy": "NATURAL",
+            "sortAscending": false,
+            "isA": "ua",
+            "multiplier": "Auto",
+            "digitGrouping": "DEFAULT",
+            "useParenthesesForNegativeValues": false,
+            "shouldFormatInPercentage": false,
+            "hideTrailingZeros": true
+          }
+        ],
+        "uaYDimension": [
+          {
+            "column": "insee_emploi",
+            "type": "NUMERICAL",
+            "treatAsAlphanum": false,
+            "sortBy": "NATURAL",
+            "sortAscending": false,
+            "isA": "ua",
+            "multiplier": "Auto",
+            "digitGrouping": "DEFAULT",
+            "useParenthesesForNegativeValues": false,
+            "shouldFormatInPercentage": false,
+            "hideTrailingZeros": true
+          }
+        ],
         "uaDimensionPair": [],
         "uaSize": [],
         "uaColor": [],
