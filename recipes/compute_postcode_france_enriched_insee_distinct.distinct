@@ -1,0 +1,93 @@
+{
+  "preFilter": {
+    "distinct": false,
+    "enabled": false
+  },
+  "keys": [
+    {
+      "column": "Nom_de_la_commune"
+    },
+    {
+      "column": "Code_postal"
+    },
+    {
+      "column": "insee_departement"
+    },
+    {
+      "column": "insee_population"
+    },
+    {
+      "column": "insee_menages"
+    },
+    {
+      "column": "insee_naissances"
+    },
+    {
+      "column": "insee_deces"
+    },
+    {
+      "column": "insee_ffiscaux"
+    },
+    {
+      "column": "insee_ffiscaux_imposables"
+    },
+    {
+      "column": "insee_revenufiscalmedianmoyen"
+    },
+    {
+      "column": "insee_emploi"
+    },
+    {
+      "column": "insee_population_1564"
+    },
+    {
+      "column": "insee_chomage_1564"
+    },
+    {
+      "column": "insee_actifs_1564"
+    }
+  ],
+  "globalCount": false,
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "inheritConf": "default",
+      "addDkuUdf": false,
+      "executionEngine": "HIVESERVER2"
+    },
+    "sqlPipelineParams": {
+      "pipelineAllowMerge": true,
+      "pipelineAllowStart": true
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "containerSelection": {
+      "containerMode": "INHERIT"
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "skipPrerunValidate": false,
+      "pipelineAllowMerge": true,
+      "useGlobalMetastore": false,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "mode": "AUTO",
+        "autoModeRepartitionInto": 10,
+        "map": {}
+      },
+      "overwriteOutputSchema": false,
+      "executionEngine": "SPARK_SUBMIT",
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      }
+    }
+  },
+  "outputColumnNameOverrides": {},
+  "postFilter": {
+    "distinct": false,
+    "enabled": false
+  }
+}
