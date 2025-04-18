@@ -20,7 +20,7 @@
           "name": "Query #1",
           "q": {
             "features": {
-              "insee_revenufiscalmedianmoyen": 21500.75,
+              "insee_revenufiscalmedianmoyen": 14000.75,
               "insee_chomage_1564": 2000,
               "insee_population": 34000,
               "insee_population_1564": 22000
@@ -48,7 +48,7 @@
     "queryKeys": [
       {
         "id": "DEFAULT_KEY",
-        "key": "e:AES:X2:TtdXCZamRkP6dZAiC/UJnBQgAPXXUOHQrihP/k6y7iySPJb80P4w65kc75tjqgbaNVBsDpJm46kwf6ALfxt/8Zu2kA9R42Ds3T72n/EX/pw\u003d",
+        "key": "e:AES:X2:g4ZdudHJ6SGdhZBSdedUparKOFy0wLj0kmsE4sEXt0QQ+KJryOsstr3e67pRFHSrN6ErazJu4Cnr+vsZY9ZtsmVPHe8EjyTslMRSXiJhEks\u003d",
         "label": "Default API key",
         "description": null,
         "createdOn": 1744968863790,
