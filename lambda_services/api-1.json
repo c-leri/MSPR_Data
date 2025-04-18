@@ -4,7 +4,7 @@
   "endpoints": [
     {
       "modelRef": "cdF4hJeD",
-      "useJava": true,
+      "useJava": false,
       "computePropensity": true,
       "outputExplanations": false,
       "individualExplanationParams": {
@@ -15,7 +15,14 @@
         "shapleyBackgroundSize": 100
       },
       "mlFlowOutputStyle": "PARSED",
-      "testQueries": [],
+      "testQueries": [
+        {
+          "name": "Query #1",
+          "q": {
+            "features": {}
+          }
+        }
+      ],
       "enrichMapping": [],
       "healthCheckQueries": [],
       "returnPostEnrichData": false,
@@ -25,7 +32,7 @@
       "openAPI": {
         "title": "predict-nuance-ep",
         "content": "{\n  \"paths\" : {\n    \"/predict-nuance-ep/predict\" : {\n      \"post\" : {\n        \"summary\" : \"predict-nuance-ep endpoint\",\n        \"description\" : \"Prediction type: STD_PREDICTION\",\n        \"parameters\" : [ {\n          \"in\" : \"body\",\n          \"name\" : \"serviceInputPayload\",\n          \"description\" : \"The input payload for executing the real-time machine learning service.\",\n          \"required\" : true,\n          \"schema\" : {\n            \"$ref\" : \"#/definitions/predict-nuance-ep_EndpointInput\"\n          }\n        } ],\n        \"responses\" : {\n          \"200\" : {\n            \"description\" : \"The service processed the input correctly and provided a result prediction, if applicable.\",\n            \"schema\" : {\n              \"$ref\" : \"#/definitions/predict-nuance-ep_EndpointOutput\"\n            }\n          },\n          \"default\" : {\n            \"description\" : \"The service failed to execute due to an error.\",\n            \"schema\" : {\n              \"$ref\" : \"#/definitions/predict-nuance-ep_ErrorResponse\"\n            }\n          }\n        }\n      }\n    }\n  },\n  \"definitions\" : {\n    \"predict-nuance-ep_EndpointInput\" : {\n      \"type\" : \"object\",\n      \"properties\" : {\n        \"features\" : {\n          \"type\" : \"object\",\n          \"properties\" : {\n            \"insee_revenufiscalmedianmoyen\" : {\n              \"type\" : \"number\",\n              \"format\" : \"double\"\n            },\n            \"insee_chomage_1564\" : {\n              \"type\" : \"integer\",\n              \"format\" : \"int32\"\n            },\n            \"insee_population\" : {\n              \"type\" : \"integer\",\n              \"format\" : \"int32\"\n            },\n            \"insee_population_1564\" : {\n              \"type\" : \"integer\",\n              \"format\" : \"int32\"\n            }\n          }\n        }\n      }\n    },\n    \"predict-nuance-ep_EndpointOutput\" : {\n      \"type\" : \"object\",\n      \"properties\" : {\n        \"result\" : {\n          \"type\" : \"object\",\n          \"properties\" : {\n            \"prediction\" : {\n              \"type\" : \"string\"\n            }\n          }\n        }\n      }\n    },\n    \"predict-nuance-ep_ErrorResponse\" : {\n      \"type\" : \"object\",\n      \"properties\" : {\n        \"status_code\" : {\n          \"type\" : \"integer\",\n          \"format\" : \"int32\"\n        },\n        \"message\" : {\n          \"type\" : \"string\"\n        }\n      }\n    }\n  }\n}",
-        "enabled": false,
+        "enabled": true,
         "isManual": false
       }
     }
@@ -36,7 +43,7 @@
     "queryKeys": [
       {
         "id": "DEFAULT_KEY",
-        "key": "e:AES:X2:TkqVLUropyGuN/4/GfPpcc8jL+O2wQ0jA1TnVkh3VfBsvmeggerXjx/UL7WFu4sRBRHRBaQAAahhft5l6CqJ3YT2Xk3nfqJLo53bUzg8qtQ\u003d",
+        "key": "e:AES:X2:J4mq9awtU+eT5tjJHCZER1OX9oKRndXiCXbOgmNuLDQKF0veNHTFRWV5UC7SHUhtmABeXoZOqo+USpFWk2kg2nLojs7KHfzbSHMVeY9R1M4\u003d",
         "label": "Default API key",
         "description": null,
         "createdOn": 1744968863790,
