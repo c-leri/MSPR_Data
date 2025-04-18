@@ -574,7 +574,7 @@
       "seed": 1337,
       "n_jobs": 2,
       "allow_sparse_matrices": false,
-      "n_init": 3,
+      "n_init": 5,
       "k": [
         3,
         5,
@@ -584,7 +584,7 @@
       "range": {
         "min": 1,
         "max": 10,
-        "nbValues": 3
+        "nbValues": 2
       }
     },
     "mini_batch_kmeans_clustering": {
