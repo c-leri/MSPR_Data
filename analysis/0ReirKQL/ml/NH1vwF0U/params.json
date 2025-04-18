@@ -584,7 +584,7 @@
       "range": {
         "min": 2,
         "max": 10,
-        "nbValues": 5
+        "nbValues": 8
       }
     },
     "mini_batch_kmeans_clustering": {
