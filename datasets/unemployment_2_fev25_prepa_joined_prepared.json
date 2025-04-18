@@ -40,18 +40,18 @@
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
-      "login": "dominique@gagnie.re"
+      "login": "celestin.bouchet@gmail.com"
     },
-    "lastModifiedOn": 1741274353984
+    "lastModifiedOn": 1744899325025
   },
   "tags": [],
   "params": {
     "bucket": "gis-data-eu-west-3",
     "metastoreSynchronizationEnabled": true,
     "metastoreDatabaseName": "default",
-    "metastoreTableName": "${projectKey}_unemployment_2_prepa",
+    "metastoreTableName": "${projectKey}_unemployment_2_fev25_prepa_joined_prepared",
     "connection": "dataiku-managed-storage",
-    "path": "/managed-dss-data/${projectKey}/unemployment_2_prepa",
+    "path": "/managed-dss-data/${projectKey}/unemployment_2_fev25_prepa_joined_prepared",
     "notReadyIfEmpty": false,
     "filesSelectionRules": {
       "mode": "ALL",
@@ -67,9 +67,8 @@
   },
   "schema": {
     "columns": [
-      {"name":"City","type":"string"},
-      {"name":"Postcode","type":"string"},
-      {"name":"Unemployeds","type":"double"}
+      {"name":"commune","type":"string"},
+      {"name":"unemployed_percent","type":"double"}
     ],
     "userModified": true
   },

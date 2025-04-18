@@ -1,8 +1,8 @@
 {
-  "type": "S3",
-  "managed": true,
+  "type": "HTTP",
+  "managed": false,
   "featureGroup": false,
-  "formatType": "parquet",
+  "formatType": "excel",
   "checklists": {
     "checklists": []
   },
@@ -11,7 +11,7 @@
     "kv": {}
   },
   "flowOptions": {
-    "virtualizable": true,
+    "virtualizable": false,
     "rebuildBehavior": "NORMAL",
     "crossProjectBuildBehavior": "DEFAULT"
   },
@@ -25,12 +25,19 @@
     }
   },
   "formatParams": {
-    "parquetLowerCaseIdentifiers": false,
-    "representsNullFields": false,
-    "parquetCompressionMethod": "SNAPPY",
-    "parquetFlavor": "HIVE",
-    "parquetBlockSizeMB": 128,
-    "readTemporalMode": "AS_TEMPORAL"
+    "preserveNumberFormatting": false,
+    "parseDatesToISO": false,
+    "skipRowsBeforeHeader": 0,
+    "parseHeaderRow": true,
+    "skipRowsAfterHeader": 0,
+    "sheetsToColumn": false,
+    "passwordRequired": false,
+    "rowOverflowStrategy": "NEW_SHEET",
+    "cellOverflowStrategy": "ERROR",
+    "invalidCellStrategy": "ERROR",
+    "applyColoring": false,
+    "sheetSelectionMode": "NAMES",
+    "sheets": "*III_1_insee_population_fr_commu"
   },
   "partitioning": {
     "ignoreNonMatchingFile": false,
@@ -40,36 +47,42 @@
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
-      "login": "dominique@gagnie.re"
+      "login": "celestin.bouchet@gmail.com"
     },
-    "lastModifiedOn": 1741274353984
+    "lastModifiedOn": 1744896796911
   },
   "tags": [],
   "params": {
-    "bucket": "gis-data-eu-west-3",
-    "metastoreSynchronizationEnabled": true,
-    "metastoreDatabaseName": "default",
-    "metastoreTableName": "${projectKey}_unemployment_2_prepa",
-    "connection": "dataiku-managed-storage",
-    "path": "/managed-dss-data/${projectKey}/unemployment_2_prepa",
+    "sources": [
+      {
+        "url": "https://github.com/c-leri/MSPR_Data/raw/refs/heads/master/datasets/POPULATION_MUNICIPALE_COMMUNES_FRANCE.xlsx"
+      }
+    ],
+    "consider404AsEmpty": true,
+    "fallbackHeadToGet": true,
     "notReadyIfEmpty": false,
-    "filesSelectionRules": {
-      "mode": "ALL",
-      "excludeRules": [],
-      "includeRules": [],
-      "explicitFiles": []
-    },
-    "variablesExpansionLoopConfig": {
-      "enabled": false,
-      "mode": "CREATE_VARIABLE_FOR_EACH_COLUMN",
-      "replacements": []
-    }
+    "useGlobalProxy": true,
+    "trustAnySSLCertificate": false,
+    "previewPartition": "",
+    "partitions": []
   },
   "schema": {
     "columns": [
-      {"name":"City","type":"string"},
-      {"name":"Postcode","type":"string"},
-      {"name":"Unemployeds","type":"double"}
+      {"name":"objectid","type":"bigint"},
+      {"name":"reg","type":"bigint"},
+      {"name":"dep","type":"string"},
+      {"name":"cv","type":"string"},
+      {"name":"codgeo","type":"string"},
+      {"name":"commune","type":"string"},
+      {"name":"p13_pop","type":"bigint"},
+      {"name":"p14_pop","type":"bigint"},
+      {"name":"p15_pop","type":"bigint"},
+      {"name":"p16_pop","type":"bigint"},
+      {"name":"p17_pop","type":"bigint"},
+      {"name":"p18_pop","type":"bigint"},
+      {"name":"p19_pop","type":"bigint"},
+      {"name":"p20_pop","type":"bigint"},
+      {"name":"pop_2024","type":"bigint"}
     ],
     "userModified": true
   },

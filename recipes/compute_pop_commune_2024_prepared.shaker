@@ -1,0 +1,169 @@
+{
+  "columnsSelection": {
+    "mode": "ALL",
+    "list": [
+      {
+        "d": true,
+        "name": "objectid"
+      },
+      {
+        "d": true,
+        "name": "reg"
+      },
+      {
+        "d": true,
+        "name": "dep"
+      },
+      {
+        "d": true,
+        "name": "cv"
+      },
+      {
+        "d": true,
+        "name": "codgeo"
+      },
+      {
+        "d": true,
+        "name": "commune"
+      },
+      {
+        "d": true,
+        "name": "p13_pop"
+      },
+      {
+        "d": true,
+        "name": "p14_pop"
+      },
+      {
+        "d": true,
+        "name": "p15_pop"
+      },
+      {
+        "d": true,
+        "name": "p16_pop"
+      },
+      {
+        "d": true,
+        "name": "p17_pop"
+      },
+      {
+        "d": true,
+        "name": "p18_pop"
+      },
+      {
+        "d": true,
+        "name": "p19_pop"
+      },
+      {
+        "d": true,
+        "name": "p20_pop"
+      },
+      {
+        "d": true,
+        "name": "pop_2024"
+      }
+    ]
+  },
+  "explorationSampling": {
+    "_refreshTrigger": 0,
+    "selection": {
+      "latestPartitionsN": 1,
+      "maxRecords": 10000,
+      "maxRecordsForDisplay": -1,
+      "ordering": {
+        "rules": [],
+        "enabled": false
+      },
+      "withinFirstN": -1,
+      "maxStoredBytes": 104857600,
+      "ascending": true,
+      "timeout": -1,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "partitionSelectionMethod": "ALL",
+      "targetRatio": 0.02,
+      "maxReadUncompressedBytes": -1,
+      "samplingMethod": "HEAD_SEQUENTIAL"
+    },
+    "autoRefreshSample": false
+  },
+  "explorationFilters": [],
+  "columnOrder": [],
+  "columnUseScientificNotationByName": {},
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "reg",
+          "dep",
+          "commune",
+          "pop_2024"
+        ],
+        "keep": true,
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    }
+  ],
+  "maxProcessedMemTableBytes": -1,
+  "previewMode": "ALL_ROWS",
+  "vizSampling": {
+    "_refreshTrigger": 0,
+    "selection": {
+      "useMemTable": false,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "latestPartitionsN": 1,
+      "maxRecords": -1,
+      "ordering": {
+        "rules": [],
+        "enabled": false
+      },
+      "withinFirstN": -1,
+      "partitionSelectionMethod": "ALL",
+      "targetRatio": 0.02,
+      "maxReadUncompressedBytes": -1,
+      "samplingMethod": "FULL",
+      "ascending": true
+    },
+    "autoRefreshSample": false
+  },
+  "analysisColumnData": {},
+  "columnWidthsByName": {
+    "codgeo": 100,
+    "p17_pop": 100,
+    "p14_pop": 100,
+    "commune": 197,
+    "pop_2024": 100,
+    "p15_pop": 100,
+    "p19_pop": 100,
+    "dep": 100,
+    "p18_pop": 100,
+    "cv": 100,
+    "reg": 100,
+    "p13_pop": 100,
+    "p16_pop": 100,
+    "p20_pop": 100,
+    "objectid": 106
+  },
+  "sorting": [],
+  "globalSearchQuery": "",
+  "coloring": {
+    "scheme": "MEANING_AND_STATUS",
+    "individualColumns": [],
+    "valueColoringMode": "HASH",
+    "individualColumnsRules": []
+  }
+}
