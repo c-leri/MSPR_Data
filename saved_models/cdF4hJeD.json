@@ -3482,8 +3482,8 @@
     "customMeasures": [],
     "labels": []
   },
-  "lastTrainIndex": 1,
-  "lastTrainJobId": "",
+  "lastTrainIndex": 2,
+  "lastTrainJobId": "Build_Predict_nuance__multiclass__2025-04-18T08-29-20.117",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
