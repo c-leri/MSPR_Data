@@ -1,0 +1,22 @@
+{
+  "type": "saved-model_report",
+  "params": {
+    "savedModelSmartId": "cdF4hJeD"
+  },
+  "owner": "dominique@gagnie.re",
+  "listed": false,
+  "name": "test",
+  "dashboardCreationId": "fBPy5mu",
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "dominique@gagnie.re"
+    },
+    "lastModifiedOn": 1744965430522
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
