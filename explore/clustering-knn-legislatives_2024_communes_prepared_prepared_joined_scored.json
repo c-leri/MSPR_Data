@@ -770,7 +770,7 @@
       "def": {
         "type": "scatter",
         "variant": "normal",
-        "name": "insee_ffiscaux vs insee_revenufiscalmedianmoyen",
+        "name": "insee_revenufiscalmedianmoyen vs cluster_labels",
         "userEditedName": false,
         "displayWithEChartsByDefault": true,
         "genericDimension0": [],
@@ -782,21 +782,6 @@
         "yDimension": [],
         "uaXDimension": [
           {
-            "column": "insee_ffiscaux",
-            "type": "NUMERICAL",
-            "treatAsAlphanum": false,
-            "sortBy": "NATURAL",
-            "sortAscending": false,
-            "isA": "ua",
-            "multiplier": "Auto",
-            "digitGrouping": "DEFAULT",
-            "useParenthesesForNegativeValues": false,
-            "shouldFormatInPercentage": false,
-            "hideTrailingZeros": true
-          }
-        ],
-        "uaYDimension": [
-          {
             "column": "insee_revenufiscalmedianmoyen",
             "type": "NUMERICAL",
             "treatAsAlphanum": false,
@@ -807,23 +792,30 @@
             "digitGrouping": "DEFAULT",
             "useParenthesesForNegativeValues": false,
             "shouldFormatInPercentage": false,
-            "hideTrailingZeros": true
+            "hideTrailingZeros": true,
+            "prefix": "",
+            "suffix": ""
+          }
+        ],
+        "uaYDimension": [
+          {
+            "column": "cluster_labels",
+            "type": "ALPHANUM",
+            "treatAsAlphanum": false,
+            "sortAscending": false,
+            "isA": "ua",
+            "multiplier": "Auto",
+            "digitGrouping": "DEFAULT",
+            "useParenthesesForNegativeValues": false,
+            "shouldFormatInPercentage": false,
+            "hideTrailingZeros": true,
+            "prefix": "",
+            "suffix": ""
           }
         ],
         "uaDimensionPair": [],
         "uaSize": [],
-        "uaColor": [
-          {
-            "treatAsAlphanum": false,
-            "isA": "ua",
-            "adminLevel": 0,
-            "multiplier": "Auto",
-            "useParenthesesForNegativeValues": false,
-            "shouldFormatInPercentage": false,
-            "column": "cluster_labels",
-            "type": "ALPHANUM"
-          }
-        ],
+        "uaColor": [],
         "uaShape": [],
         "uaTooltip": [],
         "groupDimension": [],
