@@ -1,0 +1,38 @@
+{
+  "name": null,
+  "error": null,
+  "endpoints": [],
+  "authMethod": "API_KEYS",
+  "authRealm": {
+    "id": null,
+    "queryKeys": [
+      {
+        "id": "DEFAULT_KEY",
+        "key": "e:AES:X2:ZbReLK15cTK0rhD7F8oc/iQlx7yY3KCguI+HJkMKiAnszgGhw3FIG6qLGn4PIBumGTjg7iyjHE+WBYYPg8eTS7lyqgE3JHzFPPG5lr+UFyI\u003d",
+        "label": "Default API key",
+        "description": null,
+        "createdOn": 1744979150302,
+        "createdBy": "hcwhatever@gmail.com"
+      }
+    ]
+  },
+  "oauth2Config": null,
+  "deploymentMonitoring": [],
+  "releaseNotes": null,
+  "versionTag": null,
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "hcwhatever@gmail.com"
+    },
+    "lastModifiedOn": 1744979150303,
+    "extendedProperties": null
+  },
+  "description": null,
+  "shortDesc": null,
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
