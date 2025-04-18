@@ -84,7 +84,7 @@
   },
   "schema": {
     "columns": [
-      {"name":"Code_commune_INSEE","type":"string"},
+      {"name":"Code_commune_INSEE","type":"string","meaning":"Text"},
       {"name":"Nom_de_la_commune","type":"string"},
       {"name":"Code_postal","type":"string"},
       {"name":"Libellé_d_acheminement","type":"string"},
