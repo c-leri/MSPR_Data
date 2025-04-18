@@ -48,7 +48,7 @@
     "queryKeys": [
       {
         "id": "DEFAULT_KEY",
-        "key": "e:AES:X2:aGOaEZzRrjjzX+DT8vNwgcghKXe6BqSgMFPvKootevA/n8asbYeROmVNvzwpXTFnaNWEeQp5vJ1VxEePoB6KuROUB9JzRYVu16nhMZCQ0Ts\u003d",
+        "key": "e:AES:X2:4XdO9Ehqb2rDmqGjkhI4rIReDUvo7ONdpJtqB3bn+Hc9JIz5HOyW5XcpI84jULLWukXHCGr69+qUn2YIQK9cmaW+SxsPHgxLvYAjPRp7+ts\u003d",
         "label": "Default API key",
         "description": null,
         "createdOn": 1744968863790,
@@ -70,7 +70,9 @@
   },
   "description": null,
   "shortDesc": null,
-  "tags": [],
+  "tags": [
+    "mspr"
+  ],
   "customFields": {},
   "checklists": {
     "checklists": []
