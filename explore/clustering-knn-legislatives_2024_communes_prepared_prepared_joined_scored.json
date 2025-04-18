@@ -99,8 +99,8 @@
       "def": {
         "type": "grouped_columns",
         "variant": "normal",
-        "name": "Avg of Code_postal by nuance",
-        "userEditedName": false,
+        "name": "",
+        "userEditedName": true,
         "displayWithEChartsByDefault": true,
         "genericDimension0": [
           {
@@ -124,12 +124,12 @@
               {
                 "type": "AGGREGATION",
                 "measureIdx": 0,
-                "label": "Average of Code_postal, descending"
+                "label": "Count distinct of Code_postal, descending"
               },
               {
                 "type": "AGGREGATION",
                 "measureIdx": 0,
-                "label": "Average of Code_postal, ascending",
+                "label": "Count distinct of Code_postal, ascending",
                 "sortAscending": true
               }
             ],
@@ -151,7 +151,7 @@
         "genericMeasures": [
           {
             "column": "Code_postal",
-            "function": "AVG",
+            "function": "COUNTD",
             "type": "NUMERICAL",
             "displayed": true,
             "isA": "measure",
@@ -584,7 +584,7 @@
           },
           "displayPointer": false
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABQCAYAAADSm7GJAAAAAXNSR0IArs4c6QAABUtJREFUeF7tnF1oHFUUx8+ZycduEqsomkqys9oHEX1QEEEUrFComt1tLYj4gSBiVXywVLu7EUQEEbsfQUHRFEGKKKgFMZ3diFSkvtSPB0EF9UEoO7sxCtbE5nuTmSvGCmXvZOeScXcy6z+PmTvnnvv/zbn33K9lwl9HK8Ad3To0jgC4wz8CAAbgDlegw5uHCG4R4OGDH0TXIgMDjeaXl1ZWZ1/ZN9uiaiWzANwipWPZ0r0a0WON5gXR91Yu+WSLqgXgdgkLwO1SOqB6ADgg4dtVLQC3S+mA6gHggIRvV7UA3C6lA6oHgAMSvl3VAnC7lA6oHgAOSPh2VQvACkoPHvqkX/QsS8t9kRm9br2RnFEwEVgRAFaQPpYuPaxp9KC03Ofw11YhkVUwEVgRAFaQHoAVRPIosqU3GwAYgP0r0CIL6KIVhEUEK4iELtq/SJuxgAhWUA0RrCASIti/SJuxgAhWUA0RrCASIti/SJuxgAhWUA0RrCASIti/SJuxEJoIjmVKRWa6pLGRjs3jtWLiq800XvWdTo7geMZME/OIixblSi5ZVNXIq5znUqWRKb/HLAYbDa3ZzgtTxT2feVXg53lnAy6niYUMWIjJSj5V8KPb+e/6AzyQOhlbKN/i5kxddH/zW/H2BT+OArAf9f551x/g38+cig9e+rGbGzbb+2uH9/7sx8UgAV92YGIw0quPufk/v6Q98cerI2ebtc1rDI5nwhDBHQx4+KA5pPfwO24Q/1xZ3ed1vwiAiejyp8vxLo1ubhSRNWfeyqVMvxFsZEsvCyJDsi943MonTjSLQAD+O8nyGcFGxtzFzM9KQgv6tZJP3ucFeOipD6+irsjFcoYvpqfHEpV4tvwWkbiy8blweMwqJEp+APf16tu6HO0O2YZYtgqptxHBROQXsJExn2fmnRJgQceq+eTrrQR8YW/3NUT0ovTxCDpr5ZN7ARiAm06ThrLmdZrD26SPl7XTU/mRmmryGmgWjQjeeB4cy5qvacTXSoAdMV4tpN4H4JB30QBcSGT9jsFGtvQRCdalaGB71KnzbLNpUqvH4FAAdgTXddKec+tOqtH+x43F+Z1+smjfgDOlT5lJAmzb9gGytTNbGbCRNl8ipj5JW1s/Yo2N/PDv/1s6Bou6rXV19xxxA1yZ2b7buGj6VgBuUOfcWrRXBBvZ8nEmcUGjtmtCe2YqP/IlABcSJSPMEQzA3vNgAF6fqzbZLvRYyUIXvfHPKHltNqCL/i+yaHTRiOCNdpOCniYhyVJY6MAYjDF4w/1gRDDb+5FkIcnCQoe837h+6A5ZNLJorGR5bfgjyUKShSSr2bFZJFlIspBkIcna+Hey/tf7wdhNwm5Sy6+uYAzGGIwxGGMwxuDzvwHn3LFZ7CZhN2n9u8Chu7CeqkQWjSxaKYLjGfMBh0g6nklCP1Htj1Zii/OPuJ16cPTVY6LezbpOd7ueiz699ObwFdEdzLRLyjOI5mr51Lux0eM3ksM3uFzwsmqF1GQsbe4mph2NzzXm7yq55CkjW75HCEe6fagRf17JJ3800qVHBQtNer9en5izowv9Uft+N9/1voGjK3OLg126c6f0XNOWq4cTR4fS5es1dm6SD9Vr09VcYmL4kHkba3S11DaHfqoVUydjGfMuItou302iL6ZyqW9jo+WHyHEijc9tFpO/5PZYysdmVe/AoNzWVMBzDN6absMrVQUAWFWpkJYD4JCCU3UbgFWVCmk5AA4pOFW3AVhVqZCWA+CQglN1G4BVlQppOQAOKThVtwFYVamQlgPgkIJTdRuAVZUKaTkADik4Vbf/ApWrywVK3y05AAAAAElFTkSuQmCC",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABQCAYAAADSm7GJAAAAAXNSR0IArs4c6QAABOdJREFUeF7tnU9sFFUcx39vprsbqClFWFqZ3a6agHogJF692EQPsFNX0ujNi5xMTGxrd9GTJCKhuxgxMfHPkcRANGhkZ0mMJt5MjBcOinoA9w9QKUIbSqBsZ/eRHgw6s/B72bd/Zuq3x877TX/7+bzve7Ozzawg/KxrAmJdvzq8OILgdT4JIBiCA0zg4A8DqaXr8VYdVo5Nzge48561FuoEb5/5NhmJrB5vKXjOHu8ZxQD/IQgOsJxOtAbBnaAY4HNAcIDldKI1CO4ExQCfA4IDLKcTrUFwJygG+BwQHFA5Y7nS80S039ueIPlrJW+/q9o2BKuS6vG45OzpjGEaU94/KyWdrebtadV2IFiVVI/HQTAR9ftO1sjs8cGGscnwuv/7zzu36MuXGzpzAoIDIDiVc06QoFGvyEZDvHXxaPonCNYhAMFK9LAHK2FqPQgJ1oCnUtrvPRiCVSxpjIFgHh6WaJ7RfUcgwRrwVEqRYJ4SEswzQoI1GGmVIsE8PiSYZ4QEazDSKkWCeXxIMM8ICdZgpFWKBPP4kGCeERKswUirFAnm8SHBPCMkWIORVikSzONDgnlGSLAGI61SJJjHhwTzjJBgDUZapUgwjw8J5hkhwRqMtEqRYB4fEswzQoI1GGmVIsE8PiSYZ4QEazDSKkWCeXxIMM8ICdZgpFWqm+BUtjQpDfmitwlJ9GNtzv6Yaw7/NssR0jyuKziZdV41DHrF20ZT0ve1vP0e1x4Ec4Q0j0MwD/B/vQcjwfwE6esIJJjHjwRjD+ZnSb9GIME8+a4nODFdtIQpNntbuRNtXF04nLnCt3j/ERDM0+u64FSulCUh9/rfa4qT1bn0p3yLEPxvAoF7jBIEtzeFQ/OUHQiG4PYIdOApO3gf3Db6e4VIcHsQuSV67DVns7vBfch79ltNubx0bN/SP7/HRVZI3wcns6Vpw5Av+KaPlKcq+YmPIJiIwrxEQ7DCt65AcHvbx3+qwrwHJw8UZ4QUT/uXQXGyWkg7/fy4EAnuQIKTOeeQIegZ3+fFTfFZrZA+AcFExCV4+5vFrZFGPeKFKIYfXiwfHF950CLS7VuVEKywhHOCx7LOJ8KgJ3y3MqU4XM2nv9MRPDblPE4Res43eUhcqxTSp7g9GIKJyMo54wOCXmpxuX5u7XK9n4ITs8VnTVO841tiiS7U5uz9EKyS0Gxpkgz5uj+B8udqfiKnK9g6UNwtV5u+p6pHh4Z+q9+oxx/03YVBFrztjW9GojHT9nIzSa5U8hOfczc6OnaRlZj+YgPFYpa3EZei7l9H9pRH3z4TN13pO25QfblW2Hd+bZ8UprvFW28Id6GWz1y2Zr7aSWZso++FmrJSPWIvWjPF3WQavhsykcGNv5fLZbLi255sNQ8vFdJnh6e+Hh6MRB/1TT7h3r6cz/wRz5ZGo+R/YnuzSYvz76crqdnTj7nC3OStX6278wsfZq6kcs5TrhQx7/HbK+LC9S17blo3nF0te7v5yLmRoWvRAeHu8HGR0q0dtX9ZuzYRhpHwHSexXCvsPW/lziRIyq2+7cdtXr34wcSlnt3oUFgEMKSLBLp+q7KLvePUCgQgWAFSmIdAcJjtKfQOwQqQwjwEgsNsT6F3CFaAFOYhEBxmewq9Q7ACpDAPgeAw21PoHYIVIIV5CASH2Z5C7xCsACnMQ+4CZrg9q4Ji53IAAAAASUVORK5CYII\u003d",
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT",
         "legendFormatting": {
