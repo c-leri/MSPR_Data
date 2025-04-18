@@ -48,7 +48,7 @@
     "queryKeys": [
       {
         "id": "DEFAULT_KEY",
-        "key": "e:AES:X2:4XdO9Ehqb2rDmqGjkhI4rIReDUvo7ONdpJtqB3bn+Hc9JIz5HOyW5XcpI84jULLWukXHCGr69+qUn2YIQK9cmaW+SxsPHgxLvYAjPRp7+ts\u003d",
+        "key": "e:AES:X2:/N3zytxXYD3ZOzRXluJJMho7eVDzzL7t6Gm5bS9xlT9BZvKp33ymwJwZS1iw0U1WXA/gzOaFH6KGROMYJ1ML6lFvThhG5kRbpoKoOf7jAwY\u003d",
         "label": "Default API key",
         "description": null,
         "createdOn": 1744968863790,
