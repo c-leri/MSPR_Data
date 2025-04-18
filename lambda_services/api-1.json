@@ -15,14 +15,7 @@
         "shapleyBackgroundSize": 100
       },
       "mlFlowOutputStyle": "PARSED",
-      "testQueries": [
-        {
-          "name": "Query #1",
-          "q": {
-            "features": {}
-          }
-        }
-      ],
+      "testQueries": [],
       "enrichMapping": [],
       "healthCheckQueries": [],
       "returnPostEnrichData": false,
@@ -43,7 +36,7 @@
     "queryKeys": [
       {
         "id": "DEFAULT_KEY",
-        "key": "e:AES:X2:J4mq9awtU+eT5tjJHCZER1OX9oKRndXiCXbOgmNuLDQKF0veNHTFRWV5UC7SHUhtmABeXoZOqo+USpFWk2kg2nLojs7KHfzbSHMVeY9R1M4\u003d",
+        "key": "e:AES:X2:adCdOXd/YT8LEbbMsTwd5i3M50DIYeeWuwKJAR24yPmXfcLYDRTN9oG48Za3Xx2Aeru9jaSz1TcRIaer1L/Glwz7WM+JUtSsggj6E43w3ic\u003d",
         "label": "Default API key",
         "description": null,
         "createdOn": 1744968863790,
