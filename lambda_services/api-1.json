@@ -40,6 +40,33 @@
         "enabled": true,
         "isManual": false
       }
+    },
+    {
+      "modelRef": "f6kwF0vE",
+      "useJava": false,
+      "computePropensity": false,
+      "outputExplanations": false,
+      "individualExplanationParams": {
+        "method": "ICE",
+        "nbExplanations": 3,
+        "drawInScoredSet": false,
+        "subChunkSize": 5000,
+        "shapleyBackgroundSize": 100
+      },
+      "mlFlowOutputStyle": "PARSED",
+      "testQueries": [],
+      "enrichMapping": [],
+      "healthCheckQueries": [],
+      "returnPostEnrichData": false,
+      "auditPostEnrichData": false,
+      "id": "clustering",
+      "type": "STD_CLUSTERING",
+      "openAPI": {
+        "title": "clustering",
+        "content": "{\n  \"paths\" : {\n    \"/clustering/predict\" : {\n      \"post\" : {\n        \"summary\" : \"clustering endpoint\",\n        \"description\" : \"Prediction type: STD_CLUSTERING\",\n        \"parameters\" : [ {\n          \"in\" : \"body\",\n          \"name\" : \"serviceInputPayload\",\n          \"description\" : \"The input payload for executing the real-time machine learning service.\",\n          \"required\" : true,\n          \"schema\" : {\n            \"$ref\" : \"#/definitions/clustering_EndpointInput\"\n          }\n        } ],\n        \"responses\" : {\n          \"200\" : {\n            \"description\" : \"The service processed the input correctly and provided a result prediction, if applicable.\",\n            \"schema\" : {\n              \"$ref\" : \"#/definitions/clustering_EndpointOutput\"\n            }\n          },\n          \"default\" : {\n            \"description\" : \"The service failed to execute due to an error.\",\n            \"schema\" : {\n              \"$ref\" : \"#/definitions/clustering_ErrorResponse\"\n            }\n          }\n        }\n      }\n    }\n  },\n  \"definitions\" : {\n    \"clustering_EndpointInput\" : {\n      \"type\" : \"object\",\n      \"properties\" : {\n        \"features\" : {\n          \"type\" : \"object\",\n          \"properties\" : {\n            \"stringPropExample\" : {\n              \"type\" : \"string\"\n            },\n            \"intPropExample\" : {\n              \"type\" : \"integer\",\n              \"format\" : \"int32\"\n            },\n            \"doublePropExample\" : {\n              \"type\" : \"number\",\n              \"format\" : \"double\"\n            },\n            \"boolPropExample\" : {\n              \"type\" : \"boolean\"\n            },\n            \"floatPropExample\" : {\n              \"type\" : \"number\",\n              \"format\" : \"float\"\n            }\n          }\n        }\n      }\n    },\n    \"clustering_EndpointOutput\" : {\n      \"type\" : \"object\",\n      \"properties\" : {\n        \"result\" : {\n          \"type\" : \"object\",\n          \"properties\" : {\n            \"OutputPropExample\" : {\n              \"type\" : \"string\"\n            }\n          }\n        }\n      }\n    },\n    \"clustering_ErrorResponse\" : {\n      \"type\" : \"object\",\n      \"properties\" : {\n        \"status_code\" : {\n          \"type\" : \"integer\",\n          \"format\" : \"int32\"\n        },\n        \"message\" : {\n          \"type\" : \"string\"\n        }\n      }\n    }\n  }\n}",
+        "enabled": false,
+        "isManual": true
+      }
     }
   ],
   "authMethod": "API_KEYS",
