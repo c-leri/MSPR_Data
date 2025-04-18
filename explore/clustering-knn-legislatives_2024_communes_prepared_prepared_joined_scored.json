@@ -97,9 +97,9 @@
         "_refreshTrigger": 1744976234476
       },
       "def": {
-        "type": "scatter_multiple_pairs",
+        "type": "grouped_columns",
         "variant": "normal",
-        "name": "insee_emploi vs insee_ffiscaux",
+        "name": "New chart",
         "userEditedName": false,
         "displayWithEChartsByDefault": true,
         "genericDimension0": [],
@@ -111,41 +111,7 @@
         "yDimension": [],
         "uaXDimension": [],
         "uaYDimension": [],
-        "uaDimensionPair": [
-          {
-            "id": "X:insee_emploi/Y:insee_ffiscaux_1",
-            "uaXDimension": [
-              {
-                "column": "insee_emploi",
-                "type": "NUMERICAL",
-                "treatAsAlphanum": false,
-                "sortBy": "NATURAL",
-                "sortAscending": false,
-                "isA": "ua",
-                "multiplier": "Auto",
-                "digitGrouping": "DEFAULT",
-                "useParenthesesForNegativeValues": false,
-                "shouldFormatInPercentage": false,
-                "hideTrailingZeros": true
-              }
-            ],
-            "uaYDimension": [
-              {
-                "column": "insee_ffiscaux",
-                "type": "NUMERICAL",
-                "treatAsAlphanum": false,
-                "sortBy": "NATURAL",
-                "sortAscending": false,
-                "isA": "ua",
-                "multiplier": "Auto",
-                "digitGrouping": "DEFAULT",
-                "useParenthesesForNegativeValues": false,
-                "shouldFormatInPercentage": false,
-                "hideTrailingZeros": true
-              }
-            ]
-          }
-        ],
+        "uaDimensionPair": [],
         "uaSize": [],
         "uaColor": [],
         "uaShape": [],
@@ -264,44 +230,6 @@
           },
           {
             "id": "y_right_0",
-            "displayAxis": true,
-            "showAxisTitle": true,
-            "axisTitleFormatting": {
-              "fontSize": 15,
-              "fontColor": "#333",
-              "hasBackground": false
-            },
-            "axisValuesFormatting": {
-              "numberFormatting": {
-                "multiplier": "Auto",
-                "hideTrailingZeros": true,
-                "digitGrouping": "DEFAULT",
-                "useParenthesesForNegativeValues": false,
-                "shouldFormatInPercentage": false,
-                "prefix": "",
-                "suffix": ""
-              },
-              "axisTicksFormatting": {
-                "fontSize": 12,
-                "fontColor": "#333",
-                "hasBackground": false
-              }
-            },
-            "ticksConfig": {
-              "mode": "INTERVAL"
-            },
-            "customExtent": {
-              "editMode": "AUTO",
-              "manualExtent": [
-                null,
-                null
-              ]
-            },
-            "isLogScale": false,
-            "includeZero": true
-          },
-          {
-            "id": "X:insee_emploi/Y:insee_ffiscaux_1",
             "displayAxis": true,
             "showAxisTitle": true,
             "axisTitleFormatting": {
@@ -564,7 +492,6 @@
           },
           "displayPointer": false
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABQCAYAAADSm7GJAAAAAXNSR0IArs4c6QAAASJJREFUeF7t0wERAAAIg0DXv7Q9/rAB4HYdbWA0XXBXYPwJClxg3ACO14ILjBvA8VpwgXEDOF4LLjBuAMdrwQXGDeB4LbjAuAEcrwUXGDeA47XgAuMGcLwWXGDcAI7XgguMG8DxWnCBcQM4XgsuMG4Ax2vBBcYN4HgtuMC4ARyvBRcYN4DjteAC4wZwvBZcYNwAjteCC4wbwPFacIFxAzheCy4wbgDHa8EFxg3geC24wLgBHK8FFxg3gOO14ALjBnC8Flxg3ACO14ILjBvA8VpwgXEDOF4LLjBuAMdrwQXGDeB4LbjAuAEcrwUXGDeA47XgAuMGcLwWXGDcAI7XgguMG8DxWnCBcQM4XgsuMG4Ax2vBBcYN4HgtuMC4ARyvBeOBH19gAFG6yohcAAAAAElFTkSuQmCC",
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT",
         "legendFormatting": {
@@ -644,10 +571,9 @@
             }
           },
           "horizontal": {
-            "show": false,
+            "show": true,
             "displayAxis": {
-              "type": "CUSTOM_Y_AXIS",
-              "axisId": "X:insee_emploi/Y:insee_ffiscaux_1"
+              "type": "LEFT_Y_AXIS"
             },
             "lineFormatting": {
               "type": "FILLED",
