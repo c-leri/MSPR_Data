@@ -15,7 +15,21 @@
         "shapleyBackgroundSize": 100
       },
       "mlFlowOutputStyle": "PARSED",
-      "testQueries": [],
+      "testQueries": [
+        {
+          "name": "Query #1",
+          "q": {
+            "serviceInputPayload": {
+              "features": {
+                "insee_revenufiscalmedianmoyen": 21500.75,
+                "insee_chomage_1564": 12,
+                "insee_population": 34000,
+                "insee_population_1564": 22000
+              }
+            }
+          }
+        }
+      ],
       "enrichMapping": [],
       "healthCheckQueries": [],
       "returnPostEnrichData": false,
@@ -36,7 +50,7 @@
     "queryKeys": [
       {
         "id": "DEFAULT_KEY",
-        "key": "e:AES:X2:adCdOXd/YT8LEbbMsTwd5i3M50DIYeeWuwKJAR24yPmXfcLYDRTN9oG48Za3Xx2Aeru9jaSz1TcRIaer1L/Glwz7WM+JUtSsggj6E43w3ic\u003d",
+        "key": "e:AES:X2:Lxb4nAXEN43QHwBzdKoIh9J9PdkNA10L6CI+MQU9Ly+XRBjCTw5UGk1WEse7U6wtGRjsZ6ZUkRgvaOr1YHayKimuFVcThzjnHJz86g42rmg\u003d",
         "label": "Default API key",
         "description": null,
         "createdOn": 1744968863790,
