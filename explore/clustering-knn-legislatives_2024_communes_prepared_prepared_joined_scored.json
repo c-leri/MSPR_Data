@@ -99,7 +99,7 @@
       "def": {
         "type": "grouped_columns",
         "variant": "normal",
-        "name": "Nombre de candidats élus dans chaque commune, en fonction de leur nuance",
+        "name": "Nombre de communes et leurs nuances",
         "userEditedName": true,
         "displayWithEChartsByDefault": true,
         "genericDimension0": [
