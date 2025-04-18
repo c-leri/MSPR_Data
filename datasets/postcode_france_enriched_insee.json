@@ -70,7 +70,7 @@
       {"name":"Code_commune_INSEE","type":"string","meaning":"Text"},
       {"name":"Nom_de_la_commune","type":"string"},
       {"name":"Code_postal","type":"string"},
-      {"name":"insee_departement","type":"string"},
+      {"name":"insee_departement","type":"string","meaning":"Text"},
       {"name":"insee_population","type":"bigint"},
       {"name":"insee_menages","type":"bigint"},
       {"name":"insee_naissances","type":"bigint"},
