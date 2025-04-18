@@ -86,7 +86,7 @@
             "enabled": false,
             "rules": []
           },
-          "samplingMethod": "HEAD_SEQUENTIAL",
+          "samplingMethod": "FULL",
           "maxRecords": 10,
           "targetRatio": 0.02,
           "ascending": true,
@@ -94,63 +94,117 @@
           "maxReadUncompressedBytes": -1
         },
         "autoRefreshSample": false,
-        "_refreshTrigger": 1744976234476
+        "_refreshTrigger": 1744977728541
       },
       "def": {
-        "type": "scatter",
+        "type": "grouped_columns",
         "variant": "normal",
-        "name": "insee_revenufiscalmedianmoyen vs cluster_labels",
+        "name": "Avg of Code_postal by nuance",
         "userEditedName": false,
         "displayWithEChartsByDefault": true,
-        "genericDimension0": [],
-        "genericDimension1": [],
-        "facetDimension": [],
-        "animationDimension": [],
-        "genericMeasures": [],
-        "xDimension": [],
-        "yDimension": [],
-        "uaXDimension": [
+        "genericDimension0": [
           {
-            "column": "insee_revenufiscalmedianmoyen",
-            "type": "NUMERICAL",
-            "treatAsAlphanum": false,
-            "sortBy": "NATURAL",
-            "sortAscending": false,
-            "isA": "ua",
-            "multiplier": "Auto",
-            "digitGrouping": "DEFAULT",
-            "useParenthesesForNegativeValues": false,
-            "shouldFormatInPercentage": false,
-            "hideTrailingZeros": true
-          }
-        ],
-        "uaYDimension": [
-          {
-            "column": "cluster_labels",
+            "column": "nuance",
             "type": "ALPHANUM",
-            "treatAsAlphanum": false,
-            "sortBy": "NATURAL",
-            "sortAscending": false,
-            "isA": "ua",
+            "numParams": {
+              "emptyBinsMode": "ZEROS"
+            },
+            "maxValues": 20,
+            "generateOthersCategory": true,
+            "forceLastPositionOthers": false,
+            "oneTickPerBin": "AUTO",
+            "filters": [],
+            "isA": "dimension",
+            "possibleSorts": [
+              {
+                "type": "NATURAL",
+                "label": "Natural ordering",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Average of Code_postal, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Average of Code_postal, ascending",
+                "sortAscending": true
+              }
+            ],
+            "sort": {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
+            },
             "multiplier": "Auto",
+            "hideTrailingZeros": true,
+            "digitGrouping": "DEFAULT",
             "useParenthesesForNegativeValues": false,
             "shouldFormatInPercentage": false
           }
         ],
-        "uaDimensionPair": [],
-        "uaSize": [],
-        "uaColor": [
+        "genericDimension1": [],
+        "facetDimension": [],
+        "animationDimension": [],
+        "genericMeasures": [
           {
-            "treatAsAlphanum": false,
-            "isA": "ua",
-            "adminLevel": 0,
+            "column": "Code_postal",
+            "function": "AVG",
+            "type": "NUMERICAL",
+            "displayed": true,
+            "isA": "measure",
+            "displayAxis": "axis1",
+            "displayType": "column",
+            "computeMode": "NORMAL",
+            "computeModeDim": 0,
             "multiplier": "Auto",
+            "digitGrouping": "DEFAULT",
             "useParenthesesForNegativeValues": false,
             "shouldFormatInPercentage": false,
-            "column": "nuance",
-            "type": "ALPHANUM"
+            "hideTrailingZeros": true,
+            "showValue": true,
+            "showDisplayLabel": true,
+            "labelPosition": "BOTTOM",
+            "labelFontSize": 16,
+            "percentile": 50.0,
+            "isCustomPercentile": false,
+            "kpiTextAlign": "CENTER",
+            "kpiValueFontSizeMode": "RESPONSIVE",
+            "kpiValueFontSize": 32,
+            "responsiveTextAreaFill": 100,
+            "valueTextFormatting": {
+              "fontSize": 11,
+              "fontColor": "#333",
+              "hasBackground": false
+            },
+            "labelTextFormatting": {
+              "fontSize": 11,
+              "fontColor": "#333",
+              "hasBackground": false
+            },
+            "valuesInChartDisplayOptions": {
+              "displayValues": true,
+              "textFormatting": {
+                "fontSize": 11,
+                "fontColor": "AUTO",
+                "hasBackground": false,
+                "backgroundColor": "#D9D9D9BF"
+              },
+              "addDetails": false,
+              "additionalMeasures": []
+            },
+            "colorRules": []
           }
         ],
+        "xDimension": [],
+        "yDimension": [],
+        "uaXDimension": [],
+        "uaYDimension": [],
+        "uaDimensionPair": [],
+        "uaSize": [],
+        "uaColor": [],
         "uaShape": [],
         "uaTooltip": [],
         "groupDimension": [],
@@ -530,7 +584,7 @@
           },
           "displayPointer": false
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABQCAYAAADSm7GJAAAAAXNSR0IArs4c6QAAASJJREFUeF7t0wERAAAIg0DXv7Q9/rAB4HYdbWA0XXBXYPwJClxg3ACO14ILjBvA8VpwgXEDOF4LLjBuAMdrwQXGDeB4LbjAuAEcrwUXGDeA47XgAuMGcLwWXGDcAI7XgguMG8DxWnCBcQM4XgsuMG4Ax2vBBcYN4HgtuMC4ARyvBRcYN4DjteAC4wZwvBZcYNwAjteCC4wbwPFacIFxAzheCy4wbgDHa8EFxg3geC24wLgBHK8FFxg3gOO14ALjBnC8Flxg3ACO14ILjBvA8VpwgXEDOF4LLjBuAMdrwQXGDeB4LbjAuAEcrwUXGDeA47XgAuMGcLwWXGDcAI7XgguMG8DxWnCBcQM4XgsuMG4Ax2vBBcYN4HgtuMC4ARyvBeOBH19gAFG6yohcAAAAAElFTkSuQmCC",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABQCAYAAADSm7GJAAAAAXNSR0IArs4c6QAABUtJREFUeF7tnF1oHFUUx8+ZycduEqsomkqys9oHEX1QEEEUrFComt1tLYj4gSBiVXywVLu7EUQEEbsfQUHRFEGKKKgFMZ3diFSkvtSPB0EF9UEoO7sxCtbE5nuTmSvGCmXvZOeScXcy6z+PmTvnnvv/zbn33K9lwl9HK8Ad3To0jgC4wz8CAAbgDlegw5uHCG4R4OGDH0TXIgMDjeaXl1ZWZ1/ZN9uiaiWzANwipWPZ0r0a0WON5gXR91Yu+WSLqgXgdgkLwO1SOqB6ADgg4dtVLQC3S+mA6gHggIRvV7UA3C6lA6oHgAMSvl3VAnC7lA6oHgAOSPh2VQvACkoPHvqkX/QsS8t9kRm9br2RnFEwEVgRAFaQPpYuPaxp9KC03Ofw11YhkVUwEVgRAFaQHoAVRPIosqU3GwAYgP0r0CIL6KIVhEUEK4iELtq/SJuxgAhWUA0RrCASIti/SJuxgAhWUA0RrCASIti/SJuxgAhWUA0RrCASIti/SJuxEJoIjmVKRWa6pLGRjs3jtWLiq800XvWdTo7geMZME/OIixblSi5ZVNXIq5znUqWRKb/HLAYbDa3ZzgtTxT2feVXg53lnAy6niYUMWIjJSj5V8KPb+e/6AzyQOhlbKN/i5kxddH/zW/H2BT+OArAf9f551x/g38+cig9e+rGbGzbb+2uH9/7sx8UgAV92YGIw0quPufk/v6Q98cerI2ebtc1rDI5nwhDBHQx4+KA5pPfwO24Q/1xZ3ed1vwiAiejyp8vxLo1ubhSRNWfeyqVMvxFsZEsvCyJDsi943MonTjSLQAD+O8nyGcFGxtzFzM9KQgv6tZJP3ucFeOipD6+irsjFcoYvpqfHEpV4tvwWkbiy8blweMwqJEp+APf16tu6HO0O2YZYtgqptxHBROQXsJExn2fmnRJgQceq+eTrrQR8YW/3NUT0ovTxCDpr5ZN7ARiAm06ThrLmdZrD26SPl7XTU/mRmmryGmgWjQjeeB4cy5qvacTXSoAdMV4tpN4H4JB30QBcSGT9jsFGtvQRCdalaGB71KnzbLNpUqvH4FAAdgTXddKec+tOqtH+x43F+Z1+smjfgDOlT5lJAmzb9gGytTNbGbCRNl8ipj5JW1s/Yo2N/PDv/1s6Bou6rXV19xxxA1yZ2b7buGj6VgBuUOfcWrRXBBvZ8nEmcUGjtmtCe2YqP/IlABcSJSPMEQzA3vNgAF6fqzbZLvRYyUIXvfHPKHltNqCL/i+yaHTRiOCNdpOCniYhyVJY6MAYjDF4w/1gRDDb+5FkIcnCQoe837h+6A5ZNLJorGR5bfgjyUKShSSr2bFZJFlIspBkIcna+Hey/tf7wdhNwm5Sy6+uYAzGGIwxGGMwxuDzvwHn3LFZ7CZhN2n9u8Chu7CeqkQWjSxaKYLjGfMBh0g6nklCP1Htj1Zii/OPuJ16cPTVY6LezbpOd7ueiz699ObwFdEdzLRLyjOI5mr51Lux0eM3ksM3uFzwsmqF1GQsbe4mph2NzzXm7yq55CkjW75HCEe6fagRf17JJ3800qVHBQtNer9en5izowv9Uft+N9/1voGjK3OLg126c6f0XNOWq4cTR4fS5es1dm6SD9Vr09VcYmL4kHkba3S11DaHfqoVUydjGfMuItou302iL6ZyqW9jo+WHyHEijc9tFpO/5PZYysdmVe/AoNzWVMBzDN6absMrVQUAWFWpkJYD4JCCU3UbgFWVCmk5AA4pOFW3AVhVqZCWA+CQglN1G4BVlQppOQAOKThVtwFYVamQlgPgkIJTdRuAVZUKaTkADik4Vbf/ApWrywVK3y05AAAAAElFTkSuQmCC",
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT",
         "legendFormatting": {
