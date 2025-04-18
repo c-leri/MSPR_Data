@@ -69,12 +69,12 @@
   },
   "modeling": {
     "max_iterations": 0,
-    "n_init": 3,
+    "n_init": 5,
     "ts_kmeans_k": 0,
     "coef0": 0.0,
     "seed": 1337,
     "n_jobs": 2,
-    "k": 7,
+    "k": 2,
     "isolation_forest": {
       "use_auto_contamination": false,
       "seed": 1337,
@@ -102,7 +102,7 @@
     "custom_has_k": false,
     "algorithm": "KMEANS"
   },
-  "generatingModelId": "A-MSPR-0ReirKQL-NH1vwF0U-s5-pp1-m3",
+  "generatingModelId": "A-MSPR-0ReirKQL-NH1vwF0U-s12-pp1-m1",
   "preprocessing": {
     "reduce": {
       "kept_variance": 0.0,
@@ -110,9 +110,9 @@
     },
     "per_feature": {
       "insee_revenufiscalmedianmoyen": {
-        "rescaling": "AVGSTD",
+        "rescaling": "MINMAX",
         "missing_impute_with": "MEAN",
-        "role": "REJECT",
+        "role": "INPUT",
         "sendToInput": "main",
         "customHandlingCode": "",
         "binarize_constant_threshold": 0.0,
@@ -129,7 +129,7 @@
         "state": {
           "autoModifiedByDSS": false,
           "recordedMeaning": "DoubleMeaning",
-          "userModified": false
+          "userModified": true
         },
         "impute_constant_value": 0.0
       },
@@ -163,7 +163,7 @@
         "min_samples": 10,
         "impact_method": "M_ESTIMATOR",
         "missing_impute_with": "MODE",
-        "role": "INPUT",
+        "role": "REJECT",
         "dummy_clip": "MAX_NB_CATEGORIES",
         "cumulative_proportion": 0.95,
         "customHandlingCode": "",
@@ -230,7 +230,7 @@
       "insee_menages": {
         "rescaling": "AVGSTD",
         "missing_impute_with": "MEAN",
-        "role": "INPUT",
+        "role": "REJECT",
         "sendToInput": "main",
         "customHandlingCode": "",
         "binarize_constant_threshold": 0.0,
@@ -338,7 +338,7 @@
       "insee_ffiscaux": {
         "rescaling": "AVGSTD",
         "missing_impute_with": "MEAN",
-        "role": "INPUT",
+        "role": "REJECT",
         "sendToInput": "main",
         "customHandlingCode": "",
         "binarize_constant_threshold": 0.0,
@@ -420,9 +420,9 @@
         "frequency_default_mode": "EXPLICIT"
       },
       "insee_chomage_1564": {
-        "rescaling": "AVGSTD",
+        "rescaling": "MINMAX",
         "missing_impute_with": "MEAN",
-        "role": "REJECT",
+        "role": "INPUT",
         "sendToInput": "main",
         "customHandlingCode": "",
         "binarize_constant_threshold": 0.0,
@@ -439,7 +439,7 @@
         "state": {
           "autoModifiedByDSS": false,
           "recordedMeaning": "LongMeaning",
-          "userModified": false
+          "userModified": true
         },
         "impute_constant_value": 0.0
       },
@@ -482,7 +482,7 @@
       "insee_population": {
         "rescaling": "AVGSTD",
         "missing_impute_with": "MEAN",
-        "role": "INPUT",
+        "role": "REJECT",
         "sendToInput": "main",
         "customHandlingCode": "",
         "binarize_constant_threshold": 0.0,
@@ -504,9 +504,9 @@
         "impute_constant_value": 0.0
       },
       "insee_population_1564": {
-        "rescaling": "AVGSTD",
+        "rescaling": "MINMAX",
         "missing_impute_with": "MEAN",
-        "role": "REJECT",
+        "role": "INPUT",
         "sendToInput": "main",
         "customHandlingCode": "",
         "binarize_constant_threshold": 0.0,
@@ -523,7 +523,7 @@
         "state": {
           "autoModifiedByDSS": false,
           "recordedMeaning": "LongMeaning",
-          "userModified": false
+          "userModified": true
         },
         "impute_constant_value": 0.0
       },
@@ -617,7 +617,7 @@
       "min_cum_ratio": 0.01
     }
   },
-  "modelVersionNamePrefix": "KMeans (k\u003d7) (s5)",
+  "modelVersionNamePrefix": "KMeans (k\u003d2) (s12)",
   "expectedPreparationOutputSchema": {
     "columns": [
       {
@@ -718,6 +718,7 @@
     "extractBeforePrepare": true
   },
   "script": {
+    "contextProjectKey": "MSPR",
     "columnsSelection": {
       "mode": "ALL"
     },
