@@ -3,7 +3,7 @@
   "guessPolicy": "KMEANS",
   "preprocessing": {
     "reduce": {
-      "enable": true,
+      "enable": false,
       "disable": true,
       "kept_variance": 0.95
     },
@@ -582,7 +582,7 @@
       ],
       "useClusterRange": true,
       "range": {
-        "min": 1,
+        "min": 2,
         "max": 10,
         "nbValues": 5
       }
