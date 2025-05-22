@@ -1341,10 +1341,10 @@
         "_refreshTrigger": 1744977728541
       },
       "def": {
-        "type": "grouped_columns",
+        "type": "stacked_bars",
         "variant": "normal",
-        "name": "Count by nuance",
-        "userEditedName": false,
+        "name": "La partie politique la plus votée",
+        "userEditedName": true,
         "displayWithEChartsByDefault": true,
         "genericDimension0": [
           {
@@ -1391,7 +1391,49 @@
             "shouldFormatInPercentage": false
           }
         ],
-        "genericDimension1": [],
+        "genericDimension1": [
+          {
+            "column": "nuance",
+            "type": "ALPHANUM",
+            "numParams": {
+              "emptyBinsMode": "ZEROS"
+            },
+            "maxValues": 20,
+            "generateOthersCategory": true,
+            "forceLastPositionOthers": false,
+            "oneTickPerBin": "AUTO",
+            "filters": [],
+            "isA": "dimension",
+            "possibleSorts": [
+              {
+                "type": "NATURAL",
+                "label": "Natural ordering",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Count of nuance, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Count of nuance, ascending",
+                "sortAscending": true
+              }
+            ],
+            "sort": {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Count of nuance, descending"
+            },
+            "multiplier": "Auto",
+            "hideTrailingZeros": true,
+            "digitGrouping": "DEFAULT",
+            "useParenthesesForNegativeValues": false,
+            "shouldFormatInPercentage": false
+          }
+        ],
         "facetDimension": [],
         "animationDimension": [],
         "genericMeasures": [
@@ -1669,8 +1711,8 @@
           "heatDensityMapIntensity": 0.5,
           "heatDensityMapRadius": 0.5,
           "singleColor": "#2678B1",
-          "transparency": 0.75,
-          "colorPalette": "default",
+          "transparency": 1.0,
+          "colorPalette": "dku_pastel1",
           "customPalette": {
             "id": "__dku_custom__",
             "name": "Custom Palette",
@@ -1678,7 +1720,22 @@
             "values": [],
             "fixedValues": false
           },
-          "customColors": {}
+          "customColors": {
+            "v_RN": "#694A82",
+            "v_ENS": "#FDC665",
+            "v_UG": "#95C37B",
+            "v_LR": "#75C2CC",
+            "v_DVD": "#694A82",
+            "v_UXD": "#538BC8",
+            "v_DVC": "#65B890",
+            "v_DVG": "#A874A0",
+            "v_HOR": "#EC6547",
+            "v_REG": "#FDC665",
+            "v_ECO": "#95C37B",
+            "v_UDI": "#75C2CC",
+            "v_SOC": "#694A82",
+            "v_DIV": "#538BC8"
+          }
         },
         "bubblesOptions": {
           "defaultRadius": 5.0,
