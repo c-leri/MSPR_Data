@@ -19,28 +19,9 @@
   "projectType": "REGULAR",
   "projectAppType": "REGULAR",
   "hasSetupSection": false,
-  "owner": "celestin.bouchet@gmail.com",
+  "owner": "shvadim92232@gmail.com",
   "permissionsVersion": "V2",
-  "permissions": [
-    {
-      "group": "space_administrators",
-      "admin": true,
-      "editPermissions": false,
-      "readProjectContent": false,
-      "writeProjectContent": false,
-      "exportDatasetsData": false,
-      "readDashboards": false,
-      "writeDashboards": false,
-      "moderateDashboards": false,
-      "publishToDataCollections": false,
-      "shareToWorkspaces": false,
-      "runScenarios": false,
-      "manageDashboardAuthorizations": false,
-      "manageExposedElements": false,
-      "manageAdditionalDashboardUsers": false,
-      "executeApp": false
-    }
-  ],
+  "permissions": [],
   "additionalDashboardUsers": {
     "users": []
   },
@@ -55,7 +36,6 @@
       "zonesManualPositioning": false
     },
     "gitCommitMode": "AUTO",
-    "useRemoteGit": true,
     "disableAutomaticTriggers": false,
     "integrations": {
       "integrations": []
@@ -171,7 +151,6 @@
     "dkuProperties": []
   },
   "name": "MSPR_DATA",
-  "projectStatus": "Sandbox",
   "imgPattern": 2,
   "metrics": {
     "probes": [],
@@ -237,7 +216,8 @@
   },
   "shortDesc": "The project *test* was created by Pradityo Adi Wicaksono on Mar 06th 2025",
   "tags": [
-    "mspr"
+    "mspr",
+    "imported"
   ],
   "customFields": {},
   "checklists": {
