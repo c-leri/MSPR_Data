@@ -53,7 +53,7 @@
     "main": {
       "items": [
         {
-          "ref": "code_postaux",
+          "ref": "postcode_france",
           "deps": []
         }
       ]
