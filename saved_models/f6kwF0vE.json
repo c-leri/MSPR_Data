@@ -6,7 +6,7 @@
   "cleanTemporaryVersionsPostJob": false,
   "name": "Clustering on legislatives_2024_communes_prepared_prepared_joined",
   "contentType": "clustering/py_memory",
-  "activeVersion": "1744977465143",
+  "activeVersion": "1747906643174",
   "inlineVersions": [],
   "conditionalOutputs": [],
   "partitioning": {
@@ -19,7 +19,7 @@
     "rebuildBehavior": "NORMAL",
     "crossProjectBuildBehavior": "DEFAULT"
   },
-  "lastExportedFrom": "A-MSPR-0ReirKQL-NH1vwF0U-s12-pp1-m1",
+  "lastExportedFrom": "A-MSPR_DATA-0ReirKQL-NH1vwF0U-s12-pp1-m1",
   "metrics": {
     "probes": [],
     "engineConfig": {
