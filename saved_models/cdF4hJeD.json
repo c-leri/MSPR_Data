@@ -6,7 +6,7 @@
   "cleanTemporaryVersionsPostJob": false,
   "name": "Predict nuance (multiclass)",
   "contentType": "prediction/py_memory",
-  "activeVersion": "1744977601700",
+  "activeVersion": "1747906225004",
   "inlineVersions": [],
   "conditionalOutputs": [],
   "partitioning": {
