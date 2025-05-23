@@ -32,7 +32,8 @@
               "size": 1
             },
             "titleOptions": {
-              "showTitle": "NO",
+              "showTitle": "YES",
+              "title": "Résultats réels",
               "fontColor": "#000",
               "fontSize": 13
             },
@@ -53,10 +54,10 @@
             "tileParams": {
               "showXAxis": true,
               "showYAxis": true,
-              "showLegend": false,
+              "showLegend": true,
               "showBrush": false,
-              "inheritLegendPlacement": true,
-              "legendPlacement": "OUTER_RIGHT",
+              "inheritLegendPlacement": false,
+              "legendPlacement": "INNER_BOTTOM_RIGHT",
               "showTooltips": true,
               "autoPlayAnimation": true
             },
@@ -70,6 +71,7 @@
             },
             "titleOptions": {
               "showTitle": "YES",
+              "title": "Résultats prédits",
               "fontColor": "#000",
               "fontSize": 13
             },
