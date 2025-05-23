@@ -41,10 +41,59 @@
       "uaXDimension": [],
       "uaYDimension": [],
       "uaDimensionPair": [],
-      "uaSize": [],
-      "uaColor": [],
+      "uaSize": [
+        {
+          "treatAsAlphanum": false,
+          "isA": "ua",
+          "adminLevel": 0,
+          "multiplier": "Auto",
+          "hideTrailingZeros": true,
+          "digitGrouping": "DEFAULT",
+          "useParenthesesForNegativeValues": false,
+          "shouldFormatInPercentage": false,
+          "displayLabel": "Population",
+          "column": "insee_population",
+          "type": "NUMERICAL"
+        }
+      ],
+      "uaColor": [
+        {
+          "treatAsAlphanum": false,
+          "isA": "ua",
+          "adminLevel": 0,
+          "multiplier": "Auto",
+          "useParenthesesForNegativeValues": false,
+          "shouldFormatInPercentage": false,
+          "displayLabel": "Nuance Prédite",
+          "column": "prediction",
+          "type": "ALPHANUM"
+        }
+      ],
       "uaShape": [],
-      "uaTooltip": [],
+      "uaTooltip": [
+        {
+          "treatAsAlphanum": false,
+          "isA": "ua",
+          "adminLevel": 0,
+          "multiplier": "Auto",
+          "useParenthesesForNegativeValues": false,
+          "shouldFormatInPercentage": false,
+          "displayLabel": "Commune",
+          "column": "Nom_de_la_commune",
+          "type": "ALPHANUM"
+        },
+        {
+          "treatAsAlphanum": false,
+          "isA": "ua",
+          "adminLevel": 0,
+          "multiplier": "Auto",
+          "useParenthesesForNegativeValues": false,
+          "shouldFormatInPercentage": false,
+          "displayLabel": "Nuance réelle",
+          "column": "nuance",
+          "type": "ALPHANUM"
+        }
+      ],
       "groupDimension": [],
       "xMeasure": [],
       "yMeasure": [],
