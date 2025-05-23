@@ -43,6 +43,7 @@
           }
         ]
       },
+      "title": "Nuance par commune",
       "show": true,
       "showTitle": false,
       "titleAlign": "CENTER",
