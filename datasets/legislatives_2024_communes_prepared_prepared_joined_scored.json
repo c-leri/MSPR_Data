@@ -13,7 +13,8 @@
   "flowOptions": {
     "virtualizable": true,
     "rebuildBehavior": "NORMAL",
-    "crossProjectBuildBehavior": "DEFAULT"
+    "crossProjectBuildBehavior": "DEFAULT",
+    "ignoreErrorStatusOnBuild": false
   },
   "readWriteOptions": {
     "preserveOrder": false,
@@ -67,7 +68,7 @@
   },
   "schema": {
     "columns": [
-      {"name":"Code commune","type":"string"},
+      {"name":"Code commune","type":"string","meaning":"Text"},
       {"name":"nuance","type":"string","meaning":"Text"},
       {"name":"Code_commune_INSEE","type":"string"},
       {"name":"Nom_de_la_commune","type":"string"},
