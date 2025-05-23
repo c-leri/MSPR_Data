@@ -17,7 +17,8 @@
   "flowOptions": {
     "virtualizable": false,
     "rebuildBehavior": "NORMAL",
-    "crossProjectBuildBehavior": "DEFAULT"
+    "crossProjectBuildBehavior": "DEFAULT",
+    "ignoreErrorStatusOnBuild": false
   },
   "lastExportedFrom": "A-MSPR_DATA-0ReirKQL-NH1vwF0U-s12-pp1-m1",
   "metrics": {
@@ -382,7 +383,8 @@
         "scheme": "MEANING_AND_STATUS",
         "individualColumns": [],
         "individualColumnsRules": [],
-        "valueColoringMode": "HASH"
+        "valueColoringMode": "HASH",
+        "coloringGroups": []
       },
       "sorting": [],
       "analysisColumnData": {},

@@ -1,0 +1,81 @@
+{
+  "pages": [
+    {
+      "id": "t38WnSV",
+      "grid": {
+        "tiles": [
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": 0,
+              "left": 0,
+              "width": 36,
+              "height": 17
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "showXAxis": true,
+              "showYAxis": true,
+              "showLegend": true,
+              "showBrush": false,
+              "inheritLegendPlacement": false,
+              "legendPlacement": "INNER_BOTTOM_RIGHT",
+              "showTooltips": true,
+              "autoPlayAnimation": true
+            },
+            "backgroundOpacity": 1.0,
+            "autoLoad": true,
+            "locked": false,
+            "borderOptions": {
+              "color": "#D9D9D9",
+              "radius": 0,
+              "size": 1
+            },
+            "titleOptions": {
+              "showTitle": "NO",
+              "fontColor": "#000",
+              "fontSize": 13
+            },
+            "insightId": "ki1mC3D",
+            "insightType": "chart",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
+          }
+        ]
+      },
+      "title": "Nuance par commune",
+      "show": true,
+      "showTitle": false,
+      "titleAlign": "CENTER",
+      "titleFontColor": "#444444",
+      "titleFontSize": 28,
+      "enableCrossFilters": true,
+      "backgroundColor": "#ffffff",
+      "showFilterPanel": true,
+      "filtersParams": {
+        "panelPosition": "TOP",
+        "engineType": "LINO"
+      }
+    }
+  ],
+  "owner": "celestin.bouchet@gmail.com",
+  "listed": false,
+  "name": "celestin.bouchet\u0027s dashboard",
+  "showGrid": false,
+  "columnNumber": 36,
+  "showNavigationArrows": false,
+  "reloadWhenEventReceived": false,
+  "tileSpacing": 8,
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "celestin.bouchet@gmail.com"
+    },
+    "lastModifiedOn": 1748002589693
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
