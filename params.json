@@ -180,6 +180,7 @@
   },
   "name": "MSPR_DATA",
   "imgPattern": 2,
+  "showInitials": false,
   "metrics": {
     "probes": [],
     "engineConfig": {
@@ -249,41 +250,6 @@
   ],
   "customFields": {},
   "checklists": {
-    "checklists": [
-      {
-        "title": "Your new project\u0027s Todo",
-        "createdOn": 0,
-        "items": [
-          {
-            "done": true,
-            "text": "Create the project",
-            "createdOn": 1741264492431,
-            "createdBy": "celestin.bouchet@gmail.com",
-            "stateChangedOn": 0
-          },
-          {
-            "done": false,
-            "text": "Set a project image (click on the color next to the project title)",
-            "createdOn": 1741264492431,
-            "createdBy": "celestin.bouchet@gmail.com",
-            "stateChangedOn": 0
-          },
-          {
-            "done": false,
-            "text": "Import your [first dataset](projects/MSPR_DATA/datasets/new/)",
-            "createdOn": 1741264492431,
-            "createdBy": "celestin.bouchet@gmail.com",
-            "stateChangedOn": 0
-          },
-          {
-            "done": false,
-            "text": "Organize your work by replacing this with a real todo",
-            "createdOn": 1741264492431,
-            "createdBy": "celestin.bouchet@gmail.com",
-            "stateChangedOn": 0
-          }
-        ]
-      }
-    ]
+    "checklists": []
   }
 }

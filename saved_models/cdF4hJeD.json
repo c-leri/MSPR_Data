@@ -6,7 +6,7 @@
   "cleanTemporaryVersionsPostJob": false,
   "name": "Predict nuance (multiclass)",
   "contentType": "prediction/py_memory",
-  "activeVersion": "1747906225004",
+  "activeVersion": "1747998790695",
   "inlineVersions": [],
   "conditionalOutputs": [],
   "partitioning": {
@@ -17,7 +17,8 @@
   "flowOptions": {
     "virtualizable": false,
     "rebuildBehavior": "NORMAL",
-    "crossProjectBuildBehavior": "DEFAULT"
+    "crossProjectBuildBehavior": "DEFAULT",
+    "ignoreErrorStatusOnBuild": false
   },
   "lastExportedFrom": "A-MSPR_DATA-rVGrz32A-P9bZDjNu-s3-pp1-m1",
   "metrics": {
@@ -2156,6 +2157,21 @@
         },
         "enabled": false
       },
+      "arima_timeseries": {
+        "p": 0,
+        "d": 0,
+        "q": 0,
+        "P": 0,
+        "D": 0,
+        "Q": 0,
+        "s": 7,
+        "trend": "n",
+        "trend_offset": 1,
+        "enforce_stationarity": true,
+        "enforce_invertibility": true,
+        "concentrate_scale": false,
+        "enabled": false
+      },
       "autoarima_timeseries": {
         "m": {
           "gridMode": "EXPLICIT",
@@ -3421,7 +3437,8 @@
         "scheme": "MEANING_AND_STATUS",
         "individualColumns": [],
         "individualColumnsRules": [],
-        "valueColoringMode": "HASH"
+        "valueColoringMode": "HASH",
+        "coloringGroups": []
       },
       "sorting": [],
       "analysisColumnData": {},
@@ -3483,7 +3500,7 @@
     "labels": []
   },
   "lastTrainIndex": 4,
-  "lastTrainJobId": "Build_Predict_nuance__multiclass__2025-05-22T09-30-19.343",
+  "lastTrainJobId": "Build_Predict_nuance__multiclass__2025-05-23T11-13-04.794",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {

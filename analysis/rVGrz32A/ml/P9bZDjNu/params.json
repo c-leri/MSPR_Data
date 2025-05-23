@@ -2680,6 +2680,21 @@
       },
       "enabled": false
     },
+    "arima_timeseries": {
+      "p": 0,
+      "d": 0,
+      "q": 0,
+      "P": 0,
+      "D": 0,
+      "Q": 0,
+      "s": 7,
+      "trend": "n",
+      "trend_offset": 1,
+      "enforce_stationarity": true,
+      "enforce_invertibility": true,
+      "concentrate_scale": false,
+      "enabled": false
+    },
     "autoarima_timeseries": {
       "m": {
         "gridMode": "EXPLICIT",
@@ -3983,7 +3998,8 @@
       "scheme": "MEANING_AND_STATUS",
       "individualColumns": [],
       "individualColumnsRules": [],
-      "valueColoringMode": "HASH"
+      "valueColoringMode": "HASH",
+      "coloringGroups": []
     },
     "sorting": [],
     "analysisColumnData": {},
@@ -4242,6 +4258,7 @@
           "displayPieLabelsOrValues": true,
           "displayMode": "LABELS",
           "overlappingStrategy": "AUTO",
+          "placementMode": "AUTO",
           "textFormatting": {
             "fontSize": 11,
             "fontColor": "AUTO",
@@ -4286,6 +4303,7 @@
           },
           "customColors": {}
         },
+        "colorGroups": [],
         "bubblesOptions": {
           "defaultRadius": 5.0,
           "singleShape": "FILLED_CIRCLE"
