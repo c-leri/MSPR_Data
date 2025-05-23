@@ -19,6 +19,24 @@
         "modes": [
           "READ"
         ]
+      },
+      {
+        "objectRef": {
+          "objectId": "Resultat_Legislative",
+          "objectType": "DATASET"
+        },
+        "modes": [
+          "READ"
+        ]
+      },
+      {
+        "objectRef": {
+          "objectId": "legislatives_2024_communes_prepared_prepared_joined_scored",
+          "objectType": "DATASET"
+        },
+        "modes": [
+          "READ"
+        ]
       }
     ]
   },
@@ -28,7 +46,7 @@
   "projectType": "REGULAR",
   "projectAppType": "REGULAR",
   "hasSetupSection": false,
-  "owner": "shvadim92232@gmail.com",
+  "owner": "celestin.bouchet@gmail.com",
   "permissionsVersion": "V2",
   "permissions": [
     {
@@ -179,6 +197,7 @@
     "dkuProperties": []
   },
   "name": "MSPR_DATA",
+  "projectStatus": "Sandbox",
   "imgPattern": 2,
   "showInitials": false,
   "metrics": {
