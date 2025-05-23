@@ -179,8 +179,9 @@
     },
     "dkuProperties": []
   },
-  "name": "test",
+  "name": "MSPR Prédiction des élections",
   "imgPattern": 2,
+  "showInitials": false,
   "metrics": {
     "probes": [],
     "engineConfig": {
