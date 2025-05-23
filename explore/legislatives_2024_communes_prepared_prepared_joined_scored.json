@@ -194,7 +194,8 @@
       "scheme": "MEANING_AND_STATUS",
       "individualColumns": [],
       "individualColumnsRules": [],
-      "valueColoringMode": "HASH"
+      "valueColoringMode": "HASH",
+      "coloringGroups": []
     },
     "sorting": [],
     "analysisColumnData": {},
@@ -250,43 +251,7 @@
       "autoRefresh": true
     },
     "globalSearchQuery": "",
-    "explorationFilters": [
-      {
-        "column": "nuance",
-        "type": "columnFilter",
-        "currentMode": "FACET",
-        "active": true,
-        "facet": {
-          "type": "facet",
-          "column": "nuance",
-          "columnType": "ALPHANUM",
-          "currentMode": "ALPHANUM",
-          "sort": "count",
-          "selectedValues": {
-            "REG": true
-          }
-        },
-        "alphanumFilter": {
-          "type": "alphanum",
-          "column": "nuance",
-          "selectedValues": [],
-          "params": {
-            "mode": "full_string",
-            "normalization": "exact"
-          }
-        },
-        "validityFilter": {
-          "type": "validity",
-          "column": "nuance",
-          "params": {
-            "type": "Text",
-            "ok": true,
-            "nok": true,
-            "empty": true
-          }
-        }
-      }
-    ],
+    "explorationFilters": [],
     "previewMode": "ALL_ROWS"
   },
   "charts": [
@@ -492,6 +457,7 @@
           "displayPieLabelsOrValues": true,
           "displayMode": "LABELS",
           "overlappingStrategy": "AUTO",
+          "placementMode": "AUTO",
           "textFormatting": {
             "fontSize": 11,
             "fontColor": "AUTO",
