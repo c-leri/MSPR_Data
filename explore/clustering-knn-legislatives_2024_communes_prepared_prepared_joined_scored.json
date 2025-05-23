@@ -872,51 +872,7 @@
         "name": "Count by Nom_de_la_commune",
         "userEditedName": false,
         "displayWithEChartsByDefault": true,
-        "genericDimension0": [
-          {
-            "column": "Nom_de_la_commune",
-            "type": "ALPHANUM",
-            "numParams": {
-              "emptyBinsMode": "ZEROS"
-            },
-            "maxValues": 20,
-            "generateOthersCategory": true,
-            "forceLastPositionOthers": false,
-            "oneTickPerBin": "AUTO",
-            "filters": [],
-            "isA": "dimension",
-            "possibleSorts": [
-              {
-                "type": "NATURAL",
-                "label": "Natural ordering",
-                "sortAscending": true
-              },
-              {
-                "type": "AGGREGATION",
-                "measureIdx": 0,
-                "label": "Count of nuance, descending"
-              },
-              {
-                "type": "AGGREGATION",
-                "measureIdx": 0,
-                "label": "Count of nuance, ascending",
-                "sortAscending": true
-              }
-            ],
-            "sort": {
-              "type": "AGGREGATION",
-              "measureIdx": 0,
-              "label": "Count of nuance, descending"
-            },
-            "prefix": "",
-            "suffix": "",
-            "multiplier": "Auto",
-            "hideTrailingZeros": true,
-            "digitGrouping": "DEFAULT",
-            "useParenthesesForNegativeValues": false,
-            "shouldFormatInPercentage": false
-          }
-        ],
+        "genericDimension0": [],
         "genericDimension1": [],
         "facetDimension": [],
         "animationDimension": [],
@@ -1016,24 +972,7 @@
         "tooltipMeasures": [],
         "boxplotBreakdownDim": [],
         "boxplotValue": [],
-        "filters": [
-          {
-            "filterType": "ALPHANUM_FACET",
-            "filterSelectionType": "MULTI_SELECT",
-            "facetSorting": "COUNT_DESC",
-            "id": "1748002042009_52",
-            "column": "nuance",
-            "columnType": "ALPHANUM",
-            "isA": "filter",
-            "excludedValues": {},
-            "isAGlobalFilter": false,
-            "useMinimalUi": false,
-            "excludeOtherValues": false,
-            "allValuesInSample": false,
-            "active": true,
-            "includeEmptyValues": true
-          }
-        ],
+        "filters": [],
         "xAxisFormatting": {
           "displayAxis": true,
           "showAxisTitle": true,
@@ -1500,17 +1439,21 @@
       "def": {
         "type": "multi_columns_lines",
         "variant": "normal",
-        "name": "Avg of insee_revenufiscalmedianmoyen by nuance and nuance",
+        "name": "Avg of insee_revenufiscalmedianmoyen by insee_population and nuance",
         "userEditedName": false,
         "displayWithEChartsByDefault": true,
         "genericDimension0": [
           {
-            "column": "nuance",
-            "type": "ALPHANUM",
+            "column": "insee_population",
+            "type": "NUMERICAL",
             "numParams": {
-              "emptyBinsMode": "ZEROS"
+              "mode": "FIXED_NB",
+              "nbBins": "10",
+              "binSize": 100,
+              "emptyBinsMode": "ZEROS",
+              "niceBounds": true
             },
-            "maxValues": 20,
+            "maxValues": 100,
             "generateOthersCategory": true,
             "forceLastPositionOthers": false,
             "oneTickPerBin": "AUTO",
@@ -1535,12 +1478,10 @@
               }
             ],
             "sort": {
-              "type": "AGGREGATION",
-              "measureIdx": 0,
-              "label": "Average of insee_revenufiscalmedianmoyen, descending"
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
             },
-            "prefix": "",
-            "suffix": "",
             "multiplier": "Auto",
             "hideTrailingZeros": true,
             "digitGrouping": "DEFAULT",
@@ -2036,7 +1977,7 @@
           },
           "displayPointer": false
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABQCAYAAADSm7GJAAAAAXNSR0IArs4c6QAAA+hJREFUeF7tXV1IFFEUvnd2nDZd2qyEyDToB1NcTZYisoRMKrQFC/QhegkSQkmQinxrohfLwhC0QoiCnlrESigfgiDRrAh8yESrh3bJsMKykthynJilB3d27zrItrpnPx9nx1nP951zvzPn3HvkDD+kEeCkrYNxDAQTdwIQDIKJI0DcPEQwCCaOAHHzEMEgmDgCxM1DBINg4ggQNy8sgtec7F5l2Dx22fOFuO1JYV4YwWsbujO5Im3wX6h4khQIEDcSBIPgcATu9o/vYLLsr9y20k8cn4Q3b14RfO/peLFuk30igvUqZmN56Zn83FdfwiOU4Ab8P4LznYf42UmvCB+9p3EjkzTO9za/Ed1TdKMoY8o+pY8eHkXCN09HW1iCZZbOy5peiP521y1XWSAlMCgiuG1IddiWpu0+vv50t+gZr3Nz843P8oaHXwmdrb09h+n6B15X9zPSPaqqSsZ1VVVn5onzgv0aCGaM6dfaPExjj0UEtx59kMFkpbC+o+yRiKm++yNbmSZNFB/c9E50T0tl5fL+lJQfXq9Xi3TPwO3WZcb17Ufqv8fKI0BwHAluri6vfq6ndYoI7r1+JVu32bJKjp3oExHsb+hZYXyW1bJ/wooTgOAEI9h3pq+E6frb7Is7x0AwY8ySBsdpiY5FBINgk1uDYBMgVkqVlt6DrbwmLZYsmlAE63eGlIBD22MvL3hoUAsNJqbBBsG/0qY9qRWFnSD43+oVr9ekeGgwCI6QeoJgEyjQ4HAvsVLoQASbcItbqZJYkgUNNjkSlmgs0TGpRWOJxhI9Zy16rkoWsmhk0XNvukMWjSzaxlCqDPMCaDA0GBo82wditmUH78GhoQUNhgZDgyNk69BgaDA0GBocfU8WCh0odKDQYfaBWO2LhgZDg6HB0GBocMg6kGzbZpFkIclCkoUky8oBcHST0E1iONkQ4gRWThdiR0eSn01CkoUkC0kWkiwkWWHrAE42mDebG1N2kGQhyYrLlB1s2cGWnVhM2UE3Cd0kdJPQTUI3Cd0kjHAI1QIcH8XxURwfne0DwXHC6CYt3m6StISv9jUdeBmhbBu81DXw2c0l6VPUedGbnVv4+UnhM4LjhBXm5KVNwntcN13ugBJ4H23arOJw5NSsOyV8hqUdHR3tbvZbH4k2jFS227Nrr5YKv2ega9itMflbtGGkl6oq3M9Y6mC0WZVMUjJ21dQKv2essdc9PcM/ikYZGs2GP07NpewrCD4D/1ZH5MVEroNgIkSKzADBIJg4AsTNQwSDYOIIEDcPEQyCiSNA3DxEMAgmjgBx8xDBIJg4AsTNQwSDYOIIEDcPEQyCiSNA3Ly/WZWKFC+AGbkAAAAASUVORK5CYII\u003d",
+        "thumbnailData": "data:image/png;base64,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\u003d",
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT",
         "legendFormatting": {
