@@ -289,7 +289,49 @@
           }
         ],
         "facetDimension": [],
-        "animationDimension": [],
+        "animationDimension": [
+          {
+            "column": "nuance",
+            "type": "ALPHANUM",
+            "numParams": {
+              "emptyBinsMode": "ZEROS"
+            },
+            "maxValues": 20,
+            "generateOthersCategory": true,
+            "forceLastPositionOthers": false,
+            "oneTickPerBin": "AUTO",
+            "filters": [],
+            "isA": "dimension",
+            "possibleSorts": [
+              {
+                "type": "NATURAL",
+                "label": "Natural ordering",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Count of nuance, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Count of nuance, ascending",
+                "sortAscending": true
+              }
+            ],
+            "sort": {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Count of nuance, descending"
+            },
+            "multiplier": "Auto",
+            "hideTrailingZeros": true,
+            "digitGrouping": "DEFAULT",
+            "useParenthesesForNegativeValues": false,
+            "shouldFormatInPercentage": false
+          }
+        ],
         "genericMeasures": [
           {
             "column": "nuance",
@@ -527,7 +569,7 @@
         "hexbinNumber": 20,
         "hexbinRadiusMode": "NUM_HEXAGONS",
         "valuesInChartDisplayOptions": {
-          "displayValues": false,
+          "displayValues": true,
           "displayPieLabelsOrValues": true,
           "displayMode": "VALUES",
           "overlappingStrategy": "AUTO",
@@ -555,7 +597,7 @@
         "chartHeight": 200,
         "singleXAxis": true,
         "multiTooltips": false,
-        "animationFrameDuration": 3000,
+        "animationFrameDuration": 1000,
         "animationRepeat": true,
         "colorMode": "UNIQUE_SCALE",
         "colorOptions": {
@@ -747,7 +789,7 @@
           },
           "displayPointer": false
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABQCAYAAADSm7GJAAAAAXNSR0IArs4c6QAAA+5JREFUeF7tnEtIVFEYx893B9pEBU3ppk3kovZDGelAi1IXEgU1IkEKE5kaSiaF4aunryDI1Bx7QPRcRBBY1qIMqRDbR89Fq8JVCBXNzAmrzene0RnmnHvuPffv+vr9v+/3u98Mcu+RGH6MJkBGT4fhGAQbfhNAMAQbTsDw8bDBEGw4AcPHwwZDsOEEDB8PGwzBhhMwfDxscJAE11d0xzijasNnDsx4ww87dggb/Ecw0e3AEDB70A/D4x1FEGyuZLvguvLuMnPnDd5kI486J4QNTk7FY2TR9eChMGBiztpDWxK9/0/iJBjfwT70bREdpc2jfdkIvuHD+QLfskXUtqjgwam2bYEn5SEAjSVnnuTbjvARfXHyeIxZDB/R+VKV8vt0v6H01M58S0FwvgSV/b4iwWSxvcp6RuGsCXBGSekb3Do5HSPL2ph1F365kLN3fdHIiF/aldmn8BE9L5iRZdx3MDF2EIIZYxAsc3e8Ucu2wWnOwt5oTV4XIctKY4MZY/+eJnXKQ7twJWL0fGi8vc6tvCDmaH2aRIwuQbDa2w6C1fLVXl0QvK/pTlRFR8s+vv2cqe7gg/ZPKjJR8y8BQfCuvpcxkvxGByc2fe9I8SYA10MAgvVwdy3VSXCXzHRO7Bs2WCbR3GoJguMT52OUzvx3cKKieSi38rhaNwG7YJ7hcSGxy4my5rjuhpGfGwEIzo2X7652EEwZnyYlyptafDdhwBsWBN86fCVGIcvxeXBVf01lwFn5cny7YMvxceGbqoGaDb6cMOBNQ7DhN4Ag+GbL1YxvVVafq837DT/DWXpyPEHw1/j2mEVkey+ac16/euzxqCcnQFMLEnASbHtlh3N+AIL9eSc5CbadTeKcN0KwAYJ/vdhvO13IU3x2SenYa3+Oh64XPXyWSvEIBPv3RoFg/7rLqnObYCsk/o+OZJKfwAZnxdKTF9nOJlGIFXPGkg0lp1s92TGayomA8+EzYgMQnBNHz14MwZ5VI6cxm2BO6ZXzpRujZ4flRKCKTgJOh8+6+6OR9TqbQrY8Ak6CL/RHIwXyIlBJJwEI1knfhWxB8LG7T4vmM3v2bH3vQjYiXCAgCD5UcXJd6nvqy9CzrjkXshHhAgEIdgGyzggI1knfhWxB8O6emRVLC8M/r9Wu/eFCNiJcICCeTep9tWZ5QeEsBLtA3qUICHYJtK4YQXDlwMyqcDg8hw3WpUN+riBYfnlU1E0AgnUbUJwPwYoB6y4PwboNKM6HYMWAdZeHYN0GFOdDsGLAustDsG4DivMhWDFg3eUhWLcBxfkQrBiw7vIQrNuA4nwIVgxYd3kI1m1AcT4EKwasuzwE6zagOP83m80tYO4/V2cAAAAASUVORK5CYII\u003d",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABQCAYAAADSm7GJAAAAAXNSR0IArs4c6QAAAV5JREFUeF7t1kutQkEUBdHbXvACjBiSoIAgAoIKnoSngI8YtEDCjOBg3WoHVXV20mPq0QYGTRfcVGD8CApcYNwAjteCC4wbwPFacIFxAzheCy4wbgDHa8FzCnxYn7evaexw5tngXW7HzdeCP4HH+J+NARv0ebkeFwV2I/8G3q/OS5d3fmR/99OjTxbevcAFxg3geC24wLgBHK8FFxg3gOO14ALjBnC8Flxg3ACO14ILjBvA8VpwgXEDOF4LLjBuAMdrwQXGDeB4LbjAuAEcrwUXGDeA47XgAuMGcLwWXGDcAI7XgguMG8DxWnCBcQM4XgsuMG4Ax2vBBcYN4HgtuMC4ARyvBRcYN4DjteAC4wZwvBZcYNwAjteCC4wbwPFacIFxAzheCy4wbgDHa8EFxg3geC24wLgBHK8FFxg3gOO14ALjBnC8Flxg3ACO14ILjBvA8VpwgXEDOF4LxgO/AehpFVGzC9m7AAAAAElFTkSuQmCC",
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT",
         "legendFormatting": {
@@ -999,6 +1041,8 @@
               "measureIdx": 0,
               "label": "Average of insee_revenufiscalmedianmoyen, descending"
             },
+            "prefix": "",
+            "suffix": "",
             "multiplier": "Auto",
             "hideTrailingZeros": true,
             "digitGrouping": "DEFAULT",
@@ -1243,7 +1287,7 @@
         "hexbinNumber": 20,
         "hexbinRadiusMode": "NUM_HEXAGONS",
         "valuesInChartDisplayOptions": {
-          "displayValues": false,
+          "displayValues": true,
           "displayPieLabelsOrValues": true,
           "displayMode": "LABELS",
           "overlappingStrategy": "AUTO",
@@ -1447,7 +1491,7 @@
           },
           "displayPointer": false
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABQCAYAAADSm7GJAAAAAXNSR0IArs4c6QAAAdlJREFUeF7t09FJBGEQBOFdEV/FHIxExJgM4cCEzEGMwFhE0RimuGKoC6Cvp7/9z6Pf6gXO1dd13BHw8o8g4ICXL7D8vF5wwMsXWH5eLzjg5QssP68XHPDyBZaf1wsOePkCy8/rBQe8fIHl5/WCA2YW+Hl/fTxuvs/z5e2L+YdS/xa42gv+B749Hs7ny0cU3AIBc9sqkgNWMHAlAua2VSQHrGDgSgTMbatIDljBwJUImNtWkRywgoErETC3rSI5YAUDVyJgbltFcsAKBq5EwNy2iuSAFQxciYC5bRXJASsYuBIBc9sqkgNWMHAlAua2VSQHrGDgSgTMbatIDljBwJUImNtWkRywgoErETC3rSI5YAUDVyJgbltFcsAKBq5EwNy2iuSAFQxciYC5bRXJASsYuBIBc9sqkgNWMHAlAua2VSQHrGDgSgTMbatIDljBwJUImNtWkRywgoErETC3rSI5YAUDVyJgbltFcsAKBq5EwNy2iuTrAt8d9+fT5VOxxNISVwNeuqfurIB1JLOFAp7dU5cWsI5ktlDAs3vq0gLWkcwWCnh2T11awDqS2UIBz+6pSwtYRzJbKODZPXVpAetIZgsFPLunLi1gHclsoYBn99SlBawjmS30C4YNwVFUBBEFAAAAAElFTkSuQmCC",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABQCAYAAADSm7GJAAAAAXNSR0IArs4c6QAAAWBJREFUeF7t3bFtAkEYBeE7AtyAAwvIXA5QjEUTEFDNdUDuJoxERBHIMR18O9vBzPwv3nnq0QZmmi64qcD4ERS4wLgBHK8FFxg3gOO14ALjBnC8Flxg3ACO14JHC7w5LZ//zI/r8YmzD4H3tuDdz7Kd16vv+2V/G8IADlngAuMGcLwWXGDcAI7XgguMG8DxWnCBcQM4XgsuMG4Ax2vBBcYN4HgtuMC4ARyvBRcYN4DjteAC4wZwvBZcYNwAjteCC4wbwPFacIFxAzheCy4wbgDHa8EFxg3geC24wLgBHK8FFxg3gOO14ALjBnC8Flxg3ACO14ILjBvA8VpwgXEDOF4LLjBuAMdrwQXGDeB4LbjAuAEcrwUXGDeA47XgEQOvPuavv/PhF2cfAq9POfDMBS4wbgDHa8EFxg3geC24wLgBHK8FFxg3gOO14ALjBnC8Flxg3ACO14ILjBvA8VowHvgFgj7QUetA+LEAAAAASUVORK5CYII\u003d",
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT",
         "legendFormatting": {
@@ -1946,7 +1990,7 @@
         "hexbinNumber": 20,
         "hexbinRadiusMode": "NUM_HEXAGONS",
         "valuesInChartDisplayOptions": {
-          "displayValues": false,
+          "displayValues": true,
           "displayPieLabelsOrValues": true,
           "displayMode": "LABELS",
           "overlappingStrategy": "AUTO",
@@ -1973,7 +2017,7 @@
         "chartHeight": 200,
         "singleXAxis": true,
         "multiTooltips": false,
-        "animationFrameDuration": 3000,
+        "animationFrameDuration": 1000,
         "animationRepeat": true,
         "colorMode": "UNIQUE_SCALE",
         "colorOptions": {
@@ -2150,7 +2194,7 @@
           },
           "displayPointer": false
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABQCAYAAADSm7GJAAAAAXNSR0IArs4c6QAAAWJJREFUeF7t3aGNQlEYBeH3yAaPhqyhEjQ0g0MioR7wJJQCBdAAguxaOvje3A5m5j/6jkOPNjDSdMENBcaPoMAFxg3geC24wLgBHK8FFxg3gOO14ALjBnC8rwX/Hq6LP+bHaffC2SeB9xV4tb8sx/ls/Txv75MwgEMWuMC4ARyvBRcYN4DjteAC4wZwvBZcYNwAjteCC4wbwPFacIFxAzheCy4wbgDHa8EFxg3geC24wLgBHK8FFxg3gOO14ALjBnC8Flxg3ACO14ILjBvA8VpwgXEDOF4LLjBuAMdrwQXGDeB4LbjAuAEcrwUXGDeA47XgAuMGcLwWXGDcAI7XgguMG8DxWnCBcQM4XgsuMG4Ax2vBBcYN4HgtuMC4ARyvBU8t8HC8/fwzHzdvnH0SeP2bhGcucIFxAzheCy4wbgDHa8EFxg3geC24wLgBHK8FFxg3gOO14ALjBnC8Flxg3ACO9wHE3tdRbS4/swAAAABJRU5ErkJggg\u003d\u003d",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABQCAYAAADSm7GJAAAAAXNSR0IArs4c6QAAAWFJREFUeF7t3bERQVEYBWHPGAVIvUwlYrk+dCAV6UOqADNaIVaBwJDq4Ht7O9jde+J/mPVoAwNNF9yswPgnKHCBcQM4XgsuMG4Ax2vBBcYN4HgtuMC4ARyvBU8t8Hi4rL7Mz/P+hbNPAu9vwePhuh6W883jtLtPwgAOWeAC4wZwvBZcYNwAjteCC4wbwPFacIFxAzheCy4wbgDHa8EFxg3geC24wLgBHK8FFxg3gOO14ALjBnC8Flxg3ACO14ILjBvA8VpwgXEDOF4LLjBuAMdrwQXGDeB4LbjAuAEcrwUXGDeA47XgAuMGcLwWXGDcAI7XgguMG8DxWnCBcQM4XgsuMG4Ax2vBBcYN4HgtuMC4ARyvBRcYN4DjteAC4wZwvP+jHMfb4sd83L5x9kngdXUFz1zgAuMGcLwWXGDcAI7XgguMG8DxWnCBcQM4XgsuMG4Ax2vBBcYN4HgtuMC4ARzvA3Bs01HkFJMRAAAAAElFTkSuQmCC",
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT",
         "legendFormatting": {
@@ -2314,6 +2358,8 @@
               "label": "Natural ordering",
               "sortAscending": true
             },
+            "prefix": "",
+            "suffix": "",
             "multiplier": "Auto",
             "hideTrailingZeros": true,
             "digitGrouping": "DEFAULT",
@@ -2357,6 +2403,8 @@
               "measureIdx": 0,
               "label": "Average of insee_emploi, descending"
             },
+            "prefix": "",
+            "suffix": "",
             "multiplier": "Auto",
             "hideTrailingZeros": true,
             "digitGrouping": "DEFAULT",
@@ -2365,7 +2413,51 @@
           }
         ],
         "facetDimension": [],
-        "animationDimension": [],
+        "animationDimension": [
+          {
+            "column": "nuance",
+            "type": "ALPHANUM",
+            "numParams": {
+              "emptyBinsMode": "ZEROS"
+            },
+            "maxValues": 20,
+            "generateOthersCategory": true,
+            "forceLastPositionOthers": false,
+            "oneTickPerBin": "AUTO",
+            "filters": [],
+            "isA": "dimension",
+            "possibleSorts": [
+              {
+                "type": "NATURAL",
+                "label": "Natural ordering",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Average of insee_emploi, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Average of insee_emploi, ascending",
+                "sortAscending": true
+              }
+            ],
+            "sort": {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Average of insee_emploi, descending"
+            },
+            "prefix": "",
+            "suffix": "",
+            "multiplier": "Auto",
+            "hideTrailingZeros": true,
+            "digitGrouping": "DEFAULT",
+            "useParenthesesForNegativeValues": false,
+            "shouldFormatInPercentage": false
+          }
+        ],
         "genericMeasures": [
           {
             "column": "insee_emploi",
@@ -2382,6 +2474,8 @@
             "useParenthesesForNegativeValues": false,
             "shouldFormatInPercentage": false,
             "hideTrailingZeros": true,
+            "prefix": "",
+            "suffix": "",
             "showValue": true,
             "showDisplayLabel": true,
             "labelPosition": "BOTTOM",
@@ -2407,8 +2501,8 @@
               "textFormatting": {
                 "fontSize": 11,
                 "fontColor": "AUTO",
-                "hasBackground": false,
-                "backgroundColor": "#D9D9D9BF"
+                "hasBackground": true,
+                "backgroundColor": "#000000BF"
               },
               "addDetails": false,
               "additionalMeasures": []
@@ -2460,25 +2554,7 @@
         "tooltipMeasures": [],
         "boxplotBreakdownDim": [],
         "boxplotValue": [],
-        "filters": [
-          {
-            "filterType": "ALPHANUM_FACET",
-            "filterSelectionType": "MULTI_SELECT",
-            "facetSorting": "COUNT_DESC",
-            "id": "1748011257344_18",
-            "column": "cluster_labels",
-            "label": "cluster_labels",
-            "columnType": "ALPHANUM",
-            "isA": "filter",
-            "excludedValues": {},
-            "isAGlobalFilter": false,
-            "useMinimalUi": false,
-            "excludeOtherValues": false,
-            "allValuesInSample": false,
-            "active": true,
-            "includeEmptyValues": true
-          }
-        ],
+        "filters": [],
         "xAxisFormatting": {
           "displayAxis": true,
           "showAxisTitle": true,
@@ -2619,7 +2695,7 @@
         "hexbinNumber": 20,
         "hexbinRadiusMode": "NUM_HEXAGONS",
         "valuesInChartDisplayOptions": {
-          "displayValues": false,
+          "displayValues": true,
           "displayPieLabelsOrValues": true,
           "displayMode": "LABELS",
           "overlappingStrategy": "AUTO",
@@ -2823,7 +2899,7 @@
           },
           "displayPointer": false
         },
-        "thumbnailData": "data:image/png;base64,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\u003d",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABQCAYAAADSm7GJAAAAAXNSR0IArs4c6QAAAdJJREFUeF7t06FNRFEUhOGzJCsQCDogq/DUQRtQAxJNBWwTCBIaQFMENIFYAmQdikxy1T/5nz5iZr53N+NXvcCmup3lRuDyn0BggcsXKK/nCxa4fIHyer5ggcsXKK/nCxa4fIHyer5ggcsXKK/nCxa4fIHyer5ggcsXKK/nCxa4fIHyer5ggcsXKK/nCxa4fIHyeqsv+Gxmzv9s9FG+F67eMvDJ9vT+2Pr78Pk0M6+4BcoDrwLPxd3z5c/X7N4frl/Kt0LWExjJlocWON8KeSkwki0PLXC+FfJSYCRbHlrgfCvkpcBItjy0wPlWyEuBkWx5aIHzrZCXAiPZ8tAC51shLwVGsuWhBc63Ql4KjGTLQwucb4W8FBjJlocWON8KeSkwki0PLXC+FfJSYCRbHlrgfCvkpcBItjy0wPlWyEuBkWx5aIHzrZCXAiPZ8tAC51shLwVGsuWhBc63Ql4KjGTLQwucb4W8FBjJlocWON8KeSkwki0PLXC+FfJSYCRbHlrgfCvk5TLw1c3j9tj8bX97QC5QHnoZuHwffD2B8YT/FxBY4PIFyuv5ggUuX6C8ni9Y4PIFyuv5ggUuX6C8ni9Y4PIFyuv5ggUuX6C8ni+4HPgX4aP0UdgcNmoAAAAASUVORK5CYII\u003d",
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT",
         "legendFormatting": {
@@ -2895,7 +2971,7 @@
         },
         "gridlinesOptions": {
           "vertical": {
-            "show": false,
+            "show": true,
             "lineFormatting": {
               "type": "FILLED",
               "color": "#d9d9d9",
