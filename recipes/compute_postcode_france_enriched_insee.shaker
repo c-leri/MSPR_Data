@@ -61,6 +61,10 @@
       {
         "d": true,
         "name": "insee_actifs_1564"
+      },
+      {
+        "d": true,
+        "name": "Geo_de_la_commune"
       }
     ]
   },
@@ -101,12 +105,46 @@
       "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
+      "type": "FillColumn",
+      "params": {
+        "column": "Pays",
+        "value": "France"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FillColumn",
+      "params": {
+        "column": "Geo_de_la_commune"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ZipCodeGeocoder",
+      "params": {
+        "countryCol": "Pays",
+        "zipCodeCol": "Code_postal",
+        "outputCol": "Geo_de_la_commune"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
       "type": "ColumnsSelector",
       "params": {
         "columns": [
           "Nom_de_la_commune",
           "Code_postal",
-          "Code_commune_INSEE"
+          "Code_commune_INSEE",
+          "Geo_de_la_commune"
         ],
         "keep": true,
         "appliesTo": "COLUMNS"
@@ -114,7 +152,7 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "EnrichFrenchPostcode",
@@ -163,6 +201,7 @@
     "insee_revenufiscalmedianmoyen": 233,
     "insee_departement": 143,
     "insee_menages": 113,
+    "Pays": 100,
     "postcode_deces": 120,
     "postcode_logvacants": 158,
     "postcode_ffiscaux_imposables": 225,
@@ -174,6 +213,7 @@
     "insee_population": 135,
     "postcode_actifs_1564": 165,
     "postcode_residencesprincipales": 240,
+    "Geo_de_la_commune": 176,
     "insee_population_1564": 173,
     "Libellé_d_acheminement": 180,
     "postcode_chomage_1564": 173,
@@ -182,6 +222,7 @@
     "postcode_logements": 150,
     "postcode_emploi": 128,
     "insee_deces": 100,
+    "Commune_Geo": 100,
     "postcode_residencesprincipales_proprietaire": 300,
     "insee_naissances": 135,
     "Ligne_5": 134,
@@ -199,6 +240,7 @@
   "coloring": {
     "scheme": "MEANING_AND_STATUS",
     "individualColumns": [],
+    "coloringGroups": [],
     "valueColoringMode": "HASH",
     "individualColumnsRules": []
   }
