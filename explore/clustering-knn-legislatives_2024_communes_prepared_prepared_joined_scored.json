@@ -1527,7 +1527,7 @@
       "def": {
         "type": "grouped_columns",
         "variant": "normal",
-        "name": "Avg of insee_chomage_1564 by nuance and nuance",
+        "name": "Comparer la distribution du taux de chômage selon les votes (RN, UXD, EN..etc)",
         "userEditedName": true,
         "displayWithEChartsByDefault": true,
         "genericDimension0": [
@@ -2185,14 +2185,108 @@
       "def": {
         "type": "grouped_columns",
         "variant": "normal",
-        "name": "New chart",
+        "name": "Count distinct of cluster_labels by insee_chomage_1564",
         "userEditedName": false,
         "displayWithEChartsByDefault": true,
-        "genericDimension0": [],
+        "genericDimension0": [
+          {
+            "column": "insee_chomage_1564",
+            "type": "NUMERICAL",
+            "numParams": {
+              "mode": "FIXED_NB",
+              "nbBins": 10,
+              "binSize": 100,
+              "emptyBinsMode": "ZEROS"
+            },
+            "maxValues": 100,
+            "generateOthersCategory": true,
+            "forceLastPositionOthers": false,
+            "oneTickPerBin": "AUTO",
+            "filters": [],
+            "isA": "dimension",
+            "possibleSorts": [
+              {
+                "type": "NATURAL",
+                "label": "Natural ordering",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Count distinct of cluster_labels, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Count distinct of cluster_labels, ascending",
+                "sortAscending": true
+              }
+            ],
+            "sort": {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
+            },
+            "multiplier": "Auto",
+            "hideTrailingZeros": true,
+            "digitGrouping": "DEFAULT",
+            "useParenthesesForNegativeValues": false,
+            "shouldFormatInPercentage": false
+          }
+        ],
         "genericDimension1": [],
         "facetDimension": [],
         "animationDimension": [],
-        "genericMeasures": [],
+        "genericMeasures": [
+          {
+            "column": "cluster_labels",
+            "function": "COUNTD",
+            "type": "ALPHANUM",
+            "displayed": true,
+            "isA": "measure",
+            "displayAxis": "axis1",
+            "displayType": "column",
+            "computeMode": "NORMAL",
+            "computeModeDim": 0,
+            "multiplier": "Auto",
+            "digitGrouping": "DEFAULT",
+            "useParenthesesForNegativeValues": false,
+            "shouldFormatInPercentage": false,
+            "hideTrailingZeros": true,
+            "showValue": true,
+            "showDisplayLabel": true,
+            "labelPosition": "BOTTOM",
+            "labelFontSize": 16,
+            "percentile": 50.0,
+            "isCustomPercentile": false,
+            "kpiTextAlign": "CENTER",
+            "kpiValueFontSizeMode": "RESPONSIVE",
+            "kpiValueFontSize": 32,
+            "responsiveTextAreaFill": 100,
+            "valueTextFormatting": {
+              "fontSize": 11,
+              "fontColor": "#333",
+              "hasBackground": false
+            },
+            "labelTextFormatting": {
+              "fontSize": 11,
+              "fontColor": "#333",
+              "hasBackground": false
+            },
+            "valuesInChartDisplayOptions": {
+              "displayValues": true,
+              "textFormatting": {
+                "fontSize": 11,
+                "fontColor": "AUTO",
+                "hasBackground": false,
+                "backgroundColor": "#D9D9D9BF"
+              },
+              "addDetails": false,
+              "additionalMeasures": []
+            },
+            "colorRules": []
+          }
+        ],
         "xDimension": [],
         "yDimension": [],
         "uaXDimension": [],
@@ -2382,6 +2476,7 @@
           "displayPieLabelsOrValues": true,
           "displayMode": "LABELS",
           "overlappingStrategy": "AUTO",
+          "spacing": 2,
           "placementMode": "AUTO",
           "textFormatting": {
             "fontSize": 11,
@@ -2581,6 +2676,7 @@
           },
           "displayPointer": false
         },
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABQCAYAAADSm7GJAAAAAXNSR0IArs4c6QAAAw5JREFUeF7tnbFu01AUhs81rZhYmKsYMcHAysIEElLVhIHnYERJOjEx1GWDoUICIYGQEGsTBBOPAQNCSZ+ACYqEauRgI4bauTnO0N98WX3OzX/+L/eeU8tyg/HptAOh09VRnAG44z8CAAO44w50vDx2MIA77kDHy2MHA7jjDnS8PHbw/wg4HR/ea6o7WDiZZYODjnvTifJO3cHpePLYzK7VVRjM3gJYgz+ANTi5VQLYbZ1GIoA1OLlVAthtnUYigDU4uVUC2G2dRiKANTi5VQLYbZ1GIoA1OLlVAthtnUYigDU4uVUC2G2dRiKANTi5VQLYbZ1GIoA1OLlVAthtnUYigDU4uVUC2G2dRiKANTi5VQLYbZ1GIoA1OLlVAthtnUYigDU4uVUC2G2dRiKANTi5VQLYbZ1GIoA1OLlVAthtnUYigDU4uVUC2G2dRiKANTi5VQLYbZ1GIoA1OLlVAthtnUYigDU4uVW2Brw1Ory+kScXmxRsHIePX57s/CxiLg2n28vUzh713xcxveG7G4nlF5riZ/s7HyyEfNW109HkZsjD+ca1Sx2rrr2svjbXV/Gv+J61AD4XQtYkevN7sl0B7u1OD0KeX6mND+H1fK//rAIckpOHTWvP9/q3KsDpePLczC7XxeeWvzjK7rwsrheALdiD+lj7dZQNblfX0/HklZlt1cUHs6ezbPCmDbyY3N5wOghJfr8+NnybZ/271XUA1ziVG4AX78kqjmh28OIoZAcvjl2O6JiTuDaGI5oeTA9myFrhVYb04D+nKT24/DuYHtyqBRs9mB5MD6YH04ONGx3lC8EZshiyjHvR7Qarf7MZshiyGLIYshiyGLKqf8rBkMWQxZC1vhlrTXeyRpOryzTN9wefyl62NHbzR/K1eqIjXfPa86z/+e8THeteu6wxts7Kk2Xetbm+in/lPfI2X0fuWXfg1Ed2zrpo9MU7AOB4ryQjASyJLV40gOO9kowEsCS2eNEAjvdKMhLAktjiRQM43ivJSABLYosXDeB4ryQjASyJLV40gOO9koz8DYa5Y40/TbV3AAAAAElFTkSuQmCC",
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT",
         "legendFormatting": {
