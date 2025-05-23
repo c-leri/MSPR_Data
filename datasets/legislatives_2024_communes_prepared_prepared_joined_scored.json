@@ -13,7 +13,8 @@
   "flowOptions": {
     "virtualizable": true,
     "rebuildBehavior": "NORMAL",
-    "crossProjectBuildBehavior": "DEFAULT"
+    "crossProjectBuildBehavior": "DEFAULT",
+    "ignoreErrorStatusOnBuild": false
   },
   "readWriteOptions": {
     "preserveOrder": false,
@@ -67,12 +68,12 @@
   },
   "schema": {
     "columns": [
-      {"name":"Code commune","type":"string"},
+      {"name":"Code commune","type":"string","meaning":"Text"},
       {"name":"nuance","type":"string","meaning":"Text"},
-      {"name":"Code_commune_INSEE","type":"string"},
+      {"name":"Code_commune_INSEE","type":"string","meaning":"Text"},
       {"name":"Nom_de_la_commune","type":"string"},
       {"name":"Code_postal","type":"string"},
-      {"name":"insee_departement","type":"string"},
+      {"name":"insee_departement","type":"string","meaning":"Text"},
       {"name":"insee_population","type":"bigint"},
       {"name":"insee_menages","type":"bigint"},
       {"name":"insee_naissances","type":"bigint"},
