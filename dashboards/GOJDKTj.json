@@ -9,7 +9,7 @@
             "box": {
               "top": 0,
               "left": 0,
-              "width": 36,
+              "width": 20,
               "height": 17
             },
             "clickAction": "DO_NOTHING",
@@ -37,6 +37,43 @@
               "fontSize": 13
             },
             "insightId": "ki1mC3D",
+            "insightType": "chart",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
+          },
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": 0,
+              "left": 20,
+              "width": 6,
+              "height": 6
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "showXAxis": true,
+              "showYAxis": true,
+              "showLegend": false,
+              "showBrush": false,
+              "inheritLegendPlacement": true,
+              "legendPlacement": "OUTER_RIGHT",
+              "showTooltips": true,
+              "autoPlayAnimation": true
+            },
+            "backgroundOpacity": 1.0,
+            "autoLoad": true,
+            "locked": false,
+            "borderOptions": {
+              "color": "#D9D9D9",
+              "radius": 0,
+              "size": 1
+            },
+            "titleOptions": {
+              "showTitle": "YES",
+              "fontColor": "#000",
+              "fontSize": 13
+            },
+            "insightId": "JSD0psp",
             "insightType": "chart",
             "displayMode": "INSIGHT",
             "resizeImageMode": "FIT_SIZE"
