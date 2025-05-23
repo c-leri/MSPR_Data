@@ -51,6 +51,8 @@
           "digitGrouping": "DEFAULT",
           "useParenthesesForNegativeValues": false,
           "shouldFormatInPercentage": false,
+          "prefix": "",
+          "suffix": "",
           "displayLabel": "Population",
           "column": "insee_population",
           "type": "NUMERICAL"
@@ -62,8 +64,12 @@
           "isA": "ua",
           "adminLevel": 0,
           "multiplier": "Auto",
+          "hideTrailingZeros": true,
+          "digitGrouping": "DEFAULT",
           "useParenthesesForNegativeValues": false,
           "shouldFormatInPercentage": false,
+          "prefix": "",
+          "suffix": "",
           "displayLabel": "Nuance Prédite",
           "column": "prediction",
           "type": "ALPHANUM"
@@ -76,8 +82,12 @@
           "isA": "ua",
           "adminLevel": 0,
           "multiplier": "Auto",
+          "hideTrailingZeros": true,
+          "digitGrouping": "DEFAULT",
           "useParenthesesForNegativeValues": false,
           "shouldFormatInPercentage": false,
+          "prefix": "",
+          "suffix": "",
           "displayLabel": "Commune",
           "column": "Nom_de_la_commune",
           "type": "ALPHANUM"
@@ -87,8 +97,12 @@
           "isA": "ua",
           "adminLevel": 0,
           "multiplier": "Auto",
+          "hideTrailingZeros": true,
+          "digitGrouping": "DEFAULT",
           "useParenthesesForNegativeValues": false,
           "shouldFormatInPercentage": false,
+          "prefix": "",
+          "suffix": "",
           "displayLabel": "Nuance réelle",
           "column": "nuance",
           "type": "ALPHANUM"
@@ -328,11 +342,25 @@
           "values": [],
           "fixedValues": false
         },
-        "customColors": {}
+        "customColors": {
+          "v_ENS": "#ff7f0e",
+          "v_LR": "#1f77b4",
+          "v_RN": "#40464A",
+          "v_UXD": "#7b4173",
+          "v_DVG": "#ff9896",
+          "v_UG": "#d62728",
+          "v_DVD": "#aec7e8",
+          "v_REG": "#de9ed6",
+          "v_HOR": "#17becf",
+          "v_DVC": "#ffbb78",
+          "v_ECO": "#2ca02c",
+          "v_UDI": "#ffbb78",
+          "v_DIV": "#c7c7c7"
+        }
       },
       "colorGroups": [],
       "bubblesOptions": {
-        "defaultRadius": 5.0,
+        "defaultRadius": 2.0,
         "singleShape": "FILLED_CIRCLE"
       },
       "computeMode": "NORMAL",
