@@ -879,7 +879,7 @@
             "numParams": {
               "emptyBinsMode": "ZEROS"
             },
-            "maxValues": 15,
+            "maxValues": 30,
             "generateOthersCategory": false,
             "forceLastPositionOthers": false,
             "oneTickPerBin": "AUTO",
@@ -949,9 +949,9 @@
               }
             ],
             "sort": {
-              "type": "NATURAL",
-              "label": "Natural ordering",
-              "sortAscending": true
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Average of insee_revenufiscalmedianmoyen, descending"
             },
             "prefix": "",
             "suffix": "",
@@ -1405,7 +1405,7 @@
           },
           "displayPointer": false
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABQCAYAAADSm7GJAAAAAXNSR0IArs4c6QAABB9JREFUeF7tnE9IVEEcx+e5rm4q/gvF1LJCzC3tshFiankQAiUxoi4dMqgloUNRZodiO2UWeKklk6BDXapDISUWKFSHig2isg2zP1aalRVarH929008U9xd3Z1xN3Nn/O5tmTePme9nfjPf95v3RiH4Sa2AInXv0DkCwJIPAgAGYMkVkLx7iGAAllwBybuHCAZgyRWQvHuIYACWXAHJu8cVwfevWJNcvx26UvOhAcn1kK573IB1o+71hbv3t0mngOQdAmAAJkSbomeK4HPv6wsVhdprso7+lFwnYbsXUgSff9ewWY1wPwoEmDY1LSOEOBWz+bOwKgnc8LkHfMG6kVBdlyfgG497l7pUvWFbQeprXu1se236jMWOxCUnS77x1sF1hG+70N8UzRXBfgCro0rW1uL0B7wQNMBpiY7KzIaS6551OnNyilR3VE/+mxcf/d2rpcUWk6TGrS6qzLV5XkNba1cRAx1USk/387aDWiwR2rWKxaLy1pnP6+Ytgv834GS6qGzDljU3vQDfrdtEIt2vZgPY0fq86kv/QOuK6tIRejyhjMTqHypHBn6xIDbu6kikSdGjBxsLhz2vzb6cHa/9797ZPcS6RzDlABwK4BPx5cQQdY8H8Flze+VYjOGOL+C8i3nr3BHuQXu13Wu5yjxwNVkD+qlx+49gwE7WAeAwBbz88K00qlBjT0NFBwBzrMFzMkXPYQQD8MSw5jVZABxgHpDBRS8EwKd2lBsVlUbXXrv9FGswIYSG6qLDbIoG4H/9mATAhNAwSXRgisYazPU04pXoQAQjgidHzWwTHcE8JmENxho88yyFx6QpXTBF+4wRmKy/gmCKZlicULcL4aLhouGifd+qFGnDHxGMCEYEI4IJgYuGi55xJoCLhov2emUHmSxs+E8LCaQqkapEqpJlpWGyYLJgsrRPV6R48R37wdgPxn4wa9GbKMdmA1souGi4aLhoVpzARcNFw0XDRU+NAX9fFyJViVQlUpWTCmhf+GPDHxv+LH81Xg6TBZMFkwWTBZM1LQqQyWKvIMhkIZOFTBYrTmCyYLJgsmCyYLJgsoI4JwsmCyYLJmvBmiziICuL99Q88RSgueeMyUmcbwOeF91sNRFV1+d7nDBVo1KrClK87hdIXO05OD15eG16fbFXHXtursnljPzKOm02xRVrLKgyetWl7XUmorh7Z3MY6VjbM1Nv3/fO8cNIjyWYSJy+i+esSuu+dtOIwfDS96zK/Ev5Jhd1DfmeVantJqk6mvGhvoJbo6CnaNaoRnn4KsB1GGn4Nh8tYykAwCyFBC8HYMEBspoPwCyFBC8HYMEBspoPwCyFBC8HYMEBspoPwCyFBC8HYMEBspoPwCyFBC8HYMEBspoPwCyFBC8HYMEBspoPwCyFBC8HYMEBspr/B4pXzzINxsogAAAAAElFTkSuQmCC",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABQCAYAAADSm7GJAAAAAXNSR0IArs4c6QAAA+hJREFUeF7tXV1IFFEUvnd2nDZd2qyEyDToB1NcTZYisoRMKrQFC/QhegkSQkmQinxrohfLwhC0QoiCnlrESigfgiDRrAh8yESrh3bJsMKykthynJilB3d27zrItrpnPx9nx1nP951zvzPn3HvkDD+kEeCkrYNxDAQTdwIQDIKJI0DcPEQwCCaOAHHzEMEgmDgCxM1DBINg4ggQNy8sgtec7F5l2Dx22fOFuO1JYV4YwWsbujO5Im3wX6h4khQIEDcSBIPgcATu9o/vYLLsr9y20k8cn4Q3b14RfO/peLFuk30igvUqZmN56Zn83FdfwiOU4Ab8P4LznYf42UmvCB+9p3EjkzTO9za/Ed1TdKMoY8o+pY8eHkXCN09HW1iCZZbOy5peiP521y1XWSAlMCgiuG1IddiWpu0+vv50t+gZr3Nz843P8oaHXwmdrb09h+n6B15X9zPSPaqqSsZ1VVVn5onzgv0aCGaM6dfaPExjj0UEtx59kMFkpbC+o+yRiKm++yNbmSZNFB/c9E50T0tl5fL+lJQfXq9Xi3TPwO3WZcb17Ufqv8fKI0BwHAluri6vfq6ndYoI7r1+JVu32bJKjp3oExHsb+hZYXyW1bJ/wooTgOAEI9h3pq+E6frb7Is7x0AwY8ySBsdpiY5FBINgk1uDYBMgVkqVlt6DrbwmLZYsmlAE63eGlIBD22MvL3hoUAsNJqbBBsG/0qY9qRWFnSD43+oVr9ekeGgwCI6QeoJgEyjQ4HAvsVLoQASbcItbqZJYkgUNNjkSlmgs0TGpRWOJxhI9Zy16rkoWsmhk0XNvukMWjSzaxlCqDPMCaDA0GBo82wditmUH78GhoQUNhgZDgyNk69BgaDA0GBocfU8WCh0odKDQYfaBWO2LhgZDg6HB0GBocMg6kGzbZpFkIclCkoUky8oBcHST0E1iONkQ4gRWThdiR0eSn01CkoUkC0kWkiwkWWHrAE42mDebG1N2kGQhyYrLlB1s2cGWnVhM2UE3Cd0kdJPQTUI3Cd0kjHAI1QIcH8XxURwfne0DwXHC6CYt3m6StISv9jUdeBmhbBu81DXw2c0l6VPUedGbnVv4+UnhM4LjhBXm5KVNwntcN13ugBJ4H23arOJw5NSsOyV8hqUdHR3tbvZbH4k2jFS227Nrr5YKv2ega9itMflbtGGkl6oq3M9Y6mC0WZVMUjJ21dQKv2essdc9PcM/ikYZGs2GP07NpewrCD4D/1ZH5MVEroNgIkSKzADBIJg4AsTNQwSDYOIIEDcPEQyCiSNA3DxEMAgmjgBx8xDBIJg4AsTNQwSDYOIIEDcPEQyCiSNA3Ly/WZWKFC+AGbkAAAAASUVORK5CYII\u003d",
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT",
         "legendFormatting": {
@@ -1527,14 +1527,153 @@
       "def": {
         "type": "grouped_columns",
         "variant": "normal",
-        "name": "New chart",
-        "userEditedName": false,
+        "name": "Avg of insee_chomage_1564 by nuance and nuance",
+        "userEditedName": true,
         "displayWithEChartsByDefault": true,
-        "genericDimension0": [],
-        "genericDimension1": [],
+        "genericDimension0": [
+          {
+            "column": "nuance",
+            "type": "ALPHANUM",
+            "numParams": {
+              "emptyBinsMode": "ZEROS"
+            },
+            "maxValues": 20,
+            "generateOthersCategory": true,
+            "forceLastPositionOthers": false,
+            "oneTickPerBin": "AUTO",
+            "filters": [],
+            "isA": "dimension",
+            "possibleSorts": [
+              {
+                "type": "NATURAL",
+                "label": "Natural ordering",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Average of insee_chomage_1564, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Average of insee_chomage_1564, ascending",
+                "sortAscending": true
+              }
+            ],
+            "sort": {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Average of insee_chomage_1564, descending"
+            },
+            "prefix": "",
+            "suffix": "",
+            "multiplier": "Auto",
+            "hideTrailingZeros": true,
+            "digitGrouping": "DEFAULT",
+            "useParenthesesForNegativeValues": false,
+            "shouldFormatInPercentage": false
+          }
+        ],
+        "genericDimension1": [
+          {
+            "column": "nuance",
+            "type": "ALPHANUM",
+            "numParams": {
+              "emptyBinsMode": "ZEROS"
+            },
+            "maxValues": 20,
+            "generateOthersCategory": true,
+            "forceLastPositionOthers": false,
+            "oneTickPerBin": "AUTO",
+            "filters": [],
+            "isA": "dimension",
+            "possibleSorts": [
+              {
+                "type": "NATURAL",
+                "label": "Natural ordering",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Average of insee_chomage_1564, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Average of insee_chomage_1564, ascending",
+                "sortAscending": true
+              }
+            ],
+            "sort": {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Average of insee_chomage_1564, descending"
+            },
+            "prefix": "",
+            "suffix": "",
+            "multiplier": "Auto",
+            "hideTrailingZeros": true,
+            "digitGrouping": "DEFAULT",
+            "useParenthesesForNegativeValues": false,
+            "shouldFormatInPercentage": false
+          }
+        ],
         "facetDimension": [],
         "animationDimension": [],
-        "genericMeasures": [],
+        "genericMeasures": [
+          {
+            "column": "insee_chomage_1564",
+            "function": "AVG",
+            "type": "NUMERICAL",
+            "displayed": true,
+            "isA": "measure",
+            "displayAxis": "axis1",
+            "displayType": "column",
+            "computeMode": "NORMAL",
+            "computeModeDim": 0,
+            "multiplier": "Auto",
+            "digitGrouping": "DEFAULT",
+            "useParenthesesForNegativeValues": false,
+            "shouldFormatInPercentage": false,
+            "hideTrailingZeros": true,
+            "prefix": "",
+            "suffix": "",
+            "showValue": true,
+            "showDisplayLabel": true,
+            "labelPosition": "BOTTOM",
+            "labelFontSize": 16,
+            "percentile": 50.0,
+            "isCustomPercentile": false,
+            "kpiTextAlign": "CENTER",
+            "kpiValueFontSizeMode": "RESPONSIVE",
+            "kpiValueFontSize": 32,
+            "responsiveTextAreaFill": 100,
+            "valueTextFormatting": {
+              "fontSize": 11,
+              "fontColor": "#333",
+              "hasBackground": false
+            },
+            "labelTextFormatting": {
+              "fontSize": 11,
+              "fontColor": "#333",
+              "hasBackground": false
+            },
+            "valuesInChartDisplayOptions": {
+              "displayValues": true,
+              "textFormatting": {
+                "fontSize": 11,
+                "fontColor": "AUTO",
+                "hasBackground": false,
+                "backgroundColor": "#D9D9D9BF"
+              },
+              "addDetails": false,
+              "additionalMeasures": []
+            },
+            "colorRules": []
+          }
+        ],
         "xDimension": [],
         "yDimension": [],
         "uaXDimension": [],
@@ -1724,6 +1863,7 @@
           "displayPieLabelsOrValues": true,
           "displayMode": "LABELS",
           "overlappingStrategy": "AUTO",
+          "spacing": 2,
           "placementMode": "AUTO",
           "textFormatting": {
             "fontSize": 11,
@@ -1774,6 +1914,7 @@
           "defaultRadius": 5.0,
           "singleShape": "FILLED_CIRCLE"
         },
+        "computeMode": "NORMAL",
         "xAxisMode": "NORMAL",
         "yAxisMode": "NORMAL",
         "pieOptions": {
@@ -1922,6 +2063,7 @@
           },
           "displayPointer": false
         },
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABQCAYAAADSm7GJAAAAAXNSR0IArs4c6QAAA6tJREFUeF7tmk1IVFEYhs91xhFnIhFxEZVFJZPl6MbaWDIXJEITKkiiXRAoSEELyV1naQURgdAULdo2uChDWgR3MFQoFwWZjv0sFIqgH4QopRlO3JlLC+cefy5zpnM/31nO+c7H977Pfe+cmTsGw4u0AwZpdRDHAJj4RQDAAEzcAeLykGAAJu4AcXlIMAATd4C4PCQYgIk7QFxeQYLrBp5U25rnB0/8IK59U8grALzj8sh2I1S2d+Fa59imcIC4SAAGYOIOEJeHBAMwcQeIy0OCAZi4A8TlIcEATNwB4vKQYAAm7gBxeUgwABN3gLg8JBiAiTtAXB4SDMDEHSAuDwkGYOIOEJeHBAMwcQeIy0OCAZi4A8TlIcEATNwB4vKQYAAm7gBxeUgwABN3gLg8TwkefScqbF866o1l4v74Xp4nwI8mv7SKQHD+5OGaBd87QFwAAANwoQNIsH+uCiTYP6w8TQrAnmzzzyYA9g8rT5MqASzOsAA7WLXL4IsfPU2FTUVzQB3gxqrTxtXFZNEmRSNPDgCwJ9v8swmA/cPK06QA7Mk2/2z6b4DF04F9LMiqjfbBl/6xy3+TArD/mG1oYq0BN91vii5VLn2bOzf3dUOqUPzPAa0Bxx7E2pfLl1/JAA9N8y2BSCTWu7t/UsZ0NhqN2mv70+n0ZuTuf8CVEbN3T/+IDN7bhoZGe+3AzMwbWY1IJI6xTGbC6Ov76VZz+/xobUV5ZU3PXXNW1mNqZCpsr7V0tfzS6UICYMaYuDPUxbLMWg0wC4aaL91rfyaDN/44fYhly763nqr/IKu5ebbz6GQ2PJFMJrNuNWOJxDb7/baens/FukgAuISAb3R3dL8QkWEZ4OeJW3UiENjZduHiuAzw/JXxNibE+7rrRz651YiH06E/W0VD6Hjja3sdgAkC/h3JdIU7m4cB2IlAqW7RpUowAK+4twHwCkPW+stO7nHhGk+T1vNL1rq+JhXjFF2iQ5YWCWbcCuZ4cjMj+6C3rHyNabrX5J8HM8PgTNpDWDzXwzC5tCbO47maFE+51nCnB1+lhxXP9zBT7j3sNcGdWbj7LDye18tT3j3J7Y/Hg9O1tUJ2yLKcOUzJHHYPy+FjSvgIh43hsCk4ZBXreI4+ejgAwHpwUDYFACuzVo/GAKwHB2VTALAya/VoDMB6cFA2BQArs1aPxgCsBwdlUwCwMmv1aAzAenBQNgUAK7NWj8YArAcHZVMAsDJr9WgMwHpwUDYFACuzVo/GfwEt6nZ+HCpiEgAAAABJRU5ErkJggg\u003d\u003d",
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT",
         "legendFormatting": {
