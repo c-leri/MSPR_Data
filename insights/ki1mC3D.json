@@ -26,7 +26,7 @@
       "_refreshTrigger": 0
     },
     "def": {
-      "type": "grouped_columns",
+      "type": "scatter_map",
       "variant": "normal",
       "name": "Chart",
       "userEditedName": false,
@@ -41,16 +41,65 @@
       "uaXDimension": [],
       "uaYDimension": [],
       "uaDimensionPair": [],
-      "uaSize": [],
-      "uaColor": [],
+      "uaSize": [
+        {
+          "treatAsAlphanum": false,
+          "isA": "ua",
+          "adminLevel": 0,
+          "multiplier": "Auto",
+          "hideTrailingZeros": true,
+          "digitGrouping": "DEFAULT",
+          "useParenthesesForNegativeValues": false,
+          "shouldFormatInPercentage": false,
+          "displayLabel": "Population",
+          "column": "insee_population",
+          "type": "NUMERICAL"
+        }
+      ],
+      "uaColor": [
+        {
+          "treatAsAlphanum": false,
+          "isA": "ua",
+          "adminLevel": 0,
+          "multiplier": "Auto",
+          "useParenthesesForNegativeValues": false,
+          "shouldFormatInPercentage": false,
+          "displayLabel": "Nuance",
+          "column": "nuance",
+          "type": "ALPHANUM"
+        }
+      ],
       "uaShape": [],
-      "uaTooltip": [],
+      "uaTooltip": [
+        {
+          "treatAsAlphanum": false,
+          "isA": "ua",
+          "adminLevel": 0,
+          "multiplier": "Auto",
+          "useParenthesesForNegativeValues": false,
+          "shouldFormatInPercentage": false,
+          "displayLabel": "Commune",
+          "column": "Nom_de_la_commune",
+          "type": "ALPHANUM"
+        }
+      ],
       "groupDimension": [],
       "xMeasure": [],
       "yMeasure": [],
       "colorMeasure": [],
       "sizeMeasure": [],
-      "geometry": [],
+      "geometry": [
+        {
+          "treatAsAlphanum": false,
+          "isA": "ua",
+          "adminLevel": 0,
+          "multiplier": "Auto",
+          "useParenthesesForNegativeValues": false,
+          "shouldFormatInPercentage": false,
+          "column": "Geo_de_la_commune",
+          "type": "GEOPOINT"
+        }
+      ],
       "geoLayers": [
         {
           "geometry": [],
@@ -80,6 +129,7 @@
       "tooltipMeasures": [],
       "boxplotBreakdownDim": [],
       "boxplotValue": [],
+      "filters": [],
       "xAxisFormatting": {
         "displayAxis": true,
         "showAxisTitle": true,
@@ -269,10 +319,12 @@
         },
         "customColors": {}
       },
+      "colorGroups": [],
       "bubblesOptions": {
         "defaultRadius": 5.0,
         "singleShape": "FILLED_CIRCLE"
       },
+      "computeMode": "NORMAL",
       "xAxisMode": "NORMAL",
       "yAxisMode": "NORMAL",
       "pieOptions": {
@@ -501,7 +553,9 @@
         },
         "horizontal": {
           "show": false,
-          "displayAxis": {},
+          "displayAxis": {
+            "type": "LEFT_Y_AXIS"
+          },
           "lineFormatting": {
             "type": "FILLED",
             "color": "#d9d9d9",
