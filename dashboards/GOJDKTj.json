@@ -9,7 +9,7 @@
             "box": {
               "top": 0,
               "left": 0,
-              "width": 20,
+              "width": 19,
               "height": 17
             },
             "clickAction": "DO_NOTHING",
@@ -45,9 +45,9 @@
             "tileType": "INSIGHT",
             "box": {
               "top": 0,
-              "left": 20,
-              "width": 6,
-              "height": 6
+              "left": 19,
+              "width": 17,
+              "height": 17
             },
             "clickAction": "DO_NOTHING",
             "tileParams": {
