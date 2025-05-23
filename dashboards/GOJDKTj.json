@@ -16,10 +16,10 @@
             "tileParams": {
               "showXAxis": true,
               "showYAxis": true,
-              "showLegend": false,
+              "showLegend": true,
               "showBrush": false,
-              "inheritLegendPlacement": true,
-              "legendPlacement": "OUTER_RIGHT",
+              "inheritLegendPlacement": false,
+              "legendPlacement": "INNER_BOTTOM_RIGHT",
               "showTooltips": true,
               "autoPlayAnimation": true
             },
@@ -32,7 +32,7 @@
               "size": 1
             },
             "titleOptions": {
-              "showTitle": "YES",
+              "showTitle": "NO",
               "fontColor": "#000",
               "fontSize": 13
             },
