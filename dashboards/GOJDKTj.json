@@ -1,0 +1,42 @@
+{
+  "pages": [
+    {
+      "id": "t38WnSV",
+      "grid": {
+        "tiles": []
+      },
+      "show": true,
+      "showTitle": false,
+      "titleAlign": "CENTER",
+      "titleFontColor": "#444444",
+      "titleFontSize": 28,
+      "enableCrossFilters": true,
+      "backgroundColor": "#ffffff",
+      "showFilterPanel": true,
+      "filtersParams": {
+        "panelPosition": "TOP",
+        "engineType": "LINO"
+      }
+    }
+  ],
+  "owner": "celestin.bouchet@gmail.com",
+  "listed": false,
+  "name": "celestin.bouchet\u0027s dashboard",
+  "showGrid": false,
+  "columnNumber": 36,
+  "showNavigationArrows": false,
+  "reloadWhenEventReceived": false,
+  "tileSpacing": 8,
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "celestin.bouchet@gmail.com"
+    },
+    "lastModifiedOn": 1748002589693
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
