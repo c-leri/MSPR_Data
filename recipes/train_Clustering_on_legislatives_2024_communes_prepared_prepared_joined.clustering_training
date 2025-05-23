@@ -71,7 +71,7 @@
     "max_iterations": 0,
     "n_init": 5,
     "ts_kmeans_k": 0,
-    "coef0": 0.0,
+    "coef0": 0,
     "seed": 1337,
     "n_jobs": 2,
     "k": 2,
@@ -87,25 +87,25 @@
       "enabled": false,
       "contamination": 0.05,
       "max_samples": 0.5,
-      "max_features": 1.0,
+      "max_features": 1,
       "allow_sparse_matrices": false,
       "max_anomalies": 100
     },
-    "min_cluster_size_ratio": 0.0,
-    "epsilon": 0.0,
+    "min_cluster_size_ratio": 0,
+    "epsilon": 0,
     "allow_sparse_matrices": false,
-    "min_sample_ratio": 0.0,
+    "min_sample_ratio": 0,
     "metrics": {
       "evaluationMetric": "SILHOUETTE"
     },
-    "gamma": 0.0,
+    "gamma": 0,
     "custom_has_k": false,
     "algorithm": "KMEANS"
   },
   "generatingModelId": "A-MSPR-0ReirKQL-NH1vwF0U-s12-pp1-m1",
   "preprocessing": {
     "reduce": {
-      "kept_variance": 0.0,
+      "kept_variance": 0,
       "enabled": false
     },
     "per_feature": {
@@ -115,7 +115,7 @@
         "role": "INPUT",
         "sendToInput": "main",
         "customHandlingCode": "",
-        "binarize_constant_threshold": 0.0,
+        "binarize_constant_threshold": 0,
         "type": "NUMERIC",
         "binarize_threshold_mode": "MEDIAN",
         "datetime_cyclical_periods": [],
@@ -131,7 +131,7 @@
           "recordedMeaning": "DoubleMeaning",
           "userModified": true
         },
-        "impute_constant_value": 0.0
+        "impute_constant_value": 0
       },
       "insee_ffiscaux_imposables": {
         "rescaling": "AVGSTD",
@@ -139,7 +139,7 @@
         "role": "REJECT",
         "sendToInput": "main",
         "customHandlingCode": "",
-        "binarize_constant_threshold": 0.0,
+        "binarize_constant_threshold": 0,
         "type": "NUMERIC",
         "binarize_threshold_mode": "MEDIAN",
         "datetime_cyclical_periods": [],
@@ -155,7 +155,7 @@
           "recordedMeaning": "LongMeaning",
           "userModified": false
         },
-        "impute_constant_value": 0.0
+        "impute_constant_value": 0
       },
       "nuance": {
         "nb_bins_hashing": 1048576,
@@ -170,7 +170,7 @@
         "type": "CATEGORY",
         "impact_kfold": true,
         "missing_handling": "NONE",
-        "frequency_default_value": 0.0,
+        "frequency_default_value": 0,
         "impact_kfold_seed": 1337,
         "state": {
           "autoModifiedByDSS": false,
@@ -205,7 +205,7 @@
         "type": "CATEGORY",
         "impact_kfold": true,
         "missing_handling": "NONE",
-        "frequency_default_value": 0.0,
+        "frequency_default_value": 0,
         "impact_kfold_seed": 1337,
         "state": {
           "autoModifiedByDSS": false,
@@ -233,7 +233,7 @@
         "role": "REJECT",
         "sendToInput": "main",
         "customHandlingCode": "",
-        "binarize_constant_threshold": 0.0,
+        "binarize_constant_threshold": 0,
         "type": "NUMERIC",
         "binarize_threshold_mode": "MEDIAN",
         "datetime_cyclical_periods": [],
@@ -249,7 +249,7 @@
           "recordedMeaning": "LongMeaning",
           "userModified": false
         },
-        "impute_constant_value": 0.0
+        "impute_constant_value": 0
       },
       "insee_deces": {
         "rescaling": "AVGSTD",
@@ -257,7 +257,7 @@
         "role": "REJECT",
         "sendToInput": "main",
         "customHandlingCode": "",
-        "binarize_constant_threshold": 0.0,
+        "binarize_constant_threshold": 0,
         "type": "NUMERIC",
         "binarize_threshold_mode": "MEDIAN",
         "datetime_cyclical_periods": [],
@@ -273,7 +273,7 @@
           "recordedMeaning": "LongMeaning",
           "userModified": false
         },
-        "impute_constant_value": 0.0
+        "impute_constant_value": 0
       },
       "Code commune": {
         "nb_bins_hashing": 1048576,
@@ -288,7 +288,7 @@
         "type": "CATEGORY",
         "impact_kfold": true,
         "missing_handling": "NONE",
-        "frequency_default_value": 0.0,
+        "frequency_default_value": 0,
         "impact_kfold_seed": 1337,
         "state": {
           "autoModifiedByDSS": false,
@@ -317,7 +317,7 @@
         "role": "REJECT",
         "sendToInput": "main",
         "customHandlingCode": "",
-        "binarize_constant_threshold": 0.0,
+        "binarize_constant_threshold": 0,
         "type": "NUMERIC",
         "binarize_threshold_mode": "MEDIAN",
         "datetime_cyclical_periods": [],
@@ -333,7 +333,7 @@
           "recordedMeaning": "LongMeaning",
           "userModified": false
         },
-        "impute_constant_value": 0.0
+        "impute_constant_value": 0
       },
       "insee_ffiscaux": {
         "rescaling": "AVGSTD",
@@ -341,7 +341,7 @@
         "role": "REJECT",
         "sendToInput": "main",
         "customHandlingCode": "",
-        "binarize_constant_threshold": 0.0,
+        "binarize_constant_threshold": 0,
         "type": "NUMERIC",
         "binarize_threshold_mode": "MEDIAN",
         "datetime_cyclical_periods": [],
@@ -357,7 +357,7 @@
           "recordedMeaning": "LongMeaning",
           "userModified": false
         },
-        "impute_constant_value": 0.0
+        "impute_constant_value": 0
       },
       "insee_actifs_1564": {
         "rescaling": "AVGSTD",
@@ -365,7 +365,7 @@
         "role": "REJECT",
         "sendToInput": "main",
         "customHandlingCode": "",
-        "binarize_constant_threshold": 0.0,
+        "binarize_constant_threshold": 0,
         "type": "NUMERIC",
         "binarize_threshold_mode": "MEDIAN",
         "datetime_cyclical_periods": [],
@@ -381,7 +381,7 @@
           "recordedMeaning": "LongMeaning",
           "userModified": false
         },
-        "impute_constant_value": 0.0
+        "impute_constant_value": 0
       },
       "Code_commune_INSEE": {
         "nb_bins_hashing": 1048576,
@@ -396,7 +396,7 @@
         "type": "CATEGORY",
         "impact_kfold": true,
         "missing_handling": "NONE",
-        "frequency_default_value": 0.0,
+        "frequency_default_value": 0,
         "impact_kfold_seed": 1337,
         "state": {
           "autoModifiedByDSS": false,
@@ -425,7 +425,7 @@
         "role": "INPUT",
         "sendToInput": "main",
         "customHandlingCode": "",
-        "binarize_constant_threshold": 0.0,
+        "binarize_constant_threshold": 0,
         "type": "NUMERIC",
         "binarize_threshold_mode": "MEDIAN",
         "datetime_cyclical_periods": [],
@@ -441,7 +441,7 @@
           "recordedMeaning": "LongMeaning",
           "userModified": true
         },
-        "impute_constant_value": 0.0
+        "impute_constant_value": 0
       },
       "Code_postal": {
         "nb_bins_hashing": 1048576,
@@ -456,7 +456,7 @@
         "type": "CATEGORY",
         "impact_kfold": true,
         "missing_handling": "NONE",
-        "frequency_default_value": 0.0,
+        "frequency_default_value": 0,
         "impact_kfold_seed": 1337,
         "state": {
           "autoModifiedByDSS": false,
@@ -485,7 +485,7 @@
         "role": "REJECT",
         "sendToInput": "main",
         "customHandlingCode": "",
-        "binarize_constant_threshold": 0.0,
+        "binarize_constant_threshold": 0,
         "type": "NUMERIC",
         "binarize_threshold_mode": "MEDIAN",
         "datetime_cyclical_periods": [],
@@ -501,7 +501,7 @@
           "recordedMeaning": "LongMeaning",
           "userModified": false
         },
-        "impute_constant_value": 0.0
+        "impute_constant_value": 0
       },
       "insee_population_1564": {
         "rescaling": "MINMAX",
@@ -509,7 +509,7 @@
         "role": "INPUT",
         "sendToInput": "main",
         "customHandlingCode": "",
-        "binarize_constant_threshold": 0.0,
+        "binarize_constant_threshold": 0,
         "type": "NUMERIC",
         "binarize_threshold_mode": "MEDIAN",
         "datetime_cyclical_periods": [],
@@ -525,7 +525,7 @@
           "recordedMeaning": "LongMeaning",
           "userModified": true
         },
-        "impute_constant_value": 0.0
+        "impute_constant_value": 0
       },
       "Nom_de_la_commune": {
         "nb_bins_hashing": 1048576,
@@ -540,7 +540,7 @@
         "type": "CATEGORY",
         "impact_kfold": true,
         "missing_handling": "NONE",
-        "frequency_default_value": 0.0,
+        "frequency_default_value": 0,
         "impact_kfold_seed": 1337,
         "state": {
           "autoModifiedByDSS": false,
@@ -569,7 +569,7 @@
         "role": "REJECT",
         "sendToInput": "main",
         "customHandlingCode": "",
-        "binarize_constant_threshold": 0.0,
+        "binarize_constant_threshold": 0,
         "type": "NUMERIC",
         "binarize_threshold_mode": "MEDIAN",
         "datetime_cyclical_periods": [],
@@ -585,7 +585,7 @@
           "recordedMeaning": "LongMeaning",
           "userModified": false
         },
-        "impute_constant_value": 0.0
+        "impute_constant_value": 0
       }
     },
     "skipPreprocessing": false,
