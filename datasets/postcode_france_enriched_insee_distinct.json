@@ -13,7 +13,8 @@
   "flowOptions": {
     "virtualizable": true,
     "rebuildBehavior": "NORMAL",
-    "crossProjectBuildBehavior": "DEFAULT"
+    "crossProjectBuildBehavior": "DEFAULT",
+    "ignoreErrorStatusOnBuild": false
   },
   "readWriteOptions": {
     "preserveOrder": false,
@@ -81,7 +82,8 @@
       {"name":"insee_emploi","type":"bigint"},
       {"name":"insee_population_1564","type":"bigint"},
       {"name":"insee_chomage_1564","type":"bigint"},
-      {"name":"insee_actifs_1564","type":"bigint"}
+      {"name":"insee_actifs_1564","type":"bigint"},
+      {"name":"Geo_de_la_commune","type":"string"}
     ],
     "userModified": true
   },
