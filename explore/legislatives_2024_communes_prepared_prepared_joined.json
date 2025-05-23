@@ -72,6 +72,10 @@
         {
           "name": "insee_actifs_1564",
           "d": true
+        },
+        {
+          "name": "Geo_de_la_commune",
+          "d": true
         }
       ]
     },
@@ -93,14 +97,16 @@
       "insee_emploi": 105,
       "insee_population_1564": 173,
       "insee_chomage_1564": 150,
-      "insee_actifs_1564": 143
+      "insee_actifs_1564": 143,
+      "Geo_de_la_commune": 176
     },
     "columnUseScientificNotationByName": {},
     "coloring": {
       "scheme": "MEANING_AND_STATUS",
       "individualColumns": [],
       "individualColumnsRules": [],
-      "valueColoringMode": "HASH"
+      "valueColoringMode": "HASH",
+      "coloringGroups": []
     },
     "sorting": [],
     "analysisColumnData": {},
@@ -156,43 +162,7 @@
       "autoRefresh": true
     },
     "globalSearchQuery": "",
-    "explorationFilters": [
-      {
-        "column": "Nom_de_la_commune",
-        "type": "columnFilter",
-        "currentMode": "FACET",
-        "active": true,
-        "facet": {
-          "type": "facet",
-          "column": "Nom_de_la_commune",
-          "columnType": "ALPHANUM",
-          "currentMode": "ALPHANUM",
-          "sort": "count",
-          "selectedValues": {
-            "GRENOBLE": true
-          }
-        },
-        "alphanumFilter": {
-          "type": "alphanum",
-          "column": "Nom_de_la_commune",
-          "selectedValues": [],
-          "params": {
-            "mode": "full_string",
-            "normalization": "exact"
-          }
-        },
-        "validityFilter": {
-          "type": "validity",
-          "column": "Nom_de_la_commune",
-          "params": {
-            "type": "Text",
-            "ok": true,
-            "nok": true,
-            "empty": true
-          }
-        }
-      }
-    ],
+    "explorationFilters": [],
     "previewMode": "ALL_ROWS"
   },
   "charts": [],
