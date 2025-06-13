@@ -46,7 +46,7 @@
   "projectType": "REGULAR",
   "projectAppType": "REGULAR",
   "hasSetupSection": false,
-  "owner": "shvadim92232@gmail.com",
+  "owner": "dominique@gagnie.re",
   "permissionsVersion": "V2",
   "permissions": [
     {
@@ -196,7 +196,7 @@
     },
     "dkuProperties": []
   },
-  "name": "MSPR_DATA",
+  "name": "MSPR Prédiction des élections",
   "imgPattern": 2,
   "showInitials": false,
   "metrics": {
