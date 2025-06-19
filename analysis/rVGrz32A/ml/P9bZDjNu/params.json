@@ -589,6 +589,41 @@
         "customHandlingCode": "",
         "customProcessorWantsMatrix": false,
         "sendToInput": "main"
+      },
+      "Geo_de_la_commune": {
+        "category_handling": "DUMMIFY",
+        "missing_handling": "NONE",
+        "missing_impute_with": "MODE",
+        "dummy_clip": "MAX_NB_CATEGORIES",
+        "cumulative_proportion": 0.95,
+        "min_samples": 10,
+        "max_nb_categories": 100,
+        "max_cat_safety": 200,
+        "nb_bins_hashing": 1048576,
+        "hash_whole_categories": true,
+        "dummy_drop": "AUTO",
+        "impact_method": "M_ESTIMATOR",
+        "impact_m": 10,
+        "impact_kfold": true,
+        "impact_kfold_k": 5,
+        "impact_kfold_seed": 1337,
+        "ordinal_order": "COUNT",
+        "ordinal_ascending": false,
+        "ordinal_default_mode": "HIGHEST",
+        "ordinal_default_value": 0,
+        "frequency_default_mode": "EXPLICIT",
+        "frequency_default_value": 0.0,
+        "frequency_normalized": true,
+        "role": "REJECT",
+        "type": "CATEGORY",
+        "state": {
+          "userModified": false,
+          "autoModifiedByDSS": false,
+          "recordedMeaning": "GeoPoint"
+        },
+        "customHandlingCode": "",
+        "customProcessorWantsMatrix": false,
+        "sendToInput": "main"
       }
     },
     "feature_generation": {
@@ -2680,6 +2715,21 @@
       },
       "enabled": false
     },
+    "arima_timeseries": {
+      "p": 0,
+      "d": 0,
+      "q": 0,
+      "P": 0,
+      "D": 0,
+      "Q": 0,
+      "s": 7,
+      "trend": "n",
+      "trend_offset": 1,
+      "enforce_stationarity": true,
+      "enforce_invertibility": true,
+      "concentrate_scale": false,
+      "enabled": false
+    },
     "autoarima_timeseries": {
       "m": {
         "gridMode": "EXPLICIT",
@@ -3983,7 +4033,8 @@
       "scheme": "MEANING_AND_STATUS",
       "individualColumns": [],
       "individualColumnsRules": [],
-      "valueColoringMode": "HASH"
+      "valueColoringMode": "HASH",
+      "coloringGroups": []
     },
     "sorting": [],
     "analysisColumnData": {},
@@ -4242,6 +4293,7 @@
           "displayPieLabelsOrValues": true,
           "displayMode": "LABELS",
           "overlappingStrategy": "AUTO",
+          "placementMode": "AUTO",
           "textFormatting": {
             "fontSize": 11,
             "fontColor": "AUTO",
@@ -4286,6 +4338,7 @@
           },
           "customColors": {}
         },
+        "colorGroups": [],
         "bubblesOptions": {
           "defaultRadius": 5.0,
           "singleShape": "FILLED_CIRCLE"

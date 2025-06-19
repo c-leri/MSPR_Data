@@ -12,11 +12,11 @@
         "partitionSelectionMethod": "ALL",
         "latestPartitionsN": 1,
         "ordering": {
-          "enabled": true,
+          "enabled": false,
           "rules": []
         },
         "samplingMethod": "HEAD_SEQUENTIAL",
-        "maxRecords": 40000,
+        "maxRecords": 10000,
         "targetRatio": 0.02,
         "ascending": true,
         "withinFirstN": -1,
@@ -26,7 +26,7 @@
       "_refreshTrigger": 0
     },
     "def": {
-      "type": "scatter_map",
+      "type": "grouped_columns",
       "variant": "normal",
       "name": "Chart",
       "userEditedName": false,
@@ -41,75 +41,16 @@
       "uaXDimension": [],
       "uaYDimension": [],
       "uaDimensionPair": [],
-      "uaSize": [
-        {
-          "treatAsAlphanum": false,
-          "isA": "ua",
-          "adminLevel": 0,
-          "multiplier": "Auto",
-          "hideTrailingZeros": true,
-          "digitGrouping": "DEFAULT",
-          "useParenthesesForNegativeValues": false,
-          "shouldFormatInPercentage": false,
-          "prefix": "",
-          "suffix": "",
-          "displayLabel": "Population",
-          "column": "insee_population",
-          "type": "NUMERICAL"
-        }
-      ],
-      "uaColor": [
-        {
-          "treatAsAlphanum": false,
-          "isA": "ua",
-          "adminLevel": 0,
-          "multiplier": "Auto",
-          "hideTrailingZeros": true,
-          "digitGrouping": "DEFAULT",
-          "useParenthesesForNegativeValues": false,
-          "shouldFormatInPercentage": false,
-          "prefix": "",
-          "suffix": "",
-          "displayLabel": "Nuance",
-          "column": "nuance",
-          "type": "ALPHANUM"
-        }
-      ],
+      "uaSize": [],
+      "uaColor": [],
       "uaShape": [],
-      "uaTooltip": [
-        {
-          "treatAsAlphanum": false,
-          "isA": "ua",
-          "adminLevel": 0,
-          "multiplier": "Auto",
-          "hideTrailingZeros": true,
-          "digitGrouping": "DEFAULT",
-          "useParenthesesForNegativeValues": false,
-          "shouldFormatInPercentage": false,
-          "prefix": "",
-          "suffix": "",
-          "displayLabel": "Commune",
-          "column": "Nom_de_la_commune",
-          "type": "ALPHANUM"
-        }
-      ],
+      "uaTooltip": [],
       "groupDimension": [],
       "xMeasure": [],
       "yMeasure": [],
       "colorMeasure": [],
       "sizeMeasure": [],
-      "geometry": [
-        {
-          "treatAsAlphanum": false,
-          "isA": "ua",
-          "adminLevel": 0,
-          "multiplier": "Auto",
-          "useParenthesesForNegativeValues": false,
-          "shouldFormatInPercentage": false,
-          "column": "Geo_de_la_commune",
-          "type": "GEOPOINT"
-        }
-      ],
+      "geometry": [],
       "geoLayers": [
         {
           "geometry": [],
@@ -139,7 +80,6 @@
       "tooltipMeasures": [],
       "boxplotBreakdownDim": [],
       "boxplotValue": [],
-      "filters": [],
       "xAxisFormatting": {
         "displayAxis": true,
         "showAxisTitle": true,
@@ -318,7 +258,7 @@
         "heatDensityMapIntensity": 0.5,
         "heatDensityMapRadius": 0.5,
         "singleColor": "#2678B1",
-        "transparency": 0.8,
+        "transparency": 0.75,
         "colorPalette": "default",
         "customPalette": {
           "id": "__dku_custom__",
@@ -327,28 +267,12 @@
           "values": [],
           "fixedValues": false
         },
-        "customColors": {
-          "v_RN": "#40464A",
-          "v_UXD": "#7b4173",
-          "v_ENS": "#ff7f0e",
-          "v_LR": "#1f77b4",
-          "v_UG": "#d62728",
-          "v_DVD": "#aec7e8",
-          "v_DVG": "#ff9896",
-          "v_HOR": "#17becf",
-          "v_DVC": "#ffbb78",
-          "v_REG": "#de9ed6",
-          "v_UDI": "#ffbb78",
-          "v_DIV": "#C7BFBF",
-          "v_ECO": "#2ca02c"
-        }
+        "customColors": {}
       },
-      "colorGroups": [],
       "bubblesOptions": {
-        "defaultRadius": 2.0,
+        "defaultRadius": 5.0,
         "singleShape": "FILLED_CIRCLE"
       },
-      "computeMode": "NORMAL",
       "xAxisMode": "NORMAL",
       "yAxisMode": "NORMAL",
       "pieOptions": {
@@ -577,9 +501,7 @@
         },
         "horizontal": {
           "show": false,
-          "displayAxis": {
-            "type": "LEFT_Y_AXIS"
-          },
+          "displayAxis": {},
           "lineFormatting": {
             "type": "FILLED",
             "color": "#d9d9d9",
@@ -589,18 +511,18 @@
       }
     },
     "customMeasures": [],
-    "datasetSmartName": "legislatives_2024_communes_prepared_prepared_joined"
+    "datasetSmartName": "Resultat_Legislative"
   },
   "owner": "celestin.bouchet@gmail.com",
   "listed": false,
-  "name": "Chart on legislatives_2024_communes_prepared_prepared_joined",
+  "name": "Chart on Resultat_Legislative",
   "dashboardCreationId": "GOJDKTj",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
       "login": "celestin.bouchet@gmail.com"
     },
-    "lastModifiedOn": 1748002612894
+    "lastModifiedOn": 1748009613399
   },
   "tags": [],
   "customFields": {},

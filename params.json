@@ -19,6 +19,24 @@
         "modes": [
           "READ"
         ]
+      },
+      {
+        "objectRef": {
+          "objectId": "Resultat_Legislative",
+          "objectType": "DATASET"
+        },
+        "modes": [
+          "READ"
+        ]
+      },
+      {
+        "objectRef": {
+          "objectId": "legislatives_2024_communes_prepared_prepared_joined_scored",
+          "objectType": "DATASET"
+        },
+        "modes": [
+          "READ"
+        ]
       }
     ]
   },
@@ -28,7 +46,7 @@
   "projectType": "REGULAR",
   "projectAppType": "REGULAR",
   "hasSetupSection": false,
-  "owner": "hcwhatever@gmail.com",
+  "owner": "dominique@gagnie.re",
   "permissionsVersion": "V2",
   "permissions": [
     {
@@ -64,7 +82,6 @@
       "zonesManualPositioning": false
     },
     "gitCommitMode": "AUTO",
-    "useRemoteGit": true,
     "disableAutomaticTriggers": false,
     "integrations": {
       "integrations": []
@@ -179,8 +196,9 @@
     },
     "dkuProperties": []
   },
-  "name": "test",
+  "name": "MSPR Prédiction des élections",
   "imgPattern": 2,
+  "showInitials": false,
   "metrics": {
     "probes": [],
     "engineConfig": {
@@ -245,45 +263,11 @@
   },
   "shortDesc": "The project *test* was created by Pradityo Adi Wicaksono on Mar 06th 2025",
   "tags": [
-    "mspr"
+    "mspr",
+    "imported"
   ],
   "customFields": {},
   "checklists": {
-    "checklists": [
-      {
-        "title": "Your new project\u0027s Todo",
-        "createdOn": 0,
-        "items": [
-          {
-            "done": true,
-            "text": "Create the project",
-            "createdOn": 1741264492431,
-            "createdBy": "celestin.bouchet@gmail.com",
-            "stateChangedOn": 0
-          },
-          {
-            "done": false,
-            "text": "Set a project image (click on the color next to the project title)",
-            "createdOn": 1741264492431,
-            "createdBy": "celestin.bouchet@gmail.com",
-            "stateChangedOn": 0
-          },
-          {
-            "done": false,
-            "text": "Import your [first dataset](projects/MSPR_DATA/datasets/new/)",
-            "createdOn": 1741264492431,
-            "createdBy": "celestin.bouchet@gmail.com",
-            "stateChangedOn": 0
-          },
-          {
-            "done": false,
-            "text": "Organize your work by replacing this with a real todo",
-            "createdOn": 1741264492431,
-            "createdBy": "celestin.bouchet@gmail.com",
-            "stateChangedOn": 0
-          }
-        ]
-      }
-    ]
+    "checklists": []
   }
 }

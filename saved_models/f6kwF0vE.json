@@ -6,7 +6,7 @@
   "cleanTemporaryVersionsPostJob": false,
   "name": "Clustering on legislatives_2024_communes_prepared_prepared_joined",
   "contentType": "clustering/py_memory",
-  "activeVersion": "1748004636182",
+  "activeVersion": "1748006677806",
   "inlineVersions": [],
   "conditionalOutputs": [],
   "partitioning": {
@@ -445,8 +445,8 @@
     "customMeasures": [],
     "labels": []
   },
-  "lastTrainIndex": 3,
-  "lastTrainJobId": "Build_Clustering_on_legislatives_2024_communes_prepared_prepared_joined_2025-05-23T12-50-30.771",
+  "lastTrainIndex": 5,
+  "lastTrainJobId": "Build_Clustering_on_legislatives_2024_communes_prepared_prepared_joined_2025-05-23T13-24-33.054",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
