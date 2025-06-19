@@ -132,6 +132,25 @@
         "panelPosition": "TOP",
         "engineType": "LINO"
       }
+    },
+    {
+      "id": "jVtOHLY",
+      "grid": {
+        "tiles": []
+      },
+      "title": "Vadim",
+      "show": true,
+      "showTitle": false,
+      "titleAlign": "CENTER",
+      "titleFontColor": "#444444",
+      "titleFontSize": 28,
+      "enableCrossFilters": true,
+      "backgroundColor": "#ffffff",
+      "showFilterPanel": true,
+      "filtersParams": {
+        "panelPosition": "TOP",
+        "engineType": "LINO"
+      }
     }
   ],
   "owner": "celestin.bouchet@gmail.com",
