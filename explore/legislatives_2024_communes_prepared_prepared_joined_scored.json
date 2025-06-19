@@ -281,8 +281,12 @@
             "isA": "ua",
             "adminLevel": 0,
             "multiplier": "Auto",
+            "hideTrailingZeros": true,
+            "digitGrouping": "DEFAULT",
             "useParenthesesForNegativeValues": false,
             "shouldFormatInPercentage": false,
+            "prefix": "",
+            "suffix": "",
             "column": "prediction",
             "type": "ALPHANUM"
           }
