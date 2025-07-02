@@ -1,4 +1,7 @@
 
+<p align="center">
+  <img width="460" height="300" src="https://media.istockphoto.com/id/2157583016/vector/%C3%A9lections-l%C3%A9gislatives-2024-legislative-elections-2024-in-french-vote-box-with-flag-and-text.jpg?s=612x612&w=0&k=20&c=-wBmVPPFM8xkFOyw39n3aaUFyy_8GyNWkKLZgbt-m8Y=">
+</p>
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
