@@ -13,7 +13,8 @@
   "flowOptions": {
     "virtualizable": false,
     "rebuildBehavior": "NORMAL",
-    "crossProjectBuildBehavior": "DEFAULT"
+    "crossProjectBuildBehavior": "DEFAULT",
+    "ignoreErrorStatusOnBuild": false
   },
   "readWriteOptions": {
     "preserveOrder": false,
@@ -65,13 +66,13 @@
     "lastModifiedBy": {
       "login": "celestin.bouchet@gmail.com"
     },
-    "lastModifiedOn": 1747905460680
+    "lastModifiedOn": 1752150954691
   },
   "tags": [],
   "params": {
     "sources": [
       {
-        "url": "https://www.data.gouv.fr/fr/datasets/r/ca429285-b5a1-442b-8edf-8e6f68c304c9"
+        "url": "https://www.data.gouv.fr/fr/datasets/r/98035b10-845a-45d8-9e26-f8ccb9ca40a7"
       }
     ],
     "consider404AsEmpty": true,

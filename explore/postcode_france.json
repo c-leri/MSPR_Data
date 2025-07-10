@@ -3,38 +3,10 @@
     "steps": [],
     "maxProcessedMemTableBytes": -1,
     "columnsSelection": {
-      "mode": "ALL",
-      "list": [
-        {
-          "name": "Code_commune_INSEE",
-          "d": true
-        },
-        {
-          "name": "Nom_de_la_commune",
-          "d": true
-        },
-        {
-          "name": "Code_postal",
-          "d": true
-        },
-        {
-          "name": "Libellé_d_acheminement",
-          "d": true
-        },
-        {
-          "name": "Ligne_5",
-          "d": true
-        }
-      ]
+      "mode": "ALL"
     },
     "columnOrder": [],
-    "columnWidthsByName": {
-      "Code_commune_INSEE": 619,
-      "Nom_de_la_commune": 190,
-      "Code_postal": 100,
-      "Libellé_d_acheminement": 180,
-      "Ligne_5": 134
-    },
+    "columnWidthsByName": {},
     "columnUseScientificNotationByName": {},
     "coloring": {
       "scheme": "MEANING_AND_STATUS",
@@ -93,9 +65,7 @@
       "autoRefreshSample": false,
       "_refreshTrigger": 0
     },
-    "exploreUIParams": {
-      "autoRefresh": true
-    },
+    "exploreUIParams": {},
     "globalSearchQuery": "",
     "explorationFilters": [],
     "previewMode": "ALL_ROWS"

@@ -55,7 +55,7 @@
   "projectType": "REGULAR",
   "projectAppType": "REGULAR",
   "hasSetupSection": false,
-  "owner": "hcwhatever@gmail.com",
+  "owner": "celestin.bouchet@gmail.com",
   "permissionsVersion": "V2",
   "permissions": [
     {
@@ -205,7 +205,8 @@
     },
     "dkuProperties": []
   },
-  "name": "test",
+  "name": "MSPR_DATA",
+  "projectStatus": "Sandbox",
   "imgPattern": 2,
   "showInitials": false,
   "metrics": {
